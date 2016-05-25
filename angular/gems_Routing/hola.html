@@ -1,0 +1,15 @@
+<div ng-controller="StoreController as store" ng-cloak>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="product in store.products | filter: myFilter |limitTo:7">
+      {{product.name}}
+      <a class="btn btn-info" href="#/about">el hola</a>
+      <a class="btn btn-info" ng-click='store.setElem(product)' href="#gem/ex/{{product.name}}">title and panels</a>
+      <a class="btn btn-primary" ng-click='store.setElem(product)' href="#gem/{{product.name}}">title</a>
+      <a  class="btn btn-danger" ng-click='store.setElem(product)' href="#gem/info/{{product.name}}">panel</a>
+      <!--          <product-title></product-title>
+      <product-panels></product-panels>
+-->
+    </li>
+  </ul>
+
+</div>

@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Exam rec JQ</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <div id="exam">
+    <br>
+    <input id="valor" type="text">
+    <button id="elboton">Go to...</button>
+
+  </div>
+
+  <!-- Compiled and minified JavaScript, jQuery and Bootstrap -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script>
+
+
+    $.getJSON("http://37.187.2.239:81/dwec/canvas/exam_/getJSON2.php?callback=?", function(data) {
+
+      console.log(data);
+$.each(data.important.probably["here it is"]["human beings"],function(index, value){
+
+
+  $("#exam").append("<div class='jumbotron'><div class='col-sm-6 text-center'>Wife: "+value.wife+"</div><div class='col-sm-6 text-center'>Husband: "+value.husband+"</div><h2>Children</h2><button class='borrar'>Delete me<button class='down'>Move down");
+
+
+
+
+    $(".borrar").click(function(){
+        $(".jumbotron").eq(index).remove();
+
+    });
+    $(".down").click(function(){
+       $(".jumbotron").eq(index).prev();
+    });
+    $("#elboton").on("click", function() {
+          var valor=$("#valor").val();
+          console.log($("#valor").val());
+          $("html, body").animate({
+              scrollTop: $("#exam").eq(index[valor]).offset().top
+
+          });
+      });
+
+});
+
+
+
+      // some help
+      // a = $("<div class='jumbotron'>");
+      // la a es un elemento de tipo div (se cierra automáticamente la etiqueta, no haría falta poner el </div>)
+
+      // $("<div class='col-sm-6 text-center'>
+      // "<div class='container' style='background-color: #aaa'>";
+
+
+      $("button.moveme").on("click", function(){
+      });
+
+
+
+
+    });
+
+  </script>
+
+</body>
+
+</html>

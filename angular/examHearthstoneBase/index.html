@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
+  <title>HEARTHSTONE</title>
+  <link href="" rel="shortcut icon">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="myStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3 text-right">Hearthstone cards!</h1>
+        <p class="lead">...simple hero unit...</p>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="artwork">
+      <br>
+      <div class="separator">Total health</div>
+      <br>
+      <br>
+      <input placeholder="insert a number">
+      <button>Get this amount of cards!!</button>
+
+    </div>
+    <div class="container-fluid">
+      <div class="form-group">
+        <label for="filter">Filter:</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="row">
+          <div class="clearfix" ng-if="$index % 6 == 0"></div><!--do not touch this line (esta linea no la toques)-->
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img style="width: 150px; height: 227px">
+              <div style="left: 20px; width: 150px; height: 227px; position: absolute; margin-top: -227px;"></div>
+              <div class="caption">
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="artwork" style="width: 100%; height: 70px" >
+      <br>
+      <div class="separator">Total health</div>
+
+    </div>
+
+
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+  <script src="angular/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+  <script src="cards.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

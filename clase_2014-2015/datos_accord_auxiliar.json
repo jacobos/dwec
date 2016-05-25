@@ -1,0 +1,148 @@
+[{
+    "unidad": "FrameWorks",
+    "contenido": "<a href=\"http://yuilibrary.com/\" target=\"_blank\">YUI Library</a>"
+}, {
+    "unidad": "FrameWorks",
+    "contenido": "<a href=\"http://emberjs.com/\" target=\"_blank\">EmberJS</a>"
+}, {
+    "unidad": "FrameWorks",
+    "contenido": "<a href=\"http://www.creativebloq.com/web-design/templating-engines-9134396\" target=\"_blank\">JS Templating Engines</a>"
+}, {
+    "unidad": "FrameWorks",
+    "contenido": "<a href=\"http://handlebarsjs.com/\" target=\"_blank\">&nbsp;&nbsp;&nbsp;&nbsp;HandlebarsJS templating</a>"
+}, {
+    "unidad": "FrameWorks",
+    "contenido": "<a href=\"https://angularjs.org/\" target=\"_blank\">AngularJS</a>"
+}, {
+    "unidad": "FrameWorks",
+    "contenido": "<a href=\"http://meanjs.org/\" target=\"_blank\">MeanJS (MongoDB, Express, Angular, Nodejs</a>"
+}, {
+    "unidad": "FrameWorks",
+    "contenido": "<a href=\"http://nodejs.org/\" target=\"_blank\">Node JS</a>"
+}, {
+    "unidad": "FrameWorks",
+    "contenido": "<a href=\"http://backbonejs.org/\" target=\"_blank\">BackboneJS</a>"
+}, {
+    "unidad": "FrameWorks",
+    "contenido": "<a href=\"https://www.meteor.com/\" target=\"_blank\">Meteor JS\n\n</a>\n"
+}, {
+    "unidad": "JavaScript",
+    "contenido": "<a class=\"info_ref\">Slides (show/hide)</a>\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"slides/01.html\" target=\"_blank\">Slides 01 (presentation)</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"slides/02.html\" target=\"_blank\">Slides 02 (what is JavaScript)</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"slides/03.html\" target=\"_blank\">Slides 03</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"slides/04.html\" target=\"_blank\">Slides 04</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"slides/05.html\" target=\"_blank\">Slides 05</a><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"slides/06.html\" target=\"_blank\">Slides 06</a>\n</div>"
+}, {
+    "unidad": "JavaScript",
+    "contenido": "<a href=\"javascript.pdf\" target=\"_blank\">Javascript (Crockford)</a> <a href=\"http://yuiblog.com/blog/2007/01/24/video-crockford-tjpl/\" target=\"_blank\">(the talk here)</a>"
+}, {
+    "unidad": "JavaScript",
+    "contenido": "<a class=\"info_ref\">JavaScript Reference (show/hide)</a>\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/jsref_obj_string.asp\" target=\"_blank\">String</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/jsref_obj_number.asp\" target=\"_blank\">Numbers</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/jsref_obj_boolean.asp\" target=\"_blank\">Boolean</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/jsref_obj_math.asp\" target=\"_blank\">Math Object</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/jsref_obj_date.asp\" target=\"_blank\">Date Object</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/jsref_obj_array.asp\" target=\"_blank\">Array Object</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/jsref_obj_global.asp\" target=\"_blank\">Global properties and functions</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/jsref_operators.asp\" target=\"_blank\">Operators</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/jsref_obj_regexp.asp\" target=\"_blank\">RegExp Object</a>\n    </div>"
+}, {
+    "unidad": "JavaScript",
+    "contenido": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals\" target=\"_blank\">Values, variables and literals</a>"
+}, {
+    "unidad": "JavaScript",
+    "contenido": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model\" target=\"_blank\">DOM (mozilla)</a>"
+}, {
+    "unidad": "JavaScript",
+    "contenido": "<a class=\"info_ref\">DOM (show/hide)</a>\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/dom_obj_document.asp\" target=\"_blank\">Document Object</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/dom_obj_all.asp\" target=\"_blank\">Element Object (parentNode, removeChild, childNodes, setAttribute, etc)</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/ParentNode.children\" target=\"_blank\">--&gt; children function (not found in w3schools)</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/dom_obj_attributes.asp\" target=\"_blank\">Attribute Object</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/dom_obj_event.asp\" target=\"_blank\">Events</a>\n    </div>"
+}, {
+    "unidad": "JavaScript",
+    "contenido": "<a href=\"http://www.w3schools.com/js/js_htmldom.asp\" target=\"_blank\">JavaScript HTML DOM</a>"
+}, {
+    "unidad": "JavaScript",
+    "contenido": "<a class=\"info_ref\">BOM (show/hide)</a>\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/obj_window.asp\" target=\"_blank\">Window Object</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/obj_navigator.asp\" target=\"_blank\">Navigator Object</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/obj_screen.asp\" target=\"_blank\">History Object</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/obj_history.asp\" target=\"_blank\">Screen Object</a>\n        <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/obj_location.asp\" target=\"_blank\">Location Object</a>\n    </div>\n"
+}, {
+    "unidad": "JavaScript",
+    "contenido": "<a href=\"http://www.w3schools.com/js/\" target=\"_blank\">JS</a>"
+}, {
+    "unidad": "Mobile",
+    "contenido": "<a href=\"http://phonegap.com/\" target=\"_blank\">PhoneGap\n\n</a>"
+}, {
+    "unidad": "Mobile",
+    "contenido": "<a href=\"http://cordova.apache.org/\" target=\"_blank\">Apache Cordova\n</a>"
+}, {
+    "unidad": "Mobile",
+    "contenido": "<a href=\"http://support.ludei.com/hc/en-us\" target=\"_blank\">Ludei / CocoonJS</a>"
+}, {
+    "unidad": "Others",
+    "contenido": "<a href=\"https://developers.google.com/speed/docs/insights/MinifyResources\" target=\"_blank\">Minify Resources (YUI, JSMin, etc.)</a>"
+}, {
+    "unidad": "Others",
+    "contenido": "<a href=\"http://html5gameengine.com/\" target=\"_blank\">HTML5 game engines (sort by rating!)</a>"
+}, {
+    "unidad": "Others",
+    "contenido": "<a href=\"http://www.html5gamedevelopment.com/\" target=\"_blank\">HTML5 game development</a>"
+}, {
+    "unidad": "Others",
+    "contenido": "<a href=\"http://www.chromeexperiments.com/\" target=\"_blank\">Demos (Chrome experiments)</a>"
+}, {
+    "unidad": "Others",
+    "contenido": "<a href=\"https://developer.mozilla.org/en-US/demos/\" target=\"_blank\">Demos (Mozilla Demos)</a>"
+}, {
+    "unidad": "Others",
+    "contenido": "<a href=\"http://designzum.com/2014/02/07/best-javascript-html5-presentation-frameworks/\" target=\"_blank\">HTML \npresentations\n</a>"
+}, {
+    "unidad": "Others",
+    "contenido": "<a href=\"http://cykod.github.io/CoderDeck/\" target=\"_blank\">&nbsp;&nbsp;&nbsp;&nbsp;Ex. Coder Deck</a>"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"https://github.com/fishbecat/Code-School-Slides\" target=\"_blank\">CodeSchool Slides</a>\n"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"http://www.w3schools.com/jsref/default.asp\" target=\"_blank\">w3schools</a>\n"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"http://javascript.crockford.com/\" target=\"_blank\">Crockford JavaScript</a>"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"http://www.amazon.com/gp/product/0596805527/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596805527&amp;linkCode=as2&amp;tag=interhaptic-20\" target=\"_blank\">Book reference (2) </a>\n"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"http://www.amazon.com/gp/product/1118026691/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1118026691&amp;linkCode=as2&amp;tag=interhaptic-20\" target=\"_blank\">Book reference (1)</a>"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript\" target=\"_blank\">Mozilla JS</a>"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"http://www.nodebeginner.org/\" target=\"_blank\">Nodejs Beginner</a>"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"http://javascriptissexy.com/\">JavaScript reference site\n</a>"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"http://it-ebooks.info/\" target=\"_blank\">it-ebooks</a>"
+}, {
+    "unidad": "References",
+    "contenido": "<a href=\"http://yuiblog.com/crockford/\" target=\"_blank\">Crockford JavaScript (2)</a>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a href=\"http://jquery.com/\" target=\"_blank\">jQuery</a>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a class=\"info_ref\">Timing JS (show/hide)</a>\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers.setInterval\" target=\"_blank\">setInterval</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers.clearInterval\" target=\"_blank\">clearInterval</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers.setTimeout\" target=\"_blank\">setTimeOut</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers.clearTimeout\" target=\"_blank\">clearTimeOut</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://creativejs.com/resources/requestanimationframe/\" target=\"_blank\">requestAnimationFrame</a></div>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a class=\"info_ref\">JS & jQuery selectors (show/hide)</a>\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/met_document_queryselector.asp\" target=\"_blank\">document.querySelector</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/met_document_queryselectorall.asp\" target=\"_blank\">document.querySelectorAll</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jquery/jquery_ref_selectors.asp\" target=\"_blank\">jQuery selectors (w3schools)</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/category/selectors/\" target=\"_blank\">jQuery Selectors (jQuery.com)</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://jsperf.com/getelementbyid-vs-queryselector\" target=\"_blank\">getElementById vs querySelector</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://www.w3schools.com/jsref/prop_node_nodetype.asp\" target=\"_blank\">(useful) nodeType</a>\n<br>&nbsp;&nbsp;&nbsp;&nbsp;\n</div>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a href=\"http://overapi.com/jquery/\" target=\"_blank\">jQuery cheatSheet</a>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a href=\"http://www.os-templates.com/free-basic-html5-templates/\" target=\"_blank\">Website Templates</a>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a class=\"info_ref\">jQuery tags (show/hide)</a>\n      <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/show/\" target=\"_blank\">show</a>\n     &nbsp;&nbsp;&nbsp;                                     <a href=\"http://api.jquery.com/hide/\" target=\"_blank\">hide</a>\n     &nbsp;&nbsp;&nbsp;                                    <a href=\"http://api.jquery.com/fadein/\" target=\"_blank\">fadeIn</a>\n  &nbsp;&nbsp;&nbsp;                                    <a href=\"http://api.jquery.com/fadeout/\" target=\"_blank\">fadeOut</a>\n                           &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/fadeToggle/\" target=\"_blank\">fadeToggle</a>\n             <br><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/eq/\" target=\"_blank\">eq</a>\n                                     &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/slice/\" target=\"_blank\">slice</a>\n                       <br><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/html/\" target=\"_blank\">html</a>\n                                 &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/text/\" target=\"_blank\">text</a>\n                         <br><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/children/\" target=\"_blank\">children</a>\n                 <br><br>&nbsp;&nbsp;&nbsp;       <a href=\"http://api.jquery.com/first/\" target=\"_blank\">first</a>\n                               &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/last/\" target=\"_blank\">last</a>\n                                 &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/next/\" target=\"_blank\">next</a>\n                                 &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/prev/\" target=\"_blank\">prev</a>\n                         <br><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/prepend/\" target=\"_blank\">prepend</a>\n                           &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/append/\" target=\"_blank\">append</a>\n                             &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/after/\" target=\"_blank\">after</a>\n                               &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://api.jquery.com/before/\" target=\"_blank\">before</a>\n                     <br<br>&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"http://api.jquery.com/on/\" target=\"_blank\">on</a><br><br>\n</div>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a href=\"http://try.jquery.com/\" target=\"_blank\">Try jQuery</a>"
+},  {
+    "unidad": "jQuery",
+    "contenido": "<a href=\"http://jquerymobile.com/\" target=\"_blank\">jQuery Mobile</a>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a href=\"http://jqueryui.com/\" target=\"_blank\">jQuery UI</a>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a href=\"https://github.com/brandonaaron/jquery-mousewheel/\" target=\"_blank\">JQuery MouseWheel</a>"
+}, {
+    "unidad": "jQuery",
+    "contenido": "<a href=\"http://www.javascriptkit.com/javatutors/onmousewheel.shtml\" target=\"_blank\">MouseWheel (no JQuery)</a>"
+}]

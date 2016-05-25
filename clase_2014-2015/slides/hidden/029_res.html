@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery</title>
+    <link href="css/029.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $("li").last().append("<more>");
+            $("li").append("<minus>");
+            $('li:lt(5)').addClass("hot");
+            $('li:lt(5)').hide().fadeIn(2000);
+            $('minus').on('click', function () {
+                $(this).parent().remove();
+            });
+            $('more').on('click', function () {
+                $("ul").children().last().before("<li id='" + $("li").length + "'>" + $("input").val() + "<minus></minus></li>");
+                $("ul").children().last().prev().addClass("hot").hide().fadeIn(1000);
+                $('minus').on('click', function () {
+                    $(this).parent().remove();
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="page">
+        <h1 id="header"></h1>
+        <h2>Paella Dragon</h2>
+        <ul>
+            <li id="i1"><em>nice</em> vegetables</li>
+            <li id="i2">Oil</li>
+            <li id="i3">Onions</li>
+            <li id="i4">Garroufon</li>
+            <li id="i5">Beans</li>
+            <li id="i6">Rice..</li>
+        </ul>
+        <input>
+    </div>
+
+</body>
+
+</html>

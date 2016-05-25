@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+
+	<title>DWEC - 02</title>
+	
+	<link rel="stylesheet" href="core/deck.core.css">
+	
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+	<link rel="stylesheet" href="extensions/style.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="themes/style/web-2.0.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+	
+	<!-- Required Modernizr file -->
+	<script src="modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+
+	<img src="tree-tr.png" alt="" width="100"  class="topright"/>
+	<section class="slide">
+		<h1>Good morning!</h1>
+	</section>
+
+	<section class="slide">
+		<h1>Getting to know JavaScript...</h1>
+	</section>
+
+	<section class="slide">
+		<h2>Web Client Programming Elements</h2>
+		<ul>
+			<li class="slide">
+				<h3>
+					HTML layout, HTML forms, and CSS to provide the basic interface
+				</h3></li>
+			<li class="slide">
+				<h3>
+					JavaScript
+				</h3></li>
+			<li class="slide">
+				<h3>
+					AJAX (Asynchronous Javascript and XML) 
+				</h3></li>
+		
+			<li class="slide noList"></li>
+		</ul>
+		<p class="slide"></p>
+	</section>
+
+	<section class="slide">
+
+		<h2>JS Origins (1)</h2>
+		<ul>
+			<li class="slide"><h3>
+				1992, first name: Oak (Sun & FirstPerson)
+				</h3></li>
+			<li class="slide"><h3>
+				1995: Mocha, later named LiveScript
+				</h3></li>
+			<li class="slide"><h3>
+				Initially it was intended to be used on the server side too
+				</h3></li>
+			<li class="slide"><h3>
+				Netscape changed LiveScript’s name to JavaScript (Java was becoming very popular back then)		
+				</h3></li>
+			<li class="slide noList"></li>
+		</ul>		
+	</section>
+	
+	<section class="slide">
+
+		<h2>JS Origins (2)</h2>
+		<ul>
+			<li class="slide"><h3>
+				Microsoft decided to put more resources into a competing browser named Internet Explorer			
+			</h3></li>
+			<li class="slide"><h3>
+				After Netscape Navigator 3 was released, Microsoft introduced IE 3 with a JavaScript implementation called JScript
+			</h3></li>
+			<li class="slide"><h3>
+				Microsoft’s implementation of JavaScript meant that there were two different JavaScript versions floating around
+			</h3></li>
+			<li class="slide noList"></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+
+		<h2>JS Origins (3)</h2>
+		<ul>
+			<li class="slide"><h3>
+				The industry decided that the language had to be standardized.
+			</h3></li>
+			<li class="slide"><h3>
+				1997, JavaScript 1.1 was submitted to the European Computer Manufacturers Association (ECMA) as a proposal. 			
+			</h3></li>
+			<li class="slide"><h3>
+				TC39 was assigned to “standardize the syntax and semantics of a general purpose, cross-platform, vendor-neutral scripting language"
+			</h3></li>
+			<li class="slide"><h3>
+				1998  the ISO/IEC adopted ECMAScript as a standard (ISO/IEC-16262). Since that time, (some) browsers have tried to use ECMAScript as a basis for their JavaScript implementations.
+			</h3></li>
+			<li class="slide noList"></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h1> What is JavaScript then?</h1>
+	</section>
+
+	<section class="slide">
+
+		<h2>JavaScript is not just ECMAScript
+		</h2>
+		<ul>
+			<li class="slide"><h3>
+				The Core (ECMAScript)
+			</h3></li>
+			<li class="slide"><h3>
+				The Document Object Model (DOM)
+			</h3></li>
+			<li class="slide"><h3>
+				The Browser Object Model (BOM)
+			</h3></li>
+			<li class="slide noList"></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Javascript is this (for us)</h2>
+		<img src="images/dombomecma.png"  alt="langs">
+	</section>
+
+	<section class="slide">
+		<h2>ECMASCRIPT IS</h2>
+		<h3> the scripting language standardized by EDCMA International in the ECMA-262 specification and ISO/IEC 16262. 
+		The language is widely used for client-side scripting on the web, in the form of several well-known implementations such as JavaScript (Mozilla Foundation), JScript (Microsoft) and ActionScript (Adobe).
+		<h3>
+	</section>
+
+	<section class="slide">
+		<h2>Compatibility</h2><img width="900px" src="images/ecmascript5_comp.png" alt="langs">
+		<a href="http://kangax.github.io/es5-compat-table/">LINK TO THE SOURCE</a>
+	</section>
+
+	<section class="slide">
+		<h2>DOM, this...
+		</h2>
+<pre><code>&lt;html>
+    &lt;head>
+        &lt;title>Sample Page&lt;/title>
+    &lt;/head>
+    &lt;body>
+        &lt;p>Hello World!&lt;/p>
+    &lt;/body>
+&lt;/html>
+	</section>
+
+	<section class="slide">
+		<h2>Becomes this:</h2>
+		<img width="500px" src="images/dom.png" alt="langs">
+	</section>
+
+	<section class="slide">
+		<h2>The BOM
+		</h2>
+		<ul>
+			<li class="slide"><h3>
+				Primarily, the BOM deals with the browser window and frames, but generally any browser-specific extension to JavaScript is considered to be a part of the BOM. The following are some such extensions
+			</h3></li>
+			<li class="slide noList"></li>
+		</ul>
+	</section>
+	
+
+	<section class="slide">
+		<h2>BOM extensions
+		</h2>
+		<ul>
+			<li class="slide"><h3>
+				The capability to pop up new browser windows
+			</h3></li>
+			<li class="slide"><h3>
+				The capability to move, resize, and close browser windows
+			</h3></li>
+			<li class="slide"><h3>
+				The navigator object, which provides detailed information about the browser
+			</h3></li>
+			<li class="slide"><h3>
+				The location object, which gives detailed information about the page loaded in the browser.
+			</h3></li>
+			<li class="slide"><h3>
+				The screen object, which gives detailed information about the user’s screen resolution
+			</h3></li>
+			<li class="slide"><h3>
+				Support for cookies
+			</h3></li>
+			<li class="slide"><h3>
+				Custom objects such as XMLHttpRequest and Internet Explorer’s ActiveXObject
+			</h3></li>
+			<li class="slide noList"></li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>JS vs JAVA</h2>
+		<img src="images/js_vs_java.png" alt="langs">
+	</section>
+	
+	<section class="slide"  style="text-align:center">
+		<h2 style="margin-top:100px"> Questions? </h2>
+	</section>
+	
+	<section class="slide"  style="text-align:center">
+		<h2 style="margin-top:100px"> Smile<br>:) </h2>
+	</section>
+<!-- End slides. -->
+
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exam</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+  <div id="botones" style="position:fixed">
+
+  </div>
+  <div id="exam"><br>
+    <input id="i" type="text">
+    <button id="hi">Clickeame</button>
+
+  </div>
+    <script>
+    $("#hi").on("click", function(){
+      console.log($("#i").val());
+    })
+      $.getJSON("http://jacobosolvam.tk/dwec/canvas/exam_/getJSON.php",function(data){
+
+        pepe = data;
+        miArray = pepe.information["important"].items;
+        for(i = 0; i < miArray.length; i++){
+          //console.log(miArray[i]);
+
+        }
+        $.each(pepe.information["important"].items, function(index, value){
+          console.log(value);
+          console.log(value.volumeInfo.title);
+          console.log(value.volumeInfo.description);
+          console.log(value.volumeInfo.imageLinks.smallThumbnail);
+          $("#exam").append("<div class='libro'>"+value.volumeInfo.title+value.volumeInfo.description+"<img src='"+value.volumeInfo.imageLinks.smallThumbnail+"'></img></div>");
+
+          var $boton = $("<button id='elboton"+index+"'>"+index+"</button>");
+          $boton.appendTo($("#botones"));
+          $("#elboton"+index).on("click", function() {
+            $("html, body").animate({
+              scrollTop: $(".libro").eq(index).offset().top
+            });
+          });
+        });
+        $(".libro").css({
+          height: $(window).height(),
+          background: "#bbb"
+        });
+
+        //si muestra FINISHED por consola todo va bien
+        //trabaja solo con el data, el data.devuelve es para mostrar el FINISHED
+        /*console.log(eval(data.devuelve));
+        console.log(data);
+        console.log(data.devuelve);
+        console.log(data.menu);
+        console.log(data.information);
+        console.log(data.information["JS exam"]);*/
+
+      });
+
+
+    </script>
+</body>
+
+</html>

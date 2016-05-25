@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <div id="demo">
+      <h2>Let AJAX change this text, w3schools</h2>
+    </div>
+
+    <button onclick="loadDoc()" type="button">Change Content</button>
+
+    <script>
+      function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        console.log(xhttp.readyState + " NOT LAUNCHED");
+        xhttp.onreadystatechange = function() {
+          console.log(xhttp.readyState);
+          if (xhttp.readyState == 1) {
+
+              document.getElementById("demo")
+                .innerHTML += "<br>processing<br><br>";
+          }
+          if (xhttp.readyState == 4 && xhttp.status == 200) {
+            document.getElementById("demo")
+              .innerHTML += xhttp.responseText;
+          }
+        }
+        xhttp.open("GET", "ajax_info.txt", true);
+        xhttp.send();
+      }
+    </script>
+
+  </body>
+</html>

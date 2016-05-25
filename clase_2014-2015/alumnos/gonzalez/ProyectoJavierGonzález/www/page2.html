@@ -1,0 +1,75 @@
+
+<ons-page>
+   
+  <ons-toolbar>
+   <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+        </br></br>
+    </div>
+   <div class="center">Reservation List</div>
+
+  </ons-toolbar>
+    
+    
+          
+          
+  <ons-list ng-controller="NuevoListadoResController">
+      
+      <center><button ng-click="consultarRes()">Check Reservation List </button></center> 
+   
+    <ons-list-item ng-repeat="rev in listres" >
+      <ons-row>
+        
+          
+
+          
+          
+        <ons-col>
+<center>
+            
+ <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000"> 
+    
+    
+<tr> 
+    <th>Cod</th>
+    <th>IdClient</th>
+    <th>Diners</th>
+    <th>Place</th> 
+    <th>Date</th>
+     <th>Hour</th>
+
+    
+</tr>
+    
+
+    
+<tr> 
+    <td>{{rev.Codigo}}</td>
+    <td>{{rev.Idcliente}}</td>
+    <td>{{rev.npersonas}}</td>
+    <td>{{rev.mesa}}</td>
+     <td>{{rev.Fecha}}</td>
+    <td>{{rev.Hora}}</td>
+   
+</tr>
+         
+           
+    
+    
+</table>
+           
+      </center>   
+            
+        </ons-col>
+          
+          
+          
+          
+        <ons-col width="40px"></ons-col>
+      </ons-row>
+    </ons-list-item>
+  </ons-list>
+
+</ons-page>

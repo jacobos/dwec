@@ -1,0 +1,7 @@
+THREE BUTTONS
+    ONDBLCLICK
+        exercise 004.txt
+    ONCLICK
+        exercise 006.txt
+    ONMOUSEOVER
+        exercise 007.html

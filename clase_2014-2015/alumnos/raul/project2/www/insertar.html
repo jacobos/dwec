@@ -1,0 +1,39 @@
+<ons-navigator title="Navigator" var="myNavigator">
+<ons-page ng-controller="Deinicio">
+     
+      
+       <div style="text-align: center" class="content-padded">
+      
+        <ons-button modifier="large--cta"  ng-click="showmodalote()" >Insert File</ons-button>
+        <br/>
+        <ons-button modifier="large--cta"  ng-click="showmodalote2()" >Insert Topic</ons-button>
+        </div>
+<ons-modal  var="modal">
+  <ons-icon icon="ion-arrow-up-a" spin="false"></ons-icon>
+    <br/>
+     <br/>
+      <br/>
+  Title<input id="inputT" ng-required="true" type="text" ng-model="inputtitulo" class="text-input--underbar" ng-init="disable" />
+  Author<input id="inputA" ng-required="true" type="text" ng-model="inputautor" class="text-input--underbar" />
+<ons-button  ng-click="insert(inputtitulo,inputautor)" ng-disabled="{{dato.inputtitulo == null}}" disabled="{{scope.isDisabled}}">Add</ons-button><ons-back-button ng-click="back()">Back</ons-back-button>
+
+
+</ons-modal>
+
+<ons-modal  var="modal2">
+  <ons-icon icon="ion-arrow-up-a" spin="false"></ons-icon>
+  <br/>
+  <br/>
+   <select class="topcoat-text-input ng-valid ng-dirty" ng-model="selectedValue">  
+      <option value="TECNOLOGIA">tecnologia</option>
+      <option value="POLITICA" selected>politica</option>
+      <option value="MODA">moda</option>
+    </select>
+    <textarea class="textarea" ng-model="descripcion" placeholder="Type here" style="width: 20%; height: 50px;"></textarea>
+  
+<ons-button  ng-click="insert2(selectedValue,descripcion)">Add</ons-button><ons-back-button ng-click="back()">Back</ons-back-button>
+
+
+</ons-modal>
+</ons-page>
+</ons-navigator>

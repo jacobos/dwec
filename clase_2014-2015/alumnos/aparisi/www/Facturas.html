@@ -1,0 +1,355 @@
+<link rel="stylesheet" href="css/facturas.css">
+<ons-navigator title="Navigator" var="myNavigator5">
+    <ons-page ng-controller="PaginationController5">
+        <ons-toolbar>
+            <div class="left">
+
+                <ons-toolbar-button ng-click="prevPage()">BACK</ons-toolbar-button>
+            </div>
+            <div class="center"><span >Invoices {{ currentPage + 1 }}</span>
+                <a data-toggle='modal' href="#test_modal" >
+                    <button class="toolbar-button">
+                        <i class="fa ion-document-text" style="font-size:17px"></i> ADD
+                    </button>
+                </a>
+                <a data-toggle='modal' href="#test_modal3" >
+                <button class="toolbar-button">
+<!--                        <i class="fa ion-android-search" ></i>-->
+                        <ons-icon icon="ion-android-search"  spin="true" fixed-width="true" class="ons-icon fa fa-refresh" ></ons-icon>
+                </button>
+                </a>
+            </div>
+            <div class="right">
+                <ons-toolbar-button ng-click="nextPage()">NEXT</ons-toolbar-button>
+            </div>
+        </ons-toolbar>
+
+        <ons-list class="plan-list">
+          <ons-list-item modifier="chevron" class="plan"  ng-repeat="facturas in getCurrentPage()" ng-mouseover="myStyle={'background-color':'#3399ff'}" ng-mouseleave="myStyle={'background-color':'#ccc'}" ng-click="ponerSeleccion(facturas)" onclick="myNavigator5.pushPage('facturas1.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="120px" class="plan-left">
+                <div class="plan-date">{{facturas.numfactura}}</div>
+                <div class="plan-duration">{{facturas.fecha}}</div>
+              </ons-col>
+
+              <ons-col width="6px" class="plan-center"  ng-style="myStyle" >
+              </ons-col>
+
+              <ons-col class="plan-right">
+                <div class="plan-name">Tuition: {{facturas.matricula}}</div>
+
+                <div class="plan-info">
+                  <div ng-hide="a % 4 == 0">
+                    <ons-icon icon="ion-person"></ons-icon>&nbsp;&nbsp;DNI Customer: {{facturas.dni_cliente}}
+                  </div>
+
+                  <div ng-hide="a % 3 == 0">
+                    <ons-icon icon="ion-wrench"></ons-icon>&nbsp;&nbsp;NºRepair: {{facturas.numreparacion}}
+                  </div>
+                    
+                <div ng-hide="a % 3 == 0">
+                    <ons-icon icon="ion-document"></ons-icon>&nbsp;&nbsp;Reference: {{facturas.referencia}}
+                  </div>
+                    
+                <div ng-hide="a % 3 == 0">
+                    <ons-icon class="glyphicon glyphicon-euro"></ons-icon>&nbsp;&nbsp;Price: {{facturas.precio}}
+                  </div>
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+        </ons-list>
+         <div class="modal fade" id="test_modal" style="z-index:2000;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;
+                                 </span><span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title">ADD INVOICE</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="aña5 form-horizontal">
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Nº BILL</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input1a" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">DNI CUSTOMERS</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input2a" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">TUITION</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input3a" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Nº REPAIR</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input4a" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">REFERENCE</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input5a" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">DATE</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="date" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input6a" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">TOTAL PRICE</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input7a" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="control-group">
+                            <label class="control-label" for="dlgAddDeviceFolder_name">Click to add invoice accept</label>
+                            <div class="controls">
+                                <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
+                                <input type="submit" class="btn btn-primary añadir5" name="añadir5" data-dismiss="modal" value="Accept" ng-click="anadir()"></input>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="test_modal3" style="z-index:2000;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;
+                                 </span><span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title">SEARCH INVOICE</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="bus form-horizontal">
+                        <div class="form-group has-feedback">
+                            <DIV CLASS="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <select class="form-control bucli" ng-model="buscli">
+                                    <option ng-repeat="bus in buscar">{{bus.resultado}}</option>
+                                </select>
+                            </DIV>
+                            
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="bus1" required>
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="control-group">
+                        <label class="control-label" for="dlgAddDeviceFolder_name">Click to accept client to search</label>
+                        <div class="controls">
+                            <button type="button" class="btn btn-default " data-dismiss="modal">Cancelar</button>
+                            <input type="submit" class="btn btn-primary buscar" name="buscar" data-dismiss="modal" value="Accept" ng-click="buscarfactura()"></input>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </ons-page>
+</ons-navigator>
+
+<ons-template id="facturas1.html">
+      <ons-page modifier="shop-details" ng-controller="PaginaSeleccionadaController5">
+         <ons-toolbar modifier="transparent">
+          <div class="left">
+                <ons-back-button id="atras">Back</ons-back-button>
+            </div>
+        </ons-toolbar>
+
+        <div class="card">
+
+          <div class="card-name">NºBill: {{actual.numfactura}} </div>
+          <div class="card-desc">Tuition: {{actual.matricula}}<br>Date: {{actual.fecha}} Price: {{actual.precio}}<ons-icon class="glyphicon glyphicon-euro"></ons-icon></br><ons-icon icon="ion-clipboard"></ons-icon>&nbsp;&nbsp;NºRepair: {{actual.numreparacion}} Referece: {{actual.referencia}}</div>
+
+        </div>
+
+
+        <ons-list style="border-top: none"><ons-list-item style="line-height: 1; padding: 0;">
+          <ons-row class="action">
+
+            <ons-col class="action-col">
+              <div class="action-icon"><ons-icon icon="ion-person"></ons-icon></div>
+              <div class="action-label">Customers: {{actual.dni_cliente}}</div>
+            </ons-col>
+
+            <ons-col class="action-col">
+              <div class="action-icon"><ons-icon icon="ion-model-s"></ons-icon></div>
+              <div class="action-label">Cars: {{laVariable1}}</div>
+            </ons-col>
+
+            <ons-col class="action-col">
+              <div class="action-icon"><ons-icon icon="ion-document-text"></ons-icon></div>
+              <div class="action-label">Repairs: {{laVariable2}}</div>
+            </ons-col>
+
+          </ons-row>
+        </ons-list-item></ons-list>
+
+        <ons-list style="margin-top: 12px;">
+            <a href='#test_modal1' data-toggle='modal'>
+          <ons-list-item modifier="chevron" ng-click="colocar()">
+            <div class="prop-desc">
+              <ons-icon icon="ion-compose"></ons-icon>
+              EDIT INVOICE
+            </div>
+          </ons-list-item>
+            </a>
+            <a href='#test_modal2' data-toggle='modal'>
+          <ons-list-item modifier="chevron">
+            <div class="prop-desc">
+              <ons-icon icon="ion-trash-b"></ons-icon>
+              BILL DELETE
+            </div>
+          </ons-list-item>
+            </a>
+        </ons-list>
+     <div class="modal fade" id="test_modal1" style="z-index:2000;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;
+                                 </span><span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title">CHANGE BILL</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="modifi5 form-horizontal">
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-4 col-sm-4 col-md-4 col-lg-4" for="inputSuccess3">OLD Nº BILL</label>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input1" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-4 col-sm-4 col-md-4 col-lg-4" for="inputSuccess3">NEW Nº BILL</label>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input2" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">DNI CUSTOMERS</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input3" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">TUITION</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input4" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Nº REPAIR</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input5" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">REFERENCE</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input6" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">DATE</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="date" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input7" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">TOTAL PRICE</label>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" class="form-control " id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="input8" required>
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="control-group">
+                            <label class="control-label" for="dlgAddDeviceFolder_name">Click accept to modify the bill</label>
+                            <div class="controls">
+                                <button type="button" class="btn btn-default " data-dismiss="modal">Calcel</button>
+                                <input type="submit" class="btn btn-primary modificar5" name="modificar5" data-dismiss="modal" value="Accept" ng-click="modificar()"></input>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <div class="modal fade" id="test_modal2" style="z-index:2000;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;
+                                 </span><span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title">CONFIRMATION</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure to delete this field?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <form class="form-horizontal" method="post">
+                            <div class="control-group">
+                                <label class="control-label" for="dlgAddDeviceFolder_name">Click accept to remove</label>
+                                <div class="controls">
+                                    <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
+                                    <input type="submit" class="btn btn-primary eliminar5 " name="eliminar5" data-dismiss="modal" value="Accept" ng-click="eliminar(myNavigator5)"></input>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ons-template>
+

@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Exam rec JQ</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<style>
+  .container {
+    margin-top: 10px;
+  }
+</style>
+<body class="container">
+  <div id="exam">
+    <br>
+    <input id="valor" type="text">
+    <button id="elboton">Go to...</button>
+
+  </div>
+
+  <!-- Compiled and minified JavaScript, jQuery and Bootstrap -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script>
+    $.getJSON("http://37.187.2.239:81/dwec/canvas/exam_/getJSON2.php?callback=?", function(data) {
+      console.log(data);
+
+      array = data;
+
+      var myArray = array.important.probably["here it is"]["human beings"];
+
+
+
+
+      $.each(myArray,function(index,value){
+            var hijos = value.sons;
+            var hijas = value.daughters;
+        $.each(hijos,function(a,b){
+
+          var sons = b.name;
+          var age_s = b.age;
+          var desc_s = b.desc;
+
+          $.each(hijas,function(x,y) {
+            console.log(value.daughters);
+            var daughters = y.name;
+            var age_d = y.age;
+            var desc_d = y.desc;
+
+            var wife = value.wife;
+            var husband = value.husband;
+            $("#exam").append("<div class='jumbotron'>"+"<div class='col-md-6'>Wife: "+wife+"</div>"+"<div class='col-md-6'>Husband:"+husband+"</div>"+"<p>Children</p>"+"<hr />"+"<div class='container' style='background-color: #aaa'><b>Name:</b>"+sons+" <b>Age:</b>"+age_d+" <b>Description:</b>"+desc_s+"</div>"+"<div class='container' style='background-color: #aaa'><b>Name:</b>"+daughters+"  <b>Age:</b>"+age_d+" <b>Description:</b>"+desc_d+"</div>"+"</div>");
+
+
+
+          });
+
+        });
+
+      });
+
+      $("#elboton").on("click",function(){
+         var val = ($("#valor").val());
+         $("html, body").animate({
+               scrollTop: $(".jumbotron").eq(val).offset().top
+             });
+      });
+
+      // some help
+      // a = $("<div class='jumbotron'>");
+      // la a es un elemento de tipo div (se cierra automáticamente la etiqueta, no haría falta poner el </div>)
+
+      // $("<div class='col-sm-6 text-center'>
+      // "<div class='container' style='background-color: #aaa'>";
+
+
+      $("button.moveme").on("click", function(){
+      });
+
+
+      $("#elboton").on("click", function() {
+        console.log($("#valor").val());
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>

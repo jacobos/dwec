@@ -1,0 +1,99 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <script>
+        window.jQuery || document.write('<script src="components/vendor/jquery-1.11.1.min.js"><\/script>')
+    </script>
+    <script src="components/vendor/modernizr-2.6.2.min.js"></script>
+
+    <script src="lib/onsen/js/angular/angular.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="components/loader.js"></script>
+    <script src="components/login.js"></script>
+    <script src="components/home.js"></script>
+    <script src="components/clientes.js"></script>
+    <script src="components/pedidos.js"></script>
+    <script src="components/ventas.js"></script>
+    <script src="components/usuarios.js"></script>
+    <script src="components/currentInfoFactory.js"></script>
+    <script src="components/factoria.js"></script>
+    <script src="components/paginaSeleccionadaController.js"></script>
+
+</head>
+
+<body>
+    <ons-navigator title="Navigator" var="myNavigator">
+        <ons-page>
+            <ons-toolbar>
+                <div class="center">Log in</div>
+                <div class="right">
+                    <ons-toolbar-button>Exit</ons-toolbar-button>
+                </div>
+            </ons-toolbar>
+
+            <div class="login-form" ng-controller="ControladorTareas">
+
+                <input type="text" class="text-input--underbar usuario" style="width: 100% ;margin: 0 auto; text-align:center" placeholder="Text" value="" ng-model="usuario">
+                <br>
+                <input type="password" class="text-input--underbar contrasena" style="width: 100% ;margin: 0 auto; text-align:center" placeholder="Password" value="" ng-model="pass">
+                <br>
+                <br>
+                <ons-button modifier="large" style="width: 70% ;margin: 0 auto; height: 50px; padding-top: 20px; font-size: 1.5em;" class="login-button" ng-click="ponerSeleccion(usuario, pass, myNavigator)">Log in</ons-button>
+                <ons-list-item>
+                    <br>
+                    <br>
+                    <ons-button modifier="quiet" class="forgot-password">Forgot password?</ons-button>
+            </div>
+
+        </ons-page>
+    </ons-navigator>
+    
+<ons-template id="item.html">
+    <ons-page ng-controller="PaginaSeleccionadaController">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button>Back</ons-back-button>
+            </div>
+            <div class="center">Codigo cliente, {{actual.cod}}</div>
+        </ons-toolbar>
+        <div style="text-align: center;">
+            <ons-button modifier="dark" onclick="myNavigator.popPage()">
+ 
+                <br>
+                <div class="name">name: 
+                    {{actual.nombre}}
+                </div>
+                <div class="apellidos">
+                    <i class="fa fa-map-marker"></i> {{actual.apellidos}}
+                </div>
+                <div class="email">surnames:
+                    {{actual.email}}
+                </div>
+                 <div class="telefono">phone: 
+                    {{actual.telefono}}
+                </div>
+                  <div class="domicilio">adress:
+                    {{actual.domicilio}}
+                </div>
+            </ons-button>
+            <br>{{actual}}
+        </div>
+    </ons-page>
+</ons-template>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<ons-page style="background-color: white">
+
+    <ons-list>
+    
+
+         <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('page7.html', {closeMenu: true})">
+            <i class="ons-icon fa fa-bars fa-lg" style="color: #000"></i> &nbsp; Search
+        </ons-list-item>
+        <br/>
+         <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('insertar.html', {closeMenu: true})">
+            <i class="ons-icon ons-icon--ion ion-plus-circled fa-lg" style="color: #8D364E"></i> &nbsp; Insert
+        </ons-list-item>
+        <br/>
+         <ons-list-item modifier="tappable" class="list__item__line-height" ng-init="init()" onclick="app.slidingMenu.setMainPage('topics.html', {closeMenu: true})">
+            <i class="ons-icon fa fa-desktop  fa-lg" style="color: #DC874D"></i> &nbsp; Topics
+        </ons-list-item>
+
+    </ons-list>
+
+</ons-page>

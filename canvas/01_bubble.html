@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* to remove the top and left whitespace */
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+    /* just to be sure these are full screen*/
+
+    canvas {
+      display: block;
+    }
+    /* To remove the scrollbars */
+  </style>
+</head>
+
+<body>
+  <canvas id="myCanvas"></canvas>
+  <div id="points" style="position:absolute; bottom: 0; left: 48%; font-size: 23px;"></div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+  <script>
+    var pos_y = 0;
+    var winHeight = $(window).height();
+    var winWidth = $(window).width();
+
+    window.requestAnimFrame = (function(callback) {
+      return window.requestAnimationFrame; // || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
+      //window.setTimeout(callback, 1000 / 60);
+      //};
+    })();
+
+    function getCol() {
+      return "rgba(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + "0.5)";
+    }
+
+    function Ball() {
+      this.x = Math.floor(Math.random() * winWidth);
+      this.y = Math.floor(Math.random() * winHeight);
+      this.speed = 0.1 + Math.random() * 1;
+      this.color = getCol();
+      this.size = Math.floor(Math.random() * 15) + 5;
+    }
+    balls = [];
+    for (i = 0; i < 1000; i++) {
+      bola = new Ball();
+      balls.push(bola);
+    }
+    console.log(balls[0].x);
+    console.log(balls[0].y);
+
+    function animate(canvas) {
+      var context = canvas.getContext('2d');
+      var time = (new Date()).getTime();
+
+      // update
+      var widthScale = Math.sin(time / 200) * 0.1 + 0.9;
+      var heightScale = -1 * Math.sin(time / 200) * 0.1 + 0.9;
+
+      // clear
+      context.clearRect(0, 0, canvas.width, canvas.height);
+
+      pos_y++;
+
+      for (i = 0; i < balls.length; i++) {
+        // draw
+        context.beginPath();
+        context.save();
+        context.translate(balls[i].x, balls[i].y);
+        context.scale(widthScale, heightScale);
+        context.arc(0, 0, balls[i].size, 0, 2 * Math.PI, false);
+        context.restore();
+        context.fillStyle = balls[i].color;
+        context.fill();
+        context.lineWidth = 2;
+        context.strokeStyle = '#555';
+        context.stroke();
+        context.beginPath();
+        context.save();
+        context.translate(balls[i].x, balls[i].y);
+        context.scale(widthScale, heightScale);
+        context.arc(-4, -4, balls[i].size / 2, 0, 2 * Math.PI, false);
+        context.restore();
+        context.fillStyle = 'white';
+        context.fill();
+        balls[i].y = balls[i].y - balls[i].speed;
+        if (balls[i].y < -10)
+          balls[i].y = winHeight + 10;
+      }
+
+      // request new frame
+      requestAnimFrame(function() {
+        animate(canvas);
+      });
+    }
+    points = 0;
+    var canvas = document.getElementById('myCanvas');
+    $(canvas).attr("height", $(window).height());
+    $(canvas).attr("width", $(window).width());
+    $(document.body).on("click", function(e) {
+      for (i = 0; i < balls.length; i++) {
+        var dx = Math.abs(e.pageX - balls[i].x) * Math.abs(e.pageX - balls[i].x);
+        var dy = Math.abs(e.pageY - balls[i].y) * Math.abs(e.pageY - balls[i].y);
+
+        if (Math.sqrt(dx + dy) < 18) {
+          balls.splice(i, 1);
+          points++;
+          $("#points").html(points);
+        }
+      }
+    });
+
+    animate(canvas);
+  </script>
+</body>
+
+</html>

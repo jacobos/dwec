@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+
+    <title>DWEC - 03</title>
+
+    <link rel="stylesheet" href="core/deck.core.css">
+
+    <!-- Extension CSS files go here. Remove or add as needed. -->
+    <link rel="stylesheet" href="extensions/goto/deck.goto.css">
+    <link rel="stylesheet" href="extensions/menu/deck.menu.css">
+    <link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" href="extensions/status/deck.status.css">
+    <link rel="stylesheet" href="extensions/hash/deck.hash.css">
+    <link rel="stylesheet" href="extensions/scale/deck.scale.css">
+    <link rel="stylesheet" href="extensions/style.css">
+
+    <!-- Style theme. More available in /themes/style/ or create your own. -->
+    <link rel="stylesheet" href="themes/style/web-2.0.css">
+
+    <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+    <link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+
+    <!-- Required Modernizr file -->
+    <script src="modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <img src="tree-tr.png" alt="" width="100" class="topright" />
+    <section class="slide">
+        <h1>Hi!</h1>
+    </section>
+
+    <section class="slide">
+        <h1>JavaScript Grammar (00)</h1>
+    </section>
+
+    <section class="slide">
+        <a href="http://www.w3schools.com/tags/tag_script.asp"><h2>&lt;Script> (click to go to w3schools)</h2></a>
+        <ul>
+            <li class="slide">
+                <h3>
+					The primary method of inserting JavaScript into an HTML page is via the &lt;script> element
+				</h3>
+            </li>
+            <li class="slide">
+                <h3>
+					There are six attributes for the &lt;script> element
+					<ul>
+						<li>
+							async
+						</li>
+						<li>
+							defer
+						</li>
+						<li>
+							charset
+						</li>
+						<li>
+							src
+						</li>
+						<li>
+							type
+						</li>
+						<li>
+							<em>language</em> which is deprecated
+						</li>						
+					</ul>
+				</h3>
+            </li>
+        </ul>
+        <p class="slide"></p>
+    </section>
+
+    <section class="slide">
+
+        <h2>Script attr (1)</h2>
+        <ul>
+            <li class="slide">
+                <h3>async</h3>
+                <p>Optional. Only for external script files. It indicates that the script should begin downloading immediately but should not prevent other actions on the page such as downloading resources or waiting for other scripts to load/execute (nor itself).</p>
+            </li>
+            <li class="slide">
+                <h3>defer</h3>
+                <p>Optional. It indicates that the execution of the script can safely be deferred (postponed) until after the document’s content has been completely parsed and displayed. Valid only for external scripts.</p>
+            </li>
+            <li class="slide">
+                <h3>charset</h3>
+                <p>Optional. The character set of the code. (example: charset="UTF-8")</p>
+            </li>
+
+            </div>
+    </section>
+
+    <section class="slide">
+
+        <h2>Script attr(2)</h2>
+        <ul>
+            <li class="slide">
+                <h3>src</h3>
+                <p>Optional. Indicates an external file that contains code to be executed. (example: src="myscripts.js")
+				<a href="http://www.w3schools.com/tags/att_script_src.asp">link to w3schools</a>.</p>
+            </li>
+            <li class="slide">
+                <h3>type</h3>
+                <p>Optional. Indicates the content type (also called MIME type) of the scripting language being used by the code block. Traditionally, this value has always been “text/javascript”, though both “text/javascript” and “text/ecmascript” are deprecated. The type attribute is still typically set to “text/javascript” by convention and for maximum browser compatibility. This attribute is safe to omit, as “text/javascript” is assumed when missing.			
+				<a href="http://www.w3schools.com/tags/att_script_type.asp">link to w3schools</a></p>
+            </li>
+            </div>
+    </section>
+
+    <section class="slide">
+
+        <h2>Ways to use the &lt;script> element (1)</h2>
+        <ul>
+            <li class="slide noList">
+                <pre><code>&lt;script type=”text/javascript”>
+    function sayHello(){
+        alert("Hello!");
+    }
+&lt;/script></code></pre>
+            </li>
+            <li class="slide noList">
+                <h3>
+				The JavaScript code contained inside a &lt;script> element is interpreted from top to bottom.
+			</h3>
+            </li>
+            <li class="slide noList">
+                <h3>
+				Don't insert into javascript html code things like &lt;/script> because your script could stop working.<br>
+				Escape the character using: &lt;\/script>
+			</h3>
+            </li>
+            <li class="slide noList"></li>
+        </ul>
+    </section>
+    <section class="slide">
+
+        <h2>Ways to use the &lt;script> element (2)</h2>
+        <h3>The other way to use it is linking an external file:
+		</h3>
+        <ul>
+            <li class="slide noList">
+                <pre><code>&lt;script type="text/javascript" src="example.js">&lt;/script></code></pre>
+            </li>
+            <li class="slide noList">
+                <h3>
+				Do not forget to write the &lt;/script> instead of &nbsp;&nbsp;..." src="example.js"/>, which is invalid html
+			</h3>
+            </li>
+            <li class="slide noList">
+                <h3>
+				Don't insert into javascript html code things like &lt;/script> because your script could stop working.<br>
+				Escape the character using: &lt;\/script>
+			</h3>
+            </li>
+            <li class="slide noList"></li>
+        </ul>
+    </section>
+
+	<section class="slide">
+		<h2>Inline code vs external files</h2>
+		<ul>
+			<li class="slide">
+				<h3>
+					It's considered best practice to include as much JavaScript code using external files
+				</h3></li>
+			<li class="slide">
+				<h3>
+					Why?
+					<ul>
+						<li>
+							Maintainability
+						</li>
+						<li>
+							Caching
+						</li>
+						<li>
+							Future-proof
+						</li>
+					</ul>
+				</h3></li>
+		</ul>
+		<p class="slide"></p>
+	</section>
+
+	<section class="slide">
+		<h2>Maintainability (External files)</h2>
+		<ul>
+			<li class="slide"><h3>
+				It is much easier to have a directory for all JavaScript files so that developers can edit JavaScript code independent of the markup in which it’s used.
+			</h3></li>
+		</ul>		
+	</section>
+
+	<section class="slide">
+		<h2>Caching (External files)</h2>
+		<ul>
+			<li class="slide"><h3>
+				Browsers cache all externally linked JavaScript files according to specific settings, meaning that if two pages are using the same file, the file is downloaded only once.
+			</h3></li>
+		</ul>		
+	</section>
+
+	<section class="slide">
+		<h2>Future-proof (External files)</h2>
+		<ul>
+			<li class="slide"><h3> 
+				By including JavaScript using external files, there’s no need to use the XHTML or comment hacks.
+			</h3></li>
+		</ul>		
+	</section>
+	
+	
+	<section class="slide">
+
+		<h2>XHTML Changes</h2>
+		<ul>
+			<li class="slide"><h3>
+				Extensible HyperText Markup Language, or XHTML, is a reformulation of HTML as an application of XML.
+			</h3></li>
+			<li class="slide"><h3>
+				In order to have JavaScript code into valid XHTML version you have to wrap it into a CDATA section.
+			</h3></li>
+			<li class="slide"><h3>
+				CDATA sections are used to indicate areas of the document that contain free-form text not intended to be parsed.
+			</h3></li>
+			<li class="slide noList">
+				<pre><code>&lt;script>
+//&lt;![CDATA[
+    code....
+//]]>
+&lt;/script></code></pre>
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h1>ECMAScript Language (JS)</h1>
+	</section>
+
+	<section class="slide">
+		<h2>Grammar (1)  <br>ECMAScript is case-sensitive</h2>
+		<ul class="slide">
+			<li><h3>
+				var --> reserved word to declare a variable
+			</h3></li>
+			<li><h3>
+				vAr --> just an identifier (ex. name of a variable)
+			</h3></li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>Grammar (2) - Comments</h2>
+		<ul class="slide">
+			<li class="noList"><h3>
+				<h3><pre><code>// one line comment
+/* Multiple
+line comment
+*/
+/* Another multiple
+*  line comment
+*/</code></pre>
+			</h3></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Grammar (3) - Code Blocks</h2>
+		<ul class="slide noList">
+			<li><h3><pre><code>//{
+//    this is a code block
+//}
+
+if(true) //valid, should be avoided
+    alert("true");
+
+if(true){ //preferred
+    alert("true");
+}
+</code></pre>
+Using code blocks for control statements makes the intent clearer, and there’s less chance for errors when changes need to be made.
+			</h3></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Grammar (4) - Reserved words </h2>
+		<ul class="slide">
+			<li class="noList"><h3>
+				abstract boolean break byte case catch char class const continue
+debugger default delete do double else enum export extends false final finally float for function
+goto if implements import in instanceof int interface long let
+native new null package private protected public return
+short static super switch synchronized this throw throws transient true try typeof
+var volatile void while with yield
+			</h3></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Grammar (5) - Statements and variables</h2>
+		<ul class="slide noList">
+			<li><h3><pre><code>var sum = a + b // valid, but not recommended 
+var dif = a - b; // valid – preferred
+var hi = "hello";
+hi = 3; // we can do this
+        // but avoid it if you can
+
+// to declare more than one variable 
+//(could be one line, better separate ones)
+var age = 3,
+    found = false,
+    temp = 27;</code></pre>			
+			</h3></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Grammar (6) - Identifiers </h2>
+		<h3>An Identifier (or name) is the name of a variable, a function, a property or function argument.</h3>
+		<ul class="slide">
+			<li>
+				First character must be a letter, an underscore (_), or a dollar sign ($). Because there are some JScript frameworks and libraries using the _ and $ it is not recommended to use them without checking if it already exists. The rest of the characters can be a combination of the three and numbers too.
+			</li>
+			<li>
+			    By convention, and in this course too, we are going to use the camelCase identifiers, the first letter lowercase and each additional word offset by a capital letter.
+				<ul><li>likeThis</li>
+				<li>camelCase</li>
+				</ul>
+				
+			</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>Grammar (7) - Global and Local variables </h2>
+		<h3>Using the var operator to define a variable makes it local to the scope in which it was defined.</h3>
+		<ul class="slide">
+			<li class="noList">
+			<pre><code>function test(){
+    var message = "hi"; //local variable
+}
+test();
+alert(message); //error! Try it in the console and in a file!
+</code></pre>	
+</li>
+			<li class="noList">
+			<pre><code>function test(){
+    message = "hi"; //global variable
+}
+test();
+alert(message); // Try it in the console and in a file
+</code></pre>	
+</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>Grammar (8) - Global and Local variables (2)</h2>
+		<h3>JavaScript does not have block statement scope</h3>
+		<ul class="slide">
+			<li class="noList">
+			<pre><code>if(true){
+    var x = 5;
+}
+console.log(x); // look at the console
+</code></pre>	
+			</li>
+
+		</ul>
+<h3><p class="slide">Another unusual thing about variables in JavaScript is that you can refer to a variable declared later, without getting an exception. This concept is known as hoisting; variables in JavaScript are in a sense "hoisted" or lifted to the top of the function or statement. However, variables that aren't initialized yet will return a value of undefined.</p>
+</h3>
+	</section>
+
+
+	<section class="slide">
+		<h2>Grammar (9) - Global and Local variables (2)</h2>
+		<h3>JavaScript does not have block statement scope</h3>
+		<ul class="slide">
+			<li class="noList">
+			<pre><code>if(true){
+    var x = 5;
+}
+console.log(x); // look at the console
+</code></pre>	
+			</li>
+
+		</ul>
+<h3><p class="slide">Because of hoisting, all var statements in a function should be placed as near to the top of the function as possible. This best practice increases the clarity of the code.
+<p class="slide">Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax. Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name.</p>
+</h3>
+	</section>
+
+    <section class="slide">
+        <h2>Grammar (10) - Array Reference</h2>
+
+        <li class="slide noList">
+            &rarr;
+            <a target="_blank" href="http://www.w3schools.com/jsref/jsref_obj_array.asp">Array reference</a>
+        </li>
+        <li class="slide noList">
+            <pre><code>
+    var ar = [1, 2, 5, 3]; // create an array
+    var ar2 = []; // create an empty array
+    ar2.push(1); // add an element to the end of the array
+    var arSorted = ar.sort(); // returns into arSorted the array sorted
+    //arSorted becomes [1,  2, 3, 5]
+    var tam = ar.length; // returns the size of the array
+    
+    //look at the reference for more funcions!!!                        
+        </code></pre>
+        </li>
+    </section>
+
+    <section class="slide">
+        <h2>Grammar (11) - String Reference</h2>
+
+        <li class="slide noList">
+            &rarr;
+            <a target="_blank " href="http://www.w3schools.com/jsref/jsref_obj_string.asp">String reference</a>
+        </li>
+        <li class="slide noList">
+            <pre><code>
+    var st = "a nice string"; 
+    var st_e = "";
+    var new_st = st + st_e; // concatenates the two strings
+    var st_var = st + 4; // this returns "a nice string4"
+    st.length; // returns the length(size) of the string
+    st.charAt(3); // returns the character in the given position of the string
+    var arr_st = st.split(" "); // Splits a string into an array of substrings (splitted by an empty space)
+
+    //look at the reference for more funcions!!!                        
+
+        </code></pre>
+        </li>
+    </section>
+
+    <section class="slide" style="text-align:center">
+        <h2 style="margin-top:100px"> Questions? </h2>
+    </section>
+
+    <section class="slide" style="text-align:center">
+        <h2 style="margin-top:100px"> Smile<br>:) </h2>
+    </section>
+    <!-- End slides. -->
+
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status">
+        <span class="deck-status-current"></span>
+        /
+        <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+        <label for="goto-slide">Go to slide:</label>
+        <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+        <datalist id="goto-datalist"></datalist>
+        <input type="submit" value="Go">
+    </form>
+
+    <!-- deck.hash snippet -->
+    <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+    <!-- End extension snippets. -->
+
+
+    <!-- Required JS files. -->
+    <script src="jquery-1.7.2.min.js"></script>
+    <script src="core/deck.core.js"></script>
+
+    <!-- Extension JS files. Add or remove as needed. -->
+    <script src="core/deck.core.js"></script>
+    <script src="extensions/hash/deck.hash.js"></script>
+    <script src="extensions/menu/deck.menu.js"></script>
+    <script src="extensions/goto/deck.goto.js"></script>
+    <script src="extensions/status/deck.status.js"></script>
+    <script src="extensions/navigation/deck.navigation.js"></script>
+    <script src="extensions/scale/deck.scale.js"></script>
+
+    <!-- Initialize the deck. You can put this in an external file if desired. -->
+    <script>
+        $(function () {
+            $.deck('.slide');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+  <ons-navigator var="minavegacion">
+    <ons-page ng-controller="MaquinasController">
+      <section style="padding: 6px 6px 6px">
+     <input type="search" class="search-input" ng-show="goCats" ng-model="buscador" placeholder="Buscar Maquina"></input>
+   </section>
+      <ons-toolbar>
+        <div class="left"><ons-toolbar-button><ons-icon ng-click="minavegacion.pushPage('crearmaquina.html', {animation: 'slide'})" icon="ion-compose"></ons-icon></ons-toolbar-button></div>
+        <div class="center">Listado de Maquinas</div>
+        <div class="right">
+          <ons-toolbar-button ng-click="goCats = !goCats">
+            <ons-icon icon="ion-ios7-search-strong" fixed-width="false" style="font-size: 26px; vertical-align: -4px;"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+      </ons-toolbar>
+
+        hola <h1>{{juanfransito}}</h1>
+      <ons-list style="margin: -1px 0">
+        <ons-list-item ng-repeat="maquina in maquinas|filter:buscador" modifier="chevron" class="item" ng-click="ponerSeleccion(maquina)"
+ onclick="minavegacion.pushPage('solomaquina.html', { animation : 'slide' } )">
+          <ons-row >
+            <ons-col width="60px">
+              <div class="item-thum" style="background-image: url('{{maquina.img}}');background-size: cover;  "></div>
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title">{{maquina.nombre}}</span>
+
+                <span class="item-label">--ID: {{maquina.codigo}}</span>
+                <span class="item-label">{{maquina.modelo}}</span>
+              </header>
+              <p class="item-desc">{{maquina.desc}}</p>
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+      </ons-list>
+    </ons-page>
+</ons-navigator>

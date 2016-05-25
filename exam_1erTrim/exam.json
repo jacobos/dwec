@@ -1,0 +1,1322 @@
+{
+  "devuelve": "(function(){return 'Finished!!';})()",
+  "information": {
+    "JS exam": "JS exam",
+    "names": {
+      "personal": ["js Master0", "js Master1", "js Master2", "js Master3", "js Master4", "js Master5", "js Master6", "js Master7", "js Master8", "js Master9", "js Master10", "js Master11", "js Master12", "js Master13", "js Master14", "js Master15", "js Master16", "js Master17", "js Master18", "js Master19", "js Master20", "js Master21", "js Master22", "js Master23", "js Master24", "js Master25", "js Master26", "js Master27", "js Master28", "js Master29", "js Master30", "js Master31", "js Master32", "js Master33", "js Master34", "js Master35", "js Master36", "js Master37", "js Master38", "js Master39", "js Master40", "js Master41", "js Master42", "js Master43", "js Master44", "js Master45", "js Master46", "js Master47", "js Master48", "js Master49", "js Master50", "js Master51", "js Master52", "js Master53", "js Master54", "js Master55", "js Master56", "js Master57", "js Master58", "js Master59", "js Master60", "js Master61", "js Master62", "js Master63", "js Master64", "js Master65", "js Master66", "js Master67", "js Master68", "js Master69", "js Master70", "js Master71", "js Master72", "js Master73", "js Master74", "js Master75", "js Master76", "js Master77", "js Master78", "js Master79", "js Master80", "js Master81", "js Master82", "js Master83", "js Master84", "js Master85", "js Master86", "js Master87", "js Master88", "js Master89", "js Master90", "js Master91", "js Master92", "js Master93", "js Master94", "js Master95", "js Master96", "js Master97", "js Master98", "js Master99", "js Master100", "js Master101", "js Master102", "js Master103", "js Master104", "js Master105", "js Master106", "js Master107", "js Master108", "js Master109", "js Master110", "js Master111", "js Master112", "js Master113", "js Master114", "js Master115", "js Master116", "js Master117", "js Master118", "js Master119", "js Master120", "js Master121", "js Master122", "js Master123", "js Master124", "js Master125", "js Master126", "js Master127", "js Master128", "js Master129", "js Master130", "js Master131", "js Master132", "js Master133", "js Master134", "js Master135", "js Master136", "js Master137", "js Master138", "js Master139", "js Master140", "js Master141", "js Master142", "js Master143", "js Master144", "js Master145", "js Master146", "js Master147", "js Master148", "js Master149", "js Master150", "js Master151", "js Master152", "js Master153", "js Master154", "js Master155", "js Master156", "js Master157", "js Master158", "js Master159", "js Master160", "js Master161", "js Master162", "js Master163", "js Master164", "js Master165", "js Master166", "js Master167", "js Master168", "js Master169", "js Master170", "js Master171", "js Master172", "js Master173", "js Master174", "js Master175", "js Master176", "js Master177", "js Master178", "js Master179", "js Master180", "js Master181", "js Master182", "js Master183", "js Master184", "js Master185", "js Master186", "js Master187", "js Master188", "js Master189", "js Master190", "js Master191", "js Master192", "js Master193", "js Master194", "js Master195", "js Master196", "js Master197", "js Master198", "js Master199", "js Master200", "js Master201", "js Master202", "js Master203", "js Master204", "js Master205", "js Master206", "js Master207", "js Master208", "js Master209", "js Master210", "js Master211", "js Master212", "js Master213", "js Master214", "js Master215", "js Master216", "js Master217", "js Master218", "js Master219", "js Master220", "js Master221", "js Master222", "js Master223", "js Master224", "js Master225", "js Master226", "js Master227", "js Master228", "js Master229", "js Master230", "js Master231", "js Master232", "js Master233", "js Master234", "js Master235", "js Master236", "js Master237", "js Master238", "js Master239", "js Master240", "js Master241", "js Master242", "js Master243", "js Master244", "js Master245", "js Master246", "js Master247", "js Master248", "js Master249", "js Master250", "js Master251", "js Master252", "js Master253", "js Master254", "js Master255", "js Master256", "js Master257", "js Master258"],
+      "amount": 259
+    },
+    "point": 201,
+    "important": {
+      "kind": "books#volumes",
+      "totalItems": 663,
+      "items": [{
+        "kind": "books#volume",
+        "id": "-uQj8BDQk5sC",
+        "etag": "MNEWlcrkXwQ",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/-uQj8BDQk5sC",
+        "volumeInfo": {
+          "title": "El jinete del drag\u00f3n",
+          "authors": ["Cornelia Funke"],
+          "publisher": "Siruela",
+          "publishedDate": "2010-09-20",
+          "description": "La tierra de los dragones en Escocia ha sido amenazada por los humanos. Lung, un joven drag\u00f3n, tendr\u00e1 que buscar ayuda antes de volar hacia el Himalaya, donde seg\u00fan las leyendas se escondieron los \u00faltimos dragones. Acompa\u00f1ado de una duende, Piel de Azufre, y de un joven sin familia, Ben, pronto les surgir\u00e1 el primer peligro: Ortiga Abrasadora, un malvado drag\u00f3n obra de un alquimista medieval, tendr\u00e1 como misi\u00f3n perseguirlos hasta exterminarlos... Pero muchas otras aventuras y encuentros se suceder\u00e1n: un especialista en seres fabulosos (basiliscos, unicornios, caballos alados, djin) los ayudar\u00e1 a vencer muchos peligros, tambi\u00e9n cabalgar\u00e1n a lomos de una serpiente marina, tendr\u00e1n un encuentro con los elfos del polvo y conocer\u00e1n a Subaida Ghalib, que los ayudar\u00e1 en su prop\u00f3sito proporcion\u00e1ndoles informaci\u00f3n y el agua de luna... hasta ser acogidos en Tibet en un monasterio budista, donde conocer\u00e1n las viejas profec\u00edas que hablan del regreso del jinete del drag\u00f3n...",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9788498414851"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "8498414857"
+          }],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 424,
+          "printType": "BOOK",
+          "categories": ["Juvenile Fiction"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.1.1.0.preview.3",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=-uQj8BDQk5sC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=-uQj8BDQk5sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=-uQj8BDQk5sC&printsec=frontcover&dq=Dragon&hl=&cd=2&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=-uQj8BDQk5sC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/El_jinete_del_drag%C3%B3n.html?hl=&id=-uQj8BDQk5sC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 9.99,
+            "currencyCode": "EUR"
+          },
+          "retailPrice": {
+            "amount": 9.49,
+            "currencyCode": "EUR"
+          },
+          "buyLink": "http:\/\/books.google.es\/books?id=-uQj8BDQk5sC&dq=Dragon&hl=&buy=&source=gbs_api",
+          "offers": [{
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 9990000,
+              "currencyCode": "EUR"
+            },
+            "retailPrice": {
+              "amountInMicros": 9490000,
+              "currencyCode": "EUR"
+            }
+          }]
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/El_jinete_del_drag%C3%B3n-sample-epub.acsm?id=-uQj8BDQk5sC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/El_jinete_del_drag%C3%B3n-sample-pdf.acsm?id=-uQj8BDQk5sC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=-uQj8BDQk5sC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Pero muchas otras aventuras y encuentros se suceder\u00e1n: un especialista en seres fabulosos (basiliscos, unicornios, caballos alados, djin) los ayudar\u00e1 a vencer muchos peligros, tambi\u00e9n cabalgar\u00e1n a lomos de una serpiente marina, tendr\u00e1n ..."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "Y1pGN7r9ICMC",
+        "etag": "9t3wYTc0PIY",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/Y1pGN7r9ICMC",
+        "volumeInfo": {
+          "title": "La puerta de Drag\u00f3n",
+          "subtitle": "Relato de la iniciaci\u00f3n de un maestro tao\u00edsta contempor\u00e1neo",
+          "authors": ["Chen Kaiguo", "Zheng Shunchao"],
+          "publisher": "EDAF",
+          "publishedDate": "1997",
+          "description": "En 1960 tres ancianos tao\u00edstas se encontraron en la cumbre de la monta\u00f1a sagrada de Klao, en China. Los tres eran maestros de la legendaria orden de la Puerta del Drag\u00f3n y los \u00faltimos depositarios de legendarios conocimientos secretos. Llegado el monto de escoger un sucesor, su elecci\u00f3n recay\u00f3 en un muchacho de once a\u00f1os de una aldea vecina. A partir de ese momento, el joven Wang Liping se convirti\u00f3 en el transmisor de la decimoctava generaci\u00f3n de la Puerta del Drag\u00f3n. Este libro es su biograf\u00eda, la del muchacho que se convirti\u00f3 en el heredero de una tradici\u00f3n esot\u00e9rica cuyos conocimientos y pr\u00e1cticas fueron acumulados y depurados durante once siglos, transmisi\u00f3n que se forj\u00f3 durante 15 a\u00f1os de duro aprendizaje a cargo de sus maestros, al fin de los cuales adquiri\u00f3 el compromiso de su divulgaci\u00f3n. La obra est\u00e1 escrita por los disc\u00edpulos de Wan Liping y revela conocimientos hasta ahora in\u00e9ditos sobre principios tao\u00edstas, m\u00e9todos y secretos sobre la curaci\u00f3n, la salud y la prolongaci\u00f3n de la vida, as\u00ed como ejercicios, elixires alqu\u00edmicos, los misterios del hombre y la naturaleza, y las claves de la transformaci\u00f3n interior.",
+          "industryIdentifiers": [{
+            "type": "ISBN_10",
+            "identifier": "8441402469"
+          }, {
+            "type": "ISBN_13",
+            "identifier": "9788441402461"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 448,
+          "printType": "BOOK",
+          "categories": ["Philosophy"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.1.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=Y1pGN7r9ICMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=Y1pGN7r9ICMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=Y1pGN7r9ICMC&printsec=frontcover&dq=Dragon&hl=&cd=3&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=Y1pGN7r9ICMC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/La_puerta_de_Drag%C3%B3n.html?hl=&id=Y1pGN7r9ICMC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=Y1pGN7r9ICMC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "En 1960 tres ancianos tao\u00edstas se encontraron en la cumbre de la monta\u00f1a sagrada de Klao, en China. Los tres eran maestros de la legendaria orden de la Puerta del Drag\u00f3n y los \u00faltimos depositarios de legendarios conocimientos secretos."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "AmsKk-X3xnMC",
+        "etag": "EJNqpsQpuno",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/AmsKk-X3xnMC",
+        "volumeInfo": {
+          "title": "LA ESTRATEGIA DEL DRAGON",
+          "authors": ["Analia L'abbate", "Karina Qian Gao"],
+          "publisher": "Vergara & Riba Editoras",
+          "publishedDate": "2007-03-23",
+          "description": "A powerful collection of stories, each represented by a traditional Chinese symbol, reveals ancient secret teachings.",
+          "industryIdentifiers": [{
+            "type": "ISBN_10",
+            "identifier": "9876120344"
+          }, {
+            "type": "ISBN_13",
+            "identifier": "9789876120340"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 93,
+          "printType": "BOOK",
+          "categories": ["Education"],
+          "averageRating": 4,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.1.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=AmsKk-X3xnMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=AmsKk-X3xnMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=AmsKk-X3xnMC&printsec=frontcover&dq=Dragon&hl=&cd=4&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=AmsKk-X3xnMC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/LA_ESTRATEGIA_DEL_DRAGON.html?hl=&id=AmsKk-X3xnMC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=AmsKk-X3xnMC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "A powerful collection of stories, each represented by a traditional Chinese symbol, reveals ancient secret teachings."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "oDjCP8Fe0BcC",
+        "etag": "if2yUlxuLfU",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/oDjCP8Fe0BcC",
+        "volumeInfo": {
+          "title": "Dragon",
+          "authors": ["Jody Bergsma"],
+          "publisher": "Illumination Arts Pub. Co.",
+          "publishedDate": "1999",
+          "description": "Born on the same night, a gentle prince and a fierce dragon find their destinies linked as they move toward fulfilling a prophecy that will affect the entire kingdom.",
+          "industryIdentifiers": [{
+            "type": "ISBN_10",
+            "identifier": "0935699171"
+          }, {
+            "type": "ISBN_13",
+            "identifier": "9780935699173"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 31,
+          "printType": "BOOK",
+          "categories": ["Juvenile Fiction"],
+          "averageRating": 4,
+          "ratingsCount": 2,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.1.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=oDjCP8Fe0BcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=oDjCP8Fe0BcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http:\/\/books.google.es\/books?id=oDjCP8Fe0BcC&printsec=frontcover&dq=Dragon&hl=&cd=5&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=oDjCP8Fe0BcC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/Dragon.html?hl=&id=oDjCP8Fe0BcC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=oDjCP8Fe0BcC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Born on the same night, a gentle prince and a fierce dragon find their destinies linked as they move toward fulfilling a prophecy that will affect the entire kingdom."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "5CQBb8GIxs8C",
+        "etag": "sT5yhNvaLy0",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/5CQBb8GIxs8C",
+        "volumeInfo": {
+          "title": "The Invisible Dragon",
+          "subtitle": "Essays on Beauty, Revised and Expanded",
+          "authors": ["Dave Hickey"],
+          "publisher": "University of Chicago Press",
+          "publishedDate": "2009-04-01",
+          "description": "\"With this revised and expanded edition, Hickey is back to fan the flames. More manifesto than polite discussion, more call to action than criticism, The Invisible Dragon aims squarely at the hyper-institutionalism that, in Hickey's view, denies the real pleasures that draw us to art in the first place. Deploying the artworks of Warhol, Raphael, Caravaggio, and Mapplethorpe and the writings of Ruskin, Shakespeare, Deleuze, and Foucault, Hickey takes on museum culture, arid academicism, sclerotic politics, and more - all in the service of making readers rethink the nature of art. A new introduction provides a context for earlier essays - what Hickey calls his \"intellectual temper tantrums.\" A new essay, \"American Beauty,\" concludes the volume with a historical argument that is a rousing paean to the inherently democratic nature of attention to beauty.\".",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9780226333182"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "0226333183"
+          }],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 123,
+          "printType": "BOOK",
+          "categories": ["Art"],
+          "averageRating": 4,
+          "ratingsCount": 30,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.2.0.preview.3",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=5CQBb8GIxs8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=5CQBb8GIxs8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http:\/\/books.google.es\/books?id=5CQBb8GIxs8C&printsec=frontcover&dq=Dragon&hl=&cd=6&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=5CQBb8GIxs8C&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/The_Invisible_Dragon.html?hl=&id=5CQBb8GIxs8C"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/The_Invisible_Dragon-sample-epub.acsm?id=5CQBb8GIxs8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=5CQBb8GIxs8C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "&quot; A new essay, &quot;American Beauty,&quot; concludes the volume with a historical argument that is a rousing paean to the inherently democratic nature of attention to beauty.&quot;."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "LrooMo5OSiAC",
+        "etag": "3tixH8kHULs",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/LrooMo5OSiAC",
+        "volumeInfo": {
+          "title": "El drag\u00f3n y la perla",
+          "authors": ["Jeannie Lin"],
+          "publisher": "HarperCollins Ib\u00e9rica",
+          "publishedDate": "2012-01-26",
+          "description": "El riesgo y la atracci\u00f3n mutua los subyugaban por igual Ling Suyin era famosa en todo el reino por su belleza y sensualidad. Hab\u00eda sido la concubina favorita del emperador hasta la muerte de \u00e9ste, y desde entonces viv\u00eda en su mansi\u00f3n junto al r\u00edo, hasta que el caudillo m\u00e1s belicoso de la regi\u00f3n fue en su busca para hacerla prisionera. Li Tao s\u00f3lo se reg\u00eda por su espada, pero, al igual que Ling Suyin, se encontraba atrapado en la red de intrigas pol\u00edticas que asolaban el imperio. Ten\u00eda que descubrir el papel que jugaba la hermosa seductora en ese juego de enga\u00f1os y conspiraciones... y deb\u00eda hacerlo sin caer bajo su hechizo.",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9788490104859"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "8490104859"
+          }],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 320,
+          "printType": "BOOK",
+          "categories": ["Fiction"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "2.4.4.0.preview.3",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=LrooMo5OSiAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=LrooMo5OSiAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=LrooMo5OSiAC&printsec=frontcover&dq=Dragon&hl=&cd=7&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=LrooMo5OSiAC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/El_drag%C3%B3n_y_la_perla.html?hl=&id=LrooMo5OSiAC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 3.99,
+            "currencyCode": "EUR"
+          },
+          "retailPrice": {
+            "amount": 3.79,
+            "currencyCode": "EUR"
+          },
+          "buyLink": "http:\/\/books.google.es\/books?id=LrooMo5OSiAC&dq=Dragon&hl=&buy=&source=gbs_api",
+          "offers": [{
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 3990000,
+              "currencyCode": "EUR"
+            },
+            "retailPrice": {
+              "amountInMicros": 3790000,
+              "currencyCode": "EUR"
+            }
+          }]
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/El_drag%C3%B3n_y_la_perla-sample-epub.acsm?id=LrooMo5OSiAC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/El_drag%C3%B3n_y_la_perla-sample-pdf.acsm?id=LrooMo5OSiAC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=LrooMo5OSiAC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "El riesgo y la atracci\u00f3n mutua los subyugaban por igual Ling Suyin era famosa en todo el reino por su belleza y sensualidad."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "lKtBS4ile2wC",
+        "etag": "HZLT3WmAwEs",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/lKtBS4ile2wC",
+        "volumeInfo": {
+          "title": "Encontrar el verdadero drag\u00f3n",
+          "authors": ["Gudo Wafu Nishijima"],
+          "publisher": "Editorial Norma",
+          "publishedDate": "2006-05-01",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9789580488910"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "9580488916"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 296,
+          "printType": "BOOK",
+          "categories": ["Religion"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=lKtBS4ile2wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=lKtBS4ile2wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=lKtBS4ile2wC&printsec=frontcover&dq=Dragon&hl=&cd=8&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=lKtBS4ile2wC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/Encontrar_el_verdadero_drag%C3%B3n.html?hl=&id=lKtBS4ile2wC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=lKtBS4ile2wC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "txktP0hEUa4C",
+        "etag": "Wvbawk7cSHI",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/txktP0hEUa4C",
+        "volumeInfo": {
+          "title": "Un dragon morado y otros contratiempos",
+          "authors": ["Juan Carlos Quezadas"],
+          "publisher": "Editorial Progreso",
+          "publishedDate": "2006-10-30",
+          "description": "Carlos and Antonio are swept into a world without time and meet many famous people.",
+          "industryIdentifiers": [{
+            "type": "ISBN_10",
+            "identifier": "9706415122"
+          }, {
+            "type": "ISBN_13",
+            "identifier": "9789706415127"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 218,
+          "printType": "BOOK",
+          "categories": ["Juvenile Fiction"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.1.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=txktP0hEUa4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=txktP0hEUa4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=txktP0hEUa4C&printsec=frontcover&dq=Dragon&hl=&cd=9&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=txktP0hEUa4C&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/Un_dragon_morado_y_otros_contratiempos.html?hl=&id=txktP0hEUa4C"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=txktP0hEUa4C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Carlos and Antonio are swept into a world without time and meet many famous people."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "AAofKiqLx2AC",
+        "etag": "Qn0RpZS4Doo",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/AAofKiqLx2AC",
+        "volumeInfo": {
+          "title": "Juega Con El Dragon\/ Play With the Dragon",
+          "authors": ["Andre Pessoa De Farias"],
+          "publisher": "Beascoa Ediciones",
+          "publishedDate": "2007-03-30",
+          "industryIdentifiers": [{
+            "type": "ISBN_10",
+            "identifier": "8448825004"
+          }, {
+            "type": "ISBN_13",
+            "identifier": "9788448825003"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 24,
+          "printType": "BOOK",
+          "categories": ["Juvenile Fiction"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.1.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=AAofKiqLx2AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=AAofKiqLx2AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=AAofKiqLx2AC&printsec=frontcover&dq=Dragon&hl=&cd=10&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=AAofKiqLx2AC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/Juega_Con_El_Dragon_Play_With_the_Dragon.html?hl=&id=AAofKiqLx2AC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=AAofKiqLx2AC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "GW7KFHGiljAC",
+        "etag": "PXrxxpk7a0k",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/GW7KFHGiljAC",
+        "volumeInfo": {
+          "title": "Tu drag\u00f3n interior",
+          "subtitle": "Reflexiones sobre una crianza sin padre",
+          "authors": ["Donald Miller", "John MacMurray"],
+          "publisher": "Thomas Nelson Inc",
+          "publishedDate": "2007-04-29",
+          "description": "Miller creci\u00f3 sin padre. No revela exactamente por qu\u00e9 se fue su padre o a d\u00f3nde se fue, s\u00f3lo menciona que a lo largo de su juventud su hogar fue dirigido s\u00f3lo por su mam\u00e1. Fue de adulto cuando se dio cuenta qu\u00e9 tan profundamente afect\u00f3 e impact\u00f3 su vida toda esta situaci\u00f3n. Miller, con su honestidad caracter\u00edstica, humildad y estilo un poco tosco, muestra el camino que lo trajo por fin a un lugar de redenci\u00f3n. La clave en este viaje fue el papel que desempe\u00f1\u00f3 John MacMurray, aparentemente un hombre de Dios que estaba dispuesto a invertir su tiempo en la vida de Miller. Invit\u00f3 a Miller a mudarse a su casa y entrar a su familia y a su vida, de tal forma que le pudiera dar consejer\u00eda y direcci\u00f3n, de las cuales Miller carec\u00eda tanto. MacMurray fue capaz de ser ejemplo de hombr\u00eda y madurez.",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9781418582227"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "1418582220"
+          }],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 192,
+          "printType": "BOOK",
+          "categories": ["Self-Help"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.2.3.0.preview.2",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=GW7KFHGiljAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=GW7KFHGiljAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=GW7KFHGiljAC&printsec=frontcover&dq=Dragon&hl=&cd=11&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=GW7KFHGiljAC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/Tu_drag%C3%B3n_interior.html?hl=&id=GW7KFHGiljAC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/Tu_drag%C3%B3n_interior-sample-epub.acsm?id=GW7KFHGiljAC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=GW7KFHGiljAC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Invit\u00f3 a Miller a mudarse a su casa y entrar a su familia y a su vida, de tal forma que le pudiera dar consejer\u00eda y direcci\u00f3n, de las cuales Miller carec\u00eda tanto. MacMurray fue capaz de ser ejemplo de hombr\u00eda y madurez."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "f1om7XijxLUC",
+        "etag": "4yeyGgxB0So",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/f1om7XijxLUC",
+        "volumeInfo": {
+          "title": "La ca\u00edda del drag\u00f3n (Trilog\u00eda de la independencia, 3)",
+          "authors": ["Juan Miguel Zunzunegui"],
+          "publisher": "Grijalbo",
+          "publishedDate": "2012-01-01",
+          "description": "La emocionante conclusi\u00f3n de la trilog\u00eda de la independencia.",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9786073107259"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "6073107250"
+          }],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "printType": "BOOK",
+          "categories": ["Fiction"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "2.11.12.0.preview.3",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=f1om7XijxLUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=f1om7XijxLUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=f1om7XijxLUC&printsec=frontcover&dq=Dragon&hl=&cd=12&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=f1om7XijxLUC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/La_ca%C3%ADda_del_drag%C3%B3n_Trilog%C3%ADa_de_la_in.html?hl=&id=f1om7XijxLUC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 6.99,
+            "currencyCode": "EUR"
+          },
+          "retailPrice": {
+            "amount": 6.64,
+            "currencyCode": "EUR"
+          },
+          "buyLink": "http:\/\/books.google.es\/books?id=f1om7XijxLUC&dq=Dragon&hl=&buy=&source=gbs_api",
+          "offers": [{
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 6990000,
+              "currencyCode": "EUR"
+            },
+            "retailPrice": {
+              "amountInMicros": 6640000,
+              "currencyCode": "EUR"
+            }
+          }]
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/La_ca%C3%ADda_del_drag%C3%B3n_Trilog%C3%ADa_de_la_in-sample-epub.acsm?id=f1om7XijxLUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/La_ca%C3%ADda_del_drag%C3%B3n_Trilog%C3%ADa_de_la_in-sample-pdf.acsm?id=f1om7XijxLUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=f1om7XijxLUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "La emocionante conclusi\u00f3n de la trilog\u00eda de la independencia."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "qV2aAgAAQBAJ",
+        "etag": "Mt4unDUGI\/o",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/qV2aAgAAQBAJ",
+        "volumeInfo": {
+          "title": "EL DRAGON DE VAPOR",
+          "subtitle": "",
+          "authors": ["ANDR\u00c8S ALBERTO MONTA\u00d1\u00c8S LLERAS"],
+          "publisher": "Editorial Norma",
+          "publishedDate": "2013-09-03",
+          "description": "Para M\u00e1rkel los dragones s\u00f3lo eran criaturas legendarias que aparec\u00edan en las historias de los juglares. Pero cuando los caballeros de la Ciudad de Hierro atacan su aldea y se llevan a su padre, M\u00e1rkel deber\u00e1 emprender un peligroso viaje hasta los confines del mundo en busca del \u00faltimo de los dragones, con la esperanza de que lo ayude a liberarlo. \u00bfPodr\u00e1 M\u00e1rkel descubrir los secretos de la Ciudad de Hierro antes de que sea tarde? Este emocionante relato de fantas\u00eda transportar\u00e1 a los lectores a un mundo lleno de criaturas extra\u00f1as, amigos inseparables y sorprendentes aventuras.",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9789584545732"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "9584545736"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 208,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=qV2aAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=qV2aAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=qV2aAgAAQBAJ&printsec=frontcover&dq=Dragon&hl=&cd=13&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=qV2aAgAAQBAJ&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/EL_DRAGON_DE_VAPOR.html?hl=&id=qV2aAgAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 6.34,
+            "currencyCode": "EUR"
+          },
+          "retailPrice": {
+            "amount": 6.02,
+            "currencyCode": "EUR"
+          },
+          "buyLink": "http:\/\/books.google.es\/books?id=qV2aAgAAQBAJ&dq=Dragon&hl=&buy=&source=gbs_api",
+          "offers": [{
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 6340000,
+              "currencyCode": "EUR"
+            },
+            "retailPrice": {
+              "amountInMicros": 6020000,
+              "currencyCode": "EUR"
+            }
+          }]
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/EL_DRAGON_DE_VAPOR-sample-pdf.acsm?id=qV2aAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=qV2aAgAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Para M\u00e1rkel los dragones s\u00f3lo eran criaturas legendarias que aparec\u00edan en las historias de los juglares."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "isf7cHLLZiMC",
+        "etag": "ed2AfW2fB8Q",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/isf7cHLLZiMC",
+        "volumeInfo": {
+          "title": "El drag\u00f3n verde",
+          "subtitle": "un cuento sobre los bosques",
+          "authors": ["Pablo Zamboni"],
+          "publisher": "Editorial Albatros",
+          "publishedDate": "2007",
+          "description": "An environmentally aware green dragon explains how trees and forests are created and survive, teaching children that all natural harmony is based on mutual respect and concern.",
+          "industryIdentifiers": [{
+            "type": "ISBN_10",
+            "identifier": "9502411889"
+          }, {
+            "type": "ISBN_13",
+            "identifier": "9789502411880"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 24,
+          "printType": "BOOK",
+          "categories": ["Juvenile Fiction"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.1.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=isf7cHLLZiMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=isf7cHLLZiMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=isf7cHLLZiMC&printsec=frontcover&dq=Dragon&hl=&cd=14&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=isf7cHLLZiMC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/El_drag%C3%B3n_verde.html?hl=&id=isf7cHLLZiMC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=isf7cHLLZiMC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "An environmentally aware green dragon explains how trees and forests are created and survive, teaching children that all natural harmony is based on mutual respect and concern."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "zKLAdM3dS7EC",
+        "etag": "Jl+MdPNUoik",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/zKLAdM3dS7EC",
+        "volumeInfo": {
+          "title": "El drag\u00f3n ya no vive aqu\u00ed",
+          "authors": ["Alan Cohen"],
+          "publisher": "Editorial Sirio, S.A.",
+          "publishedDate": "1999-05-01",
+          "industryIdentifiers": [{
+            "type": "ISBN_10",
+            "identifier": "8478082824"
+          }, {
+            "type": "ISBN_13",
+            "identifier": "9788478082827"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 413,
+          "printType": "BOOK",
+          "categories": ["Psychology"],
+          "averageRating": 5,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.1.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=zKLAdM3dS7EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=zKLAdM3dS7EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http:\/\/books.google.es\/books?id=zKLAdM3dS7EC&printsec=frontcover&dq=Dragon&hl=&cd=15&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=zKLAdM3dS7EC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/El_drag%C3%B3n_ya_no_vive_aqu%C3%AD.html?hl=&id=zKLAdM3dS7EC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=zKLAdM3dS7EC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "uVVN96_jdTUC",
+        "etag": "BfNb0uZzxBY",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/uVVN96_jdTUC",
+        "volumeInfo": {
+          "title": "Kumiko and the Dragon's Secret",
+          "authors": ["Briony Stewart"],
+          "publisher": "Univ. of Queensland Press",
+          "publishedDate": "2010",
+          "description": "\"Kumiko and the Dragon's Secret\" continues the fantasy adventure of Kumiko, a young Japanese girl who is guarded by the dragon, Tomodo. Danger surrounds Kumiko's family. The sinister shadow catchers kidnap Kumiko's sister, Arisu, seeking to absorb the dragons' magical powers through the royal human bloodline of Kumiko's family. Kumiko is the only one who can defeat the shadow catchers. She alone has the power to rescue her little sister and to restore order to the magical world of the dragons. But can she get there in time?",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9780702238024"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "0702238023"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 96,
+          "printType": "BOOK",
+          "categories": ["Juvenile Fiction"],
+          "averageRating": 4,
+          "ratingsCount": 2,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.2.3.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=uVVN96_jdTUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=uVVN96_jdTUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http:\/\/books.google.es\/books?id=uVVN96_jdTUC&printsec=frontcover&dq=Dragon&hl=&cd=16&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=uVVN96_jdTUC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/Kumiko_and_the_Dragon_s_Secret.html?hl=&id=uVVN96_jdTUC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http:\/\/books.google.es\/books\/download\/Kumiko_and_the_Dragon_s_Secret-sample-pdf.acsm?id=uVVN96_jdTUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=uVVN96_jdTUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "&quot;Kumiko and the Dragon&#39;s Secret&quot; continues the fantasy adventure of Kumiko, a young Japanese girl who is guarded by the dragon, Tomodo."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "Tlp8AAAAIAAJ",
+        "etag": "ZiXF7cvJ\/lA",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/Tlp8AAAAIAAJ",
+        "volumeInfo": {
+          "title": "El drag\u00f3n y el unicornio",
+          "subtitle": "la tensi\u00f3n del pensamiento entre las antiguas relaciones de sangre y las nuevas relaciones jur\u00eddico-estatales que surgieron con la civilizaci\u00f3n",
+          "authors": ["Alejandro Carrillo Castro", "Carlos Fuentes"],
+          "publishedDate": "1996",
+          "industryIdentifiers": [{
+            "type": "OTHER",
+            "identifier": "STANFORD:36105020241597"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 331,
+          "printType": "BOOK",
+          "categories": ["Civilization"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=Tlp8AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=Tlp8AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=Tlp8AAAAIAAJ&q=Dragon&dq=Dragon&hl=&cd=17&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=Tlp8AAAAIAAJ&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/El_drag%C3%B3n_y_el_unicornio.html?hl=&id=Tlp8AAAAIAAJ"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=Tlp8AAAAIAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "mEX5DBdaT0MC",
+        "etag": "3pbzyZWuE8g",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/mEX5DBdaT0MC",
+        "volumeInfo": {
+          "title": "El \u00faltimo drag\u00f3n",
+          "publisher": "Equipo Sirius",
+          "publishedDate": "2006-04-18",
+          "description": "El barco pirata m\u00e1s temido de Argos tiene una tripulaci\u00f3n compuesta por un amplio grupo de razas, enanos, elfos... personalidades que ense\u00f1aran a Gallen un mundo real en el que cada uno arrastra una historia que marca su vida. El destino tejera una indestructible amistad entre ellos, mientras comparten peligrosas aventuras El \u00daltimo Drag\u00f3n, introduce nuevos elementos que dar\u00e1n un giro espectacular al destino de los protagonistas, nos obliga a leer a toda velocidad porque esta historia, es nuestra historia y al llegar la \u00faltima p\u00e1gina echamos de menos el olor del mar. AFILA TU ESPADA Y ACOMPA\u00d1A A GALLEN EN LAS AVENTURAS MAS OSADAS, SI TE ATREVES...",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9788496554085"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "8496554082"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 544,
+          "printType": "BOOK",
+          "categories": ["Fiction"],
+          "averageRating": 4,
+          "ratingsCount": 2,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.0.1.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=mEX5DBdaT0MC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=mEX5DBdaT0MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=mEX5DBdaT0MC&pg=PA541&dq=Dragon&hl=&cd=18&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=mEX5DBdaT0MC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/El_%C3%BAltimo_drag%C3%B3n.html?hl=&id=mEX5DBdaT0MC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=mEX5DBdaT0MC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Un apartado especial para tres personas que han le\u00eddo y han aportado sus ideas <br>\ny sus correcciones al borrador de El \u00daltimo <b>Drag\u00f3n<\/b>: Jose Manu\u00e9l Bur\u00f3n Barrio (<br>\nadministrador del fant\u00e1stico ezine AuroraBitzine.com), V\u00edctor Mart\u00ednez Mart\u00ed&nbsp;..."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "bCZAlSXH5YwC",
+        "etag": "hYwacMOMrhQ",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/bCZAlSXH5YwC",
+        "volumeInfo": {
+          "title": "El otro sexo del drag\u00f3n",
+          "subtitle": "mujeres, literatura y sociedad en China",
+          "authors": ["Taciana Fisac Badell"],
+          "publisher": "Narcea Ediciones",
+          "publishedDate": "1997-01",
+          "description": "La autora, profesora titular de Lengua y Cultura China, as\u00ed como Directora del Centro de Estudios de Asia Oriental en la Universidad Aut\u00f3noma de Madrid, ofrece un apasionante recorrido a trav\u00e9s de la historia de China, con las mujeres como protagonistas. Analiza la posici\u00f3n de las mujeres en la sociedad y en la cultura china, desde los tiempos imperiales hasta nuestros d\u00edas. Estudia tambi\u00e9n la imagen que de ellas se ha presentado en el \u00e1mbito literario y su propio trabajo como escritoras, adentr\u00e1ndose en las claves necesarias para comprender la trayectoria del feminismo chino en su lucha contra el dominio patriarcal. El otro sexo del drag\u00f3n, primer texto de su g\u00e9nero escrito en el \u00e1mbito de la sinolog\u00eda espa\u00f1ola, nos da a conocer la fascinante realidad femenina de una civilizaci\u00f3n milenaria que adquiere especial relevancia en los umbrales del siglo XXI. El libro, que transcribe gran parte de los textos literarios, \u00edndices, glosarios, bibliograf\u00eda, etc., en caracteres chinos, constituye una aportaci\u00f3n fundamental al estudio de las mujeres y la literatura china.",
+          "industryIdentifiers": [{
+            "type": "ISBN_10",
+            "identifier": "8427711786"
+          }, {
+            "type": "ISBN_13",
+            "identifier": "9788427711785"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 158,
+          "printType": "BOOK",
+          "categories": ["Social Science"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.1.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=bCZAlSXH5YwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=bCZAlSXH5YwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=bCZAlSXH5YwC&printsec=frontcover&dq=Dragon&hl=&cd=19&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=bCZAlSXH5YwC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/El_otro_sexo_del_drag%C3%B3n.html?hl=&id=bCZAlSXH5YwC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=bCZAlSXH5YwC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "El otro sexo del drag\u00f3n, primer texto de su g\u00e9nero escrito en el \u00e1mbito de la sinolog\u00eda espa\u00f1ola, nos da a conocer la fascinante realidad femenina de una civilizaci\u00f3n milenaria que adquiere especial relevancia en los umbrales del ..."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "r_lB2MBWWh8C",
+        "etag": "1STUYXnNyv8",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/r_lB2MBWWh8C",
+        "volumeInfo": {
+          "title": "El misterio del Drag\u00f3n",
+          "publisher": "Universidad Nac. del Litoral",
+          "publishedDate": "2003",
+          "industryIdentifiers": [{
+            "type": "ISBN_10",
+            "identifier": "9875082236"
+          }, {
+            "type": "ISBN_13",
+            "identifier": "9789875082236"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 15,
+          "printType": "BOOK",
+          "categories": ["Dragons"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=r_lB2MBWWh8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=r_lB2MBWWh8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=r_lB2MBWWh8C&pg=PT11&dq=Dragon&hl=&cd=20&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=r_lB2MBWWh8C&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/El_misterio_del_Drag%C3%B3n.html?hl=&id=r_lB2MBWWh8C"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=r_lB2MBWWh8C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Por eso arremeti\u00f3 otra vez contra el <b>drag\u00f3n<\/b> y alcanz\u00f3 a arrebatarle la perla que <br>\nllevaba en el cuello, emblema del sol, sin la cual la bestia se volv\u00eda inofensiva. <br>\nEso es lo que crey\u00f3 Juan, que no entend\u00eda de magia ni de cosas fant\u00e1sticas que<br>\n&nbsp;..."
+        }
+      }, {
+        "kind": "books#volume",
+        "id": "-f20LdaA0NIC",
+        "etag": "z8\/nGvXMfwQ",
+        "selfLink": "https:\/\/www.googleapis.com\/books\/v1\/volumes\/-f20LdaA0NIC",
+        "volumeInfo": {
+          "title": "El libro secreto del drag\u00f3n",
+          "authors": ["Alex Muniente Mane"],
+          "publisher": "Maikalili Ediciones",
+          "publishedDate": "2004-07-29",
+          "industryIdentifiers": [{
+            "type": "ISBN_13",
+            "identifier": "9788496036499"
+          }, {
+            "type": "ISBN_10",
+            "identifier": "8496036499"
+          }],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 132,
+          "printType": "BOOK",
+          "categories": ["Fiction"],
+          "averageRating": 4,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.0.0.preview.1",
+          "imageLinks": {
+            "smallThumbnail": "http:\/\/books.google.es\/books\/content?id=-f20LdaA0NIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http:\/\/books.google.es\/books\/content?id=-f20LdaA0NIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http:\/\/books.google.es\/books?id=-f20LdaA0NIC&pg=PA117&dq=Dragon&hl=&cd=21&source=gbs_api",
+          "infoLink": "http:\/\/books.google.es\/books?id=-f20LdaA0NIC&dq=Dragon&hl=&source=gbs_api",
+          "canonicalVolumeLink": "http:\/\/books.google.es\/books\/about\/El_libro_secreto_del_drag%C3%B3n.html?hl=&id=-f20LdaA0NIC"
+        },
+        "saleInfo": {
+          "country": "ES",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "ES",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http:\/\/books.google.es\/books\/reader?id=-f20LdaA0NIC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Del verdadero significado del mito \u201cSi existe alguna raz\u00f3n que pueda explicar el <br>\nhecho que los <b>Dragones<\/b> est\u00e9n siempre presentes en nuestra imaginaci\u00f3n, <br>\nseguramente se encuentra aqu\u00ed: son el aspecto exterior de un conocimiento <br>\ninterior,&nbsp;..."
+        }
+      }]
+    }
+  },
+  "menu": "<div class=\"footer\" style=\"position: absolute; bottom: 0px; width: 100%; height: 60px; background: #efe;\">\n        <div class=\"container\" style=\"padding: 25px; text-align:center\">\n          JS exam Footer   :)\n        <\/div>\n    <\/div>"
+}

@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    hola
+    <ul>
+        <li class='confirmation'>
+            <h3>Hawaiian Vacation</h3>
+            <button>Flight details</button>
+            <div class='ticket'>
+                <a class='view-boarding-pass'>View Boarding Pass</a>
+            </div>
+        </li>
+    </ul>
+
+    <script>
+        $('.confirmation').on('click', 'button', function () {
+            var a = {
+                uno: "one",
+                dos: "two"
+            };
+
+            $.ajax({
+                url: '052_ajax_php.php',
+                success: function (response) {
+                    $('.ticket').html(response).slideDown();
+                },
+                data: {
+                    info: JSON.stringify(a)
+                },
+                type: "POST"
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <p>Finding the amount of arguments.</p>
+    <p id="demo"></p>
+
+    <script>
+        
+        function findNumArg() {
+            // arguments is an array with all the parameters
+            // passed to the function
+            return arguments.length;
+        }
+
+        function findNumArg(number1, number2, number3) {
+
+            return arguments[arguments.length - 1];
+            /*
+    if(arguments.length == 3){
+        return number3;
+    }
+    else if(arguments.length == 2){
+        return number2;
+    }
+*/
+        }
+
+        document.getElementById("demo").innerHTML = findNumArg(4, 5, 6);
+
+        alert("HOLA");
+
+        document.getElementById("demo").innerHTML = findNumArg(4, 5);
+    </script>
+    <script src="js/common.js"></script>   
+</body>
+
+</html>
+
+

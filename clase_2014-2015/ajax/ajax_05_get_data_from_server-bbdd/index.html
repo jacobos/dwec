@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="cliente.js"></script>
+</head>
+
+<body>
+  <div>
+    User:
+    <input type="text" id="text1"> Pass:
+    <input type="text" id="text2">
+    <button id="getData">Get data</button>
+  </div>
+  <div id="answer">
+    Answer here...
+  </div>
+  <button class="hide">PHP code - show/hide </button>
+  <div style="display:none">
+    <pre>
+      $var1 = $_POST['variable1'];
+      $var2 = $_POST['variable2'];
+      error_reporting(E_ERROR | E_PARSE);
+      $con=mysqli_connect("localhost",$var1,$var2,"solvam") or die('{"devuelve": "Error en conexion a la DB"}');
+
+
+      //the usuario table should exist in your database
+      $result = mysqli_query($con,"SELECT * FROM usuario");
+      $devuelve = "&lt;table border=1>";
+
+        $devuelve = $devuelve. "<tr><td> " . "Info" . "</td></tr>";
+        while($row = mysqli_fetch_array($result))
+        {
+          // name and number are the columns you have in the people table
+          $devuelve = $devuelve. "&lt;tr>&lt;td> " . $row['info'] . "&lt;/td>&lt;/tr>";
+        }
+        $devuelve = $devuelve."&lt;/table>";
+
+        // Array with the answer
+        $respuesta['devuelve'] = $devuelve;
+
+        echo json_encode($respuesta); // we return it as an object
+    </pre>
+  </div>
+  <script>
+  $(".hide").on("click", function() {
+    $(this).next().toggle();
+  });
+  </script>
+
+  <script src="../common.js"></script>
+</body>
+
+</html>

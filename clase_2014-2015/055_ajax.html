@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+  <ul>
+    <li class='confirmation'>
+      <h3>Hawaiian Vacation</h3>
+      <button>Flight details</button>
+      <div class='ticket'>
+        <a class='view-boarding-pass'>View Boarding Pass</a>
+      </div>
+    </li>
+  </ul>
+  <table border=1>
+    <tr><td>a</td><td>d</td><td>g</td><td>j</td></tr>
+    <tr><td>b</td><td>e</td><td>h</td><td>k</td></tr>
+    <tr><td>c</td><td>f</td><td>i</td><td>l</td></tr>
+  </table>
+
+  <script>
+  var a;
+  $('.confirmation').on('click', 'button', function () {
+    a = {
+      uno: {"one": "element"},
+      dos: "two"
+    };
+    a = [];
+    $("td").each(function(ind, val){
+      a.push(val.innerHTML);
+    });
+
+    $.ajax({
+      url: '055_ajax.php',
+      success: function (response) {
+        $('.ticket').html(response).slideDown();
+      },
+      data: {
+        info: a
+      }
+    });
+  });
+  </script>
+</body>
+
+</html>

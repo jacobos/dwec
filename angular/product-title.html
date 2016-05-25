@@ -1,0 +1,9 @@
+<h3>
+  {{product.name}}
+  <em class="pull-right">
+    {{product.price | currency}}
+  </em>
+  <div ng-repeat="imagenes in product.images">
+    <img ng-src="{{imagenes.full}}">
+  </div>
+</h3>

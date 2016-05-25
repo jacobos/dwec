@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exam info</title>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <link rel="stylesheet" href="styleEx.css">
+  <style>
+    a,
+    .showHide {
+      color: #088;
+    }
+
+    .showHide {
+      display: inline-block;
+    }
+
+    a:hover,
+    .showHide:hover {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Exam</h1>
+  <ol>
+    <li>
+      Each page of your exam should look like this
+      <br>
+      <div style="text-align:center">
+        <img src="exam_slide.png" width="1000">
+      </div>
+    </li>
+    <li>each book should have the following elements (find them in the volumeInfo)</li>
+    <li>
+      <ol>
+        <li>a thumbnail (which is in the imageLinks object of the book)</li>
+        <li>title</li>
+        <li>description</li>
+        <li>the description should be a link (&lta>)</li>
+        <li>for your information, to check if an element exists you can check it with: if(elemento.volumeInfo.imageLinks !== undefined) { }</li>
+        <li>and each book should have 100% the height of the window, like the picture</li>
+
+      </ol>
+      Then add:
+      <ol>
+        <li>on the top buttons to go to every book (1, 2, 3, 4, 5... on click go to the book slide)</li>
+        <li>You should be able to delete a book by clicking on it (the slide and the button should dissapear)</li>
+      </ol>
+
+    </li>
+    <li><a href="exam_jq.html">Use this, go to the console, get the code and go for it!</a></li>
+  </ol>
+
+  <script>
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .divs {
+            float: left;
+        }
+        .celda {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-top: 5px;
+            border: 1px solid black;
+        }
+        #tabla {
+            position: absolute;
+            left: 20%;
+            top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="ancho"></input>
+    <input id="alto"></input>
+    <button id="boton">CLICK</button>
+    <div>
+        <div class="divs" id="red" style="background-color: red; width: 20px; height: 20px; margin-left: 20px;"></div>
+        <div class="divs" id="green" style="background-color: green; width: 20px; height: 20px;margin-left: 20px;"></div>
+        <div class="divs" id="yellow" style="background-color: yellow; width: 20px; height: 20px;margin-left: 20px;"></div>
+        <div class="divs" id="blue" style="background-color: blue; width: 20px; height: 20px;margin-left: 20px;"></div>
+    </div>
+    <div id="tabla">
+    </div>
+    <script>
+        var filas,
+            columnas,
+            tabla,
+            boton,
+            var_activar_desactivar = 0,
+            var_color;
+        boton = document.getElementById("boton");
+        filas = document.getElementById("ancho");
+        alto = document.getElementById("alto");
+
+        boton.onclick = function () {
+            var num_filas = filas.value,
+                num_columnas = alto.value,
+                tabla = document.getElementById("tabla"),
+                i,
+                j;
+            for (i = 0; i < num_filas; i++) {
+                for (j = 0; j < num_columnas; j++) {
+                    var di = document.createElement("div");
+                    di.setAttribute("class", "celda " + "n" + j); //clase para las columnas
+                    di.setAttribute("celda", "n" + j); //clase para las columnas
+                    // solo se pinta en el mouseover
+                    di.onmouseover = function () {
+                        if (var_activar_desactivar == 0)
+                            this.setAttribute("style", "background-color: " + var_color);
+                    }
+                    // para pintar la columna entera en el mouseout
+                    if (i == num_filas - 1) {
+                        di.onmouseout = function () {
+                            var celdas_a_pintar = document.getElementsByClassName(this.getAttribute("celda"))
+                            for (var j = 0; j < num_filas; j++)
+                                celdas_a_pintar[j].setAttribute("style", "background-color: purple");
+                        }
+                    }
+                    tabla.appendChild(di);
+
+                }
+                var limpiar = document.createElement("div");
+                limpiar.setAttribute("style", "clear:both");
+                tabla.appendChild(limpiar);
+            }
+        }
+
+        document.getElementById("red").onclick = function () {
+            var_color = "red";
+        }
+        document.getElementById("green").onclick = function () {
+            var_color = "green";
+        }
+        document.getElementById("blue").onclick = function () {
+            var_color = "blue";
+        }
+        document.getElementById("yellow").onclick = function () {
+            var_color = "yellow";
+        }
+        tabla = document.getElementById("tabla");
+        tabla.onclick = function () {
+            if (var_activar_desactivar == 0)
+                var_activar_desactivar = 1;
+            else
+                var_activar_desactivar = 0;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+  background: transparent url("http://eu.battle.net/hearthstone/static/images/body-content-bg.jpg") 50% 0;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+
+.separator {
+  margin-top: 2px;
+  color: #333;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+}
+
+.separator::before {
+  margin-right: .25em;
+}
+
+.separator::after {
+  margin-left: .25em;
+}
+
+.jumbotron {
+  background: url('http://us.battle.net/hearthstone/static/images/heroes.jpg') no-repeat;
+  background-size: contain;
+  height: 550px;
+  background-color: transparent;
+      }
+
+.artwork {
+  position: relative;
+  margin: 0 auto;
+  background: transparent url("http://us.battle.net/hearthstone/static/images/media-row-bg.png?v=2") 50% 0 no-repeat;
+  max-width: 2600px;
+  height: 150px;
+  text-align: center;
+  overflow: hidden;
+  margin-top:-50px;
+
+}
+.divider{
+  background-image: url("http://us.battle.net/hearthstone/static/images/home/divider-bottom-small.jpg");
+  height: 40px;
+  margin-top:-70px;
+}
+.thumbnail, input, .form-control{
+  background-color: transparent;
+}
+.form-control{
+  border: 2px solid black;
+}
+input{
+  color: white;
+}
+.web{
+  background-image: url("https://awkwardlistdotcom.files.wordpress.com/2011/06/spiderweb.gif");
+  z-index: 1; position:relative
+}
+.hero{
+  border: 2px solid rgb(208, 18, 5);
+}
+.hero:before{
+  content: "HERO";
+  border-bottom: 2px solid rgb(57, 36, 56);
+  left: 40%;
+  position: absolute;
+}
+.hero:after{
+  content: "hero";
+  left: 40%;
+  position: absolute;
+  bottom: 17px;
+}
+.spell{
+  border: 2px solid #c27102;
+}
+.spell:after{
+  content: "spell";
+  left: 40%;
+  position: absolute;
+  bottom: 17px;
+}
+.minion{
+  border: 2px solid #1eab67;
+}
+.minion:after{
+  content: "minion";
+  left: 40%;
+  position: absolute;
+  bottom: 17px;
+}

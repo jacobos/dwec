@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exercises</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <link rel="stylesheet" href="styleEx.css">
+  <style>
+    a,
+    .showHide {
+      color: #088;
+    }
+
+    .showHide {
+      display: inline-block;
+    }
+
+    a:hover,
+    .showHide:hover {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>jQuery Exercises (always using bootstrap)</h1>
+  <ol>
+    <li>
+      Create a list of the animals that you can find <a href="wildlife" target="_blank">here</a>, make use of <a href="wildlife/wildlife.js" target="_blank">this script</a>.
+      <br> Max. 4 images / row
+      <ul>
+        <li>
+          Only 4 images should appear
+        </li>
+        <li>
+          There should be a button to add more, when you click on it 4 new ones should appear
+        </li>
+        <li>
+          Every image should have an 'X' to
+          <span class=" " title="Remove the set of matched elements from the DOM."><a href="http://api.jquery.com/remove/" target="_blank">delete</a>&nbsp;<a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_remove" target="_blank">(EX)</a></span> it
+        </li>
+        <li>
+          On the bottom of the page an input field should appear, you write something in it, and when you click on an image the text should appear under the selected image.
+        </li>
+        <li>
+          On the side of each row you need a button, when you click on it all the row should be removed
+        </li>
+      </ul>
+    </li>
+    <li>
+      On the following site <a href="http://startbootstrap.com/template-overviews/shop-homepage/" target="_blank">shop_base</a> or <a href="http://startbootstrap.com/template-categories/all/" target="_blank"> another one</a> that fits your needs. Create
+      a small shop that:
+      <ul>
+        <li>
+          When you buy an element a shopping card with the price and the name of the elements bought appear
+        </li>
+        <li>
+          A total price should be shown too
+        </li>
+        <li>
+          Add new menu elements to the top (using inputs to add them dynamically)
+        </li>
+        <li>
+          Add new products (create a '+' button on the bottom right of the site, when you click on it a div with inputs appear, you fill them, click on another button and the products is created)
+        </li>
+        <li>
+          Allow the user to remove products
+        </li>
+      </ul>
+    </li>
+    <li>
+      Do the following page using
+      <a href="heroic_bootstrap_temp_exercise_jq.html">this site</a>
+      <br>
+      <div style="text-align:center">
+        <img src="heroic_boots.gif" width="600">
+      </div>
+    </li>
+    <li>
+      Do the following page using
+      <a href="paellaDragon.html">this site</a>
+      <br>
+      <div style="text-align:center">
+        <video width="600" controls>
+
+          <source src="paellaDragon.ogv" type="video/ogg"> Your browser does not support the video tag.
+        </video>
+      </div>
+    </li>
+    <li>
+      Using the multiple keypress code and the animate function from jquery (<a href="http://jsfiddle.net/B1KMusic/U5L2X/embedded/result%2Cjs/" target="_blank">example -a bit difficult to understand-</a>)
+      <ul>
+        <li>
+          Move a div arround a html page with a nice background
+        </li>
+      </ul>
+      <pre>
+        <code>
+          var key = [];
+          document.body.onkeydown = document.body.onkeyup = function(e){
+              var e = e || event;
+              key[e.keyCode] = e.type == 'keydown';
+          };
+          // onkeydown and onkeyup have the same function assigned
+          // in the key array we store the keys that are being pressed, test it with console.log
+          // var e = e || event; --> with this line we use e if it exists or event if not, browser compatibility
+          // e.type is the type of event, keydown when a key is pressed and keyup when it stops being pressed
+        </code>
+      </pre>
+    </li>
+    <li>
+      Do the following project you can use <a href="fourWaysJQuery.js" target="_blank"> this </a>
+      <br>
+      <div style="text-align:center">
+        <img src="ex_proj_jquery.jpg" width="500">
+      </div>
+    </li>
+    <li>
+      (using) this: <a href="http://jacobosolvam.tk/dwec/ajax/ajax_07_flickr_api/">ajax flickr api</a>
+      <pre>
+        <code>
+1 2 3 4 5 6 7 8 9... (ON CLICK SCROLL TO ELEMENT -SLIDE TO ELEMENT-)
+
+  TITULO
+
+  EACH PHOTO ELEMEN-T ($(window).height()+"px")
+  	TITLE 1
+  	IMAGE 1
+  	DESCRIPTION (THE IMAGE IS INCLUDED IN THE DESCRIPTION)
+  	PUBLISHED
+
+  	TITLE 2
+  	IMAGE 2
+    DESCRIPTION (THE IMAGE IS INCLUDED IN THE DESCRIPTION)
+  	PUBLISHED
+        </code>
+      </pre>
+    </li>
+
+  </ol>
+
+  <script>
+  </script>
+</body>
+
+</html>

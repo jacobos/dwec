@@ -1,0 +1,79 @@
+<ons-navigator title="Navigator" var="myNavigator">
+<ons-page ng-controller="favs_films">
+
+   <!--<ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+    <div class="center">The best films</div>
+  </ons-toolbar> -->
+  <div class="tittle_favs">
+  		<br />
+      	<h1  class="tittle">Favourite films</h1>
+  </div>
+  <!--<div style="text-align: center">
+    <h1>Page 2</h1>
+    <ons-button ng-click="app.slidingMenu.toggleMenu()">Toggle Menu</ons-button>
+  </div>-->
+        <ons-list>
+            <ons-list-item ng-repeat="item in items" ng-click="ponerSeleccion(item)" onclick="myNavigator.pushPage('pageN3.html', { animation : 'slide' } )">
+                <ons-row>
+                    
+                    <ons-col>
+                        <div class="name">
+                            {{item.nombre}}
+                        </div>
+                        <div class="location">
+                            <!--  <i class="fa fa-map-marker"></i>--> {{item.director}}
+                        </div>
+                        <div class="year">
+                            {{item.year}}
+                        </div>
+                        <div class="gender">
+                            {{item.genero}}
+                        </div>
+                        <div class="id">
+                            ID: {{item.id}}
+                        </div>
+                    </ons-col>
+                    <ons-col width="40px"></ons-col>
+                </ons-row>
+            </ons-list-item>
+        </ons-list>
+    </ons-page>
+    <!--    {{'page'+item+'.html'}}
+    {{'pageN'+item+'.html'}}
+    -->
+
+</ons-navigator>
+
+
+<ons-template id="pageN3.html">
+    <ons-page ng-controller="PaginaSeleccionadaController">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button>Back</ons-back-button>
+            </div>
+            <div class="center">Film: {{actual.nombre}}</div>
+        </ons-toolbar>
+        <div style="text-align: center;">
+            <ons-button modifier="dark" onclick="myNavigator.popPage()" class="margin-top">
+                
+                <br>
+                <div class="name">
+                    {{actual.nombre}}
+                </div>
+                <div class="desc">
+                    <!--  <i class="fa fa-map-marker"></i> -->{{actual.director}}
+                </div>
+                <div class="year_pop">
+                    {{actual.year}}
+                </div>
+                
+            </ons-button>
+            <!--<br>{{actual}}-->
+        </div>
+    </ons-page>
+</ons-template>

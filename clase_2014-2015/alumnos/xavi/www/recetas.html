@@ -1,0 +1,157 @@
+<ons-navigator title="Navigator2" var="myNavigator2">
+     <ons-page>
+      <ons-toolbar>
+          <div class="left"><ons-button onclick="app.slidingMenu.setMainPage('chefs.html')">Back</ons-button><ons-button type="button" class="btn btn-success"  onclick="myNavigator2.pushPage('anadirrec.html', { animation : 'slide' } )">Add Receipe</ons-button></div>
+        <div class="center">Recetas</div>
+      </ons-toolbar>
+
+      <ons-list ng-controller="RecetasController">
+
+        <ons-list-item modifier="chevron" class="list-item-container" ng-repeat="rec in recetas">
+          <ons-row >
+            <ons-col width="95px">
+              <img ng-src="{{rec.Imagen}}" class="thumbnail">
+            </ons-col>
+            <ons-col>
+              <div class="name">
+                  {{rec.Nombre}}
+              </div>
+              <div class="location">
+                <i class="fa fa-graduation-cap"></i>{{rec.Chef}}
+                 
+
+              </div>
+              <div class="desc">
+                 {{rec.Descripcion}}
+
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+             <ons-col class="left"><ons-button type="button" class="btn btn-danger" ng-click="delRec(rec.Nombre)" >Delete Chef</ons-button><ons-button type="button" ng-click="modRec1(rec.Nombre)" class="btn btn-primary"  onclick="myNavigator2.pushPage('modRec.html', { animation : 'slide' } )">Modify Chef</ons-button></ons-col>
+        </ons-list-item>
+
+       
+
+    </ons-page>
+             </ons-navigator>
+ <ons-template id="anadirrec.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">Sign up</div>
+      </ons-toolbar>
+
+      <div class="formarea" ng-controller="RecetasController as AddRec">
+        <div class="form-row">
+          <input type="text" class="text-input--underbar width-half" ng-model="AddRec.rec.name"  placeholder="Name" value="">
+          <input type="text" class="text-input--underbar width-half" ng-model="AddRec.rec.desc" placeholder="Description" value="" style="border-width-left: 1px">
+        </div>
+
+        <div class="form-row">
+          <input type="text" class="text-input--underbar width-full" ng-model="AddRec. rec.chef" placeholder="Place of birth" value="">
+        </div>
+
+       
+
+        <div class="form-row">
+         <ons-list>
+        <ons-list-item modifier="chevron" class="list-item-container" >
+          <ons-row >
+            <ons-col width="95px">
+              <img ng-src="" class="thumbnail">
+            </ons-col>
+            <ons-col>
+              <div class="name">
+                  {{AddRec. rec.name}}
+              </div>
+              <div class="location">
+                <i class="fa fa-graduation-cap"></i>{{AddRec. rec.chef}}
+
+              </div>
+              <div class="desc">
+            {{AddRec.rec.desc}}
+
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+
+         </ons-list>
+        </div>
+           <div class="vspc form-row">
+          <form action="php/subir_fichero.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fichero" id="fichero" >
+        <br>
+        <input type="submit"  value="Upload">
+    </form>
+        </div>
+        <div class="vspc form-row">
+          <ons-button modifier="large--cta"  ng-click="addRec(AddRec. rec.name, AddRec. rec.desc, AddRec. rec.chef)">Modify</ons-button>
+        </div>
+         
+          
+      </div>
+        
+
+    </ons-page>
+
+</ons-template>
+ <ons-template id="modRec.html">
+    <ons-page ng-controller="RecetasController as ModChef">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">Modify Receipes</div>
+      </ons-toolbar>
+
+    <div class="formarea" >
+        <div class="form-row">
+         <ons-list>
+        <ons-list-item modifier="chevron" class="list-item-container" >
+          <ons-row >
+            <ons-col width="95px">
+              <img ng-src="" class="thumbnail">
+            </ons-col>
+            <ons-col>
+              <div class="name">
+                  {{ModChef. chef.name}}
+              </div>
+              <div class="location">
+                <i class="fa fa-graduation-cap"></i>{{ModChef. chef.date}}
+
+              </div>
+              <div class="desc">
+            {{ModChef. chef.desc}}
+
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+
+         </ons-list>
+            <div class="form-row">
+          <input type="text" class="text-input--underbar width-half" ng-model="ModChef. chef.name"  placeholder="Name" ng-value="chef2.name">
+          <input type="text" class="text-input--underbar width-half" ng-model="ModChef. chef.desc" placeholder="Description" ng-value="chef2.desc" style="border-width-left: 1px">
+        </div>
+
+        <div class="form-row">
+          <input type="text" class="text-input--underbar width-full" ng-model="ModChef. chef.date" placeholder="Place of birth" ng-value="chef2.date">
+        </div>
+        <div class="vspc form-row">
+          <ons-button modifier="large--cta"  ng-click="modRec2(ModChef. chef.name,ModChef. chef.desc,ModChef. chef.date)">Sign up</ons-button>
+        </div>
+        </div>
+          
+         
+          
+      </div>
+</ons-template>
+    
+    
+
+
+
+ 
+ 

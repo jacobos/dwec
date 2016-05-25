@@ -1,0 +1,19 @@
+<ons-page>
+  <ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+    <div class="center">Delete a film</div>
+  </ons-toolbar>
+  <ons-list ng-controller="EliminarFilmController">
+     <div class="form-group">
+      <label for="id">Insert the ID of the film to remove:</label>
+      <input type="text" class="form-control" ng-model="codigo">
+    </div>
+     <button ng-click="delete(codigo)">Delete the film !</button></center> 
+ 
+  </ons-list>
+
+</ons-page>

@@ -1,0 +1,36 @@
+<ons-page>
+  <ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+    <div class="center">List of Mangas</div>
+  </ons-toolbar>
+  <ons-list ng-controller="LandController">
+ 
+    <ons-list-item ng-repeat="cap in capitales" modifier="chevron" class="list-item-container">
+      <ons-row>
+        <ons-col width="95px">
+          <img ng-src="{{cap.img}}" class="thumbnail">
+        </ons-col>
+        <ons-col>
+          <div class="name">
+            {{cap.what}}
+          </div>
+          <div class="location">
+            <i class="fa fa-map-marker"></i> {{cap.where}}
+          </div>
+          <div class="desc">
+            {{cap.desc}}
+          </div>
+        </ons-col>
+        <ons-col width="40px"></ons-col>
+      </ons-row>
+    </ons-list-item>
+<button ng-click="new()">Mostrar</button>
+    <button ng-click="del()">Borrar</button>
+    <button ng-click="delAll()">Borrar Todos</button>
+  </ons-list>
+
+</ons-page>

@@ -1,0 +1,79 @@
+<ons-page>
+  <ons-toolbar>
+
+    <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+    <div class="center">Page 4</div>
+  </ons-toolbar>
+
+  <div ng-controller="MorningCtrl">
+    <h2>{{greeting}}</h2>
+  </div>
+  <div ng-controller="GemitaController">
+    <!-- USING THE TRACK BY $INDEX , BECAUSE WHEN STORING DATA MADE BY US
+    CAN CAUSE AN ERROR ON THE KEY, SEE https://docs.angularjs.org/error/ngRepeat/dupes -->
+    <div ng-repeat="product in products | orderBy : '-price' | limitTo:6  track by $index ">
+      <h3> {{product.name | uppercase}} </h3>
+      <em class="pull-right"> {{product.price | currency}} </em>
+      <p>{{product.description | limitTo: 20}}</p>
+      <div ng-repeat="imagenes in product.images">
+        <img style="height: 30px" ng-src="{{imagenes.full}}" />
+      </div>
+      <input type="number" ng-model="infoToPass"></input><br>
+      <button ng-click="new(infoToPass)">Add new element (JSONP)</button><br>
+
+      <button ng-show="product.canPurchase">Add to Cart</button>
+
+      <section ng-controller="panelController as panel">
+        <ul class="nav nav-pills">
+          <li ng-class="{active: panel.isSelected(1)}">
+            <a href ng-click="panel.selectTab(1)">Description</a>
+          </li>
+          <li ng-class="{active: panel.isSelected(2)}">
+            <a href ng-click="panel.selectTab(2)">Specifications</a>
+          </li>
+          <li ng-class="{active: panel.isSelected(3)}">
+            <a href ng-click="panel.selectTab(3)">Reviews</a>
+          </li>
+        </ul>
+
+        <div class="panel" ng-show="panel.isSelected(1)">
+          <h4>Description</h4>
+          <p>{{product.description}}</p>
+        </div>
+        <div class="panel" ng-show="panel.isSelected(2)">
+          <h4>Specifications</h4>
+          <blockquote>None yet</blockquote>
+        </div>
+        <div class="panel" ng-show="panel.isSelected(3)">
+          <h4>Reviews</h4>
+          <blockquote ng-repeat="review in product.reviews">
+            <b>Stars: {{review.stars}}</b> {{review.body}}
+            <cite>by: {{review.author}}</cite>
+          </blockquote>
+          <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product, gemita.products)">
+            <blockquote>
+              <b>Stars: {{ reviewCtrl. review.stars}}</b> {{ reviewCtrl. review.body}}
+              <cite>by: {{ reviewCtrl. review.author}}</cite>
+            </blockquote>
+            <select ng-model=" reviewCtrl. review.stars">
+              <option value="1">1 star</option>
+              <option value="2">2 stars</option>
+              <option value="3">3 stars</option>
+              <option value="4">4 stars</option>
+              <option value="5">5 stars</option>
+            </select>
+            <textarea ng-model="reviewCtrl.review.body"></textarea>
+            <label>by:</label>
+            <input ng-model="reviewCtrl.review.author" type="email" />
+            <input type="submit" value="Submit" />
+          </form>
+
+        </div>
+      </section>
+    </div>
+  </div>
+</ons-page>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>GEMS</title>
+    <link href="" rel="shortcut icon">
+    <!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  </head>
+
+  <body >
+
+    <div ng-app="store2">
+      <div ng-controller="StoreController2 as store">
+        <ul class="list-group">
+          <li class="list-group-item" ng-repeat="productC in store.products">
+            <h2>{{productC.categoria}}</h2>
+              <div ng-repeat="subcat in productC.subcategorias">
+                <h3>{{subcat.nombre}}</h3>
+                <div ng-repeat="subSubCategoria in subcat.subSubCategoria">
+                    <h4>{{subSubCategoria.tipo}}</h4>
+                    <ul>
+                      <li class="list-group-item" ng-repeat="product in subSubCategoria.productos">
+                      <h3>
+                        {{product.name}}
+                        <em class="pull-right">
+                          {{product.precio | currency}}
+                        </em>
+                      </h3>
+                      <section>
+                        <ul class="nav nav-pills">
+                          <li>
+                            <a href ng-click="tab = 1">Description</a>
+                          </li>
+                          <li>
+                            <a href ng-click="tab = 2">Specifications</a>
+                          </li>
+                          <li>
+                            <a href ng-click="tab = 3">Reviews</a>
+                          </li>
+                        </ul>
+
+                        <div class="panel" ng-show="tab == 1">
+                          <h4>Description</h4>
+                          <blockquote>{{product.desc}}</blockquote>
+                        </div>
+                        <div class="panel" ng-show="tab == 2">
+                          <h4>Specifications</h4>
+                          <blockquote>None yet</blockquote>
+                        </div>
+                        <div class="panel" ng-show="tab == 3">
+                          <h4>Reviews</h4>
+                          <blockquote>None yet</blockquote>
+                        </div>
+                      </section>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<!--
+    <div ng-app="store">
+      <div ng-controller="StoreController as store">
+        <ul class="list-group">
+          <li class="list-group-item" ng-repeat="product in store.products | limitTo:10">
+            <h3>
+              {{product.name}}
+              <em class="pull-right">
+                {{product.price | currency}}
+              </em>
+              <div ng-repeat="imagenes in product.images">
+                <img ng-src="{{imagenes.full}}">
+              </div>
+            </h3>
+            <section>
+              <ul class="nav nav-pills">
+                <li>
+                  <a href ng-click="tab = 1">Description</a>
+                </li>
+                <li>
+                  <a href ng-click="tab = 2">Specifications</a>
+                </li>
+                <li>
+                  <a href ng-click="tab = 3">Reviews</a>
+                </li>
+              </ul>
+
+              <div class="panel" ng-show="tab == 1">
+                <h4>Description</h4>
+                <blockquote>{{product.description}}</blockquote>
+              </div>
+              <div class="panel" ng-show="tab == 2">
+                <h4>Specifications</h4>
+                <blockquote>None yet</blockquote>
+              </div>
+              <div class="panel" ng-show="tab == 3">
+                <h4>Reviews</h4>
+                <blockquote>None yet</blockquote>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    -->
+    <!--
+
+      <div ng-repeat="product in store.products">
+        <div ng-hide="product.soldOut">
+          <h1>
+            {{product.name}}
+          </h1>
+          <h2>
+            ${{product.price}}
+          </h2>
+          <p>
+            {{product.description}}
+          </p>
+          <button ng-show="product.canPurchase">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  -->
+    <!-- General JavaScript -->
+    <!-- jquery.js
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+  -->
+    <script src="js/jquery-1.11.1.js"></script>
+    <!-- bootstrap.js
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>
+  -->
+    <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <!-- angular
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+  -->
+    <script src="angular/angular.min.js"></script>
+    <script src="sillas.js" type="text/javascript"></script>
+
+  </body>
+
+</html>

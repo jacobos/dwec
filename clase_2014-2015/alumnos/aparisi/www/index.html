@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+      <link rel="stylesheet" href="css/iniciar.css">
+    <script>
+        
+        var module = ons.bootstrap('my-app', ['onsen']);
+         
+        ons.disableAutoStatusBarFill();  // (Monaca enables StatusBar plugin by default)
+        
+        //var module = angular.module('store', []);
+
+    module.controller('iniciarController', function ($scope, $http) {
+        
+      $scope.iniciar = function (usuario,contraseña,nav) {
+        
+          $http({
+        method: 'JSONP',
+        url: 'http://javieraparisi.es/proyecto/php/index.php?variable1=' + $scope.usuario + '&variable2=' + $scope.contrasena + '&callback=JSON_CALLBACK'
+    }).success(function (data, status, headers, config) {
+        console.log("got info from the server!");
+      if(data=="conectado"){
+          nav.pushPage('index2.html', { animation : 'slide' } );
+      }else{
+          $scope.error="The User or Password do not exist try again";
+      }
+              
+    }).error(function (data, status, headers, config) {
+        console.log("Some error ocurred");
+    });
+       
+   };
+      
+     
+    
+    });
+    </script>
+   
+<script src="js/jquery-1.11.1.min.js"></script>
+     <!--<script src="js/bootstrap.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/paginationController.js"></script>
+    <script src="js/currentInfoFactory.js"></script>
+    <script src="js/paginaSeleccionadaController.js"></script>
+    <script src="js/paginationController2.js"></script>
+    <script src="js/paginaSeleccionadaController2.js"></script>
+     <script src="js/paginationController3.js"></script>
+    <script src="js/paginaSeleccionadaController3.js"></script>
+    <script src="js/paginationController4.js"></script>
+    <script src="js/paginaSeleccionadaController4.js"></script>
+    <script src="js/paginationController5.js"></script>
+    <script src="js/paginaSeleccionadaController5.js"></script>
+      <script src="js/iniciar2Controller.js"></script>
+      <script src="js/factoria.js"></script>
+</head>
+  <body>
+    <ons-navigator title="Navigator" var="Navigator">
+    <ons-page ng-controller="iniciarController">
+      <ons-toolbar>
+        <div class="center">Log In</div>
+      </ons-toolbar>
+        <center>
+        <img style="margin-top:2em; width:40%;" src="images/logo.png">
+        </center>
+      <div class="login-form">
+       <input type="text" class="text-input--underbar" placeholder="User" value="" ng-model="usuario"/>
+        <input type="password" class="text-input--underbar" placeholder="Password" value="" ng-model="contrasena"/>
+        <br><br>
+        <ons-button modifier="large" class="login-button" ng-click="iniciar(usuario,contrasena,Navigator)">Log In</ons-button>
+        <br><br>
+      </div>
+<p style="font-weight: bold; font-size: 230%; color: red; margin-left: 10%;">{{error}}</p>
+    </ons-page>
+      </ons-navigator>
+  </body>
+</html>

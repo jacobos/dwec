@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+  </head>
+  <body>
+    <button type="button" name="button" id="bot">Click me!</button>
+    <ul id="ulUsers"></ul>
+    <script type="text/javascript">
+        $("#bot").on("click", function(){
+        $.get ("http://jacobosolvam.tk/dwec/ajax/jsonp_02/json.php?callback=?", function(data, textStatus) {
+          $.each(data, function(index, user) {
+              $.each(user, function(key, val){
+                console.log(key);
+                console.log(val);
+              });
+              console.log(data);
+              $("#ulUsers").append($("<li></li>").text(user.name + " is " + user.age + " years old"));
+            });
+        }, "json");
+      });
+    </script>
+
+    <button class="hideme">PHP code - show/hide </button>
+    <div style="display:none">
+      <pre>
+        &lt;?php
+        $users = array
+        (
+                array("name" => "John Doe", "age" => 42),
+                array("name" => "Jane Doe", "age" => $_GET['callback'])
+        );
+        echo $_REQUEST['callback'] . "(" . json_encode($users) . ")";
+        ?>
+
+
+      </pre>
+
+    </div>
+    <script>
+      $(".hideme").on("click", function() {
+        $(this).next().toggle();
+      });
+    </script>
+
+  </body>
+</html

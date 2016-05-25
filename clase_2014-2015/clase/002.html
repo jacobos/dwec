@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <a id="name1">pepito</a>
+    <a id="name2">juanfran</a>
+    <br>
+
+    <button onclick="myFunction2()">Exchange the names</button>
+
+    <script>
+        uno = document.getElementById("name1");
+        ds = document.getElementById("name2");
+
+        function myFunction2() {
+            var aux = ds.innerHTML;
+            ds.innerHTML = uno.innerHTML;
+            uno.innerHTML = aux;
+        }
+    </script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
+

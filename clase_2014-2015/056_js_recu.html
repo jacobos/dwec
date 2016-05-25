@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Animate</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    html,
+    body {
+      overflow: hidden;
+    }
+    .slide {
+      float: left;
+      padding: 50px 100px;
+    }
+    #scrolling {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+    }
+    #content {
+      position: absolute;
+    }
+    #botR,
+    #botL,
+    #botT,
+    #botB {
+      position: fixed;
+      background-size: 40px 40px;
+      height: 40px;
+      width: 40px;
+    }
+    #botR {
+      top: 50%;
+      right: 2%;
+      background-image: url(arrow_LeftLight.png);
+      -webkit-transform: rotate(180deg);
+      /* Chrome, Safari, Opera */
+
+      transform: rotate(180deg);
+    }
+    #botL {
+      top: 50%;
+      left: 2%;
+      background-image: url(arrow_LeftLight.png);
+    }
+    #botT {
+      top: 2%;
+      left: 50%;
+      background-image: url(arrow_LeftLight.png);
+      /* IE 9 */
+
+      -webkit-transform: rotate(90deg);
+      /* Chrome, Safari, Opera */
+
+      transform: rotate(90deg);
+    }
+    #botB {
+      bottom: 2%;
+      left: 50%;
+      background-image: url(arrow_LeftLight.png);
+      /* IE 9 */
+
+      -webkit-transform: rotate(-90deg);
+      /* Chrome, Safari, Opera */
+
+      transform: rotate(-90deg);
+    }
+    .slide ul {
+      list-style-type: none;
+      width: 80;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    ul {
+      list-style-type: none;
+      width: 80;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    h3 {
+      font: bold 15px/1.5 Helvetica, Verdana, sans-serif;
+    }
+    ul li img {
+      float: left;
+      margin: 0 15px 0 0;
+    }
+    ul li p {
+      font: 200 12px/1.5 Georgia, Times New Roman, serif;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    ul li {
+      padding: 10px;
+      overflow: auto;
+      background: #eee;
+    }
+    ol {
+      margin-left: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <div class="slide">
+      <ol>
+        <li>Create a grid (just use JS for it), with two given inputs and a button. Just DIV elements, 20*20px </li>
+	<li>When you click on the last element a new column should appear</li>
+	<li>Create a color picker, 3 colors in three divs, when you create a new column the picked color will define the color of that column</li>
+	<li>Change the code to have the same with just one input, if you write in it 20,20 you should create a 20x20 grid</li>
+	<li>Create a basic html creator. One input field where you write A or P, or DIV and another input where you write text. With a button you should create those elements with the text created and insert them into the body.</li>
+      </ol>
+    </div>
+  </div>
+</body>
+
+</html>
+

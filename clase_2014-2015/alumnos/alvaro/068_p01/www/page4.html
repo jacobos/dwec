@@ -1,0 +1,76 @@
+<ons-page>
+    
+  <ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+    <div class="center">List of movies</div>
+  </ons-toolbar>
+  <ons-list ng-controller="modificarController">
+      <style>
+        .list-item-container:nth-child(odd){
+            background: #b0e0ff;
+        }
+    </style>
+    <ons-list-item ng-repeat="pelicula in pelis" modifier="chevron" class="list-item-container">
+      <ons-row>
+        <ons-col>
+          <div class="id">
+            <span>{{pelicula.id}}</span>
+          </div>
+          <div class="titulo">
+            <span>{{pelicula.nombre}}</span>
+          </div>
+          <div class="pais">
+            {{pelicula.pais}}
+          </div>
+        </ons-col>
+        <ons-col width="40px"></ons-col>
+      </ons-row>
+    </ons-list-item>
+      <style>
+          .list__item{
+                    padding: 0;
+                }
+                .row{margin-left: 0}
+                button{background: #4F81BB;border:0;border-radius: 5px;color:white}
+                input{  background-color: transparent;  
+                        border-style: solid;  
+                        border-width: 0px 0px 1px 0px;  
+                        border-color: #4f81bb; 
+                        outline:0; 
+                }
+      </style>
+      <ons-list-item>
+      <ons-row>
+        <ons-col>
+            <div class="datos" style="text-align:center">
+                <span>Id of watched movie</span>   
+            </div>
+        </ons-col>
+      </ons-row>
+      </ons-list-item>
+      <ons-list-item>
+      <ons-row>
+        <ons-col>
+            <div class="datos" class="center">
+                <input type="text" name="titulo" ng-model="id" placeholder="ID" style="width:100%">
+            </div>
+        </ons-col>
+      </ons-row>
+      </ons-list-item>
+      <ons-list-item>
+      <ons-row>
+        <ons-col>
+            <div class="datos" class="center">
+                <br>
+                <button id="enviar" ng-click="modificar(id)" style="width:100%">Watched</button>
+            </div>
+        </ons-col>
+      </ons-row>
+      </ons-list-item>
+  </ons-list>
+
+</ons-page>

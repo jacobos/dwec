@@ -1,0 +1,77 @@
+<ons-navigator title="Navigator" var="myNavigator">
+<ons-page ng-controller="PaginationControllerComedy">
+
+
+	<!--  <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="prevPage()">Previous page</ons-toolbar-button>
+            </div>
+            <div class="center">Page {{ currentPage -1  }}</div>
+            <div class="right">
+                <ons-toolbar-button ng-click="nextPage()">Next page</ons-toolbar-button>
+            </div>
+   </ons-toolbar>-->
+   
+  <div class="tittle_comedy">
+  		<br />
+      	<h1 class="tittle">Comedy</h1>
+  </div>
+  <!--<div style="text-align: center">
+    <h1>Page 2</h1>
+    <ons-button ng-click="app.slidingMenu.toggleMenu()">Toggle Menu</ons-button>
+  </div>-->
+        <ons-list>
+            <ons-list-item ng-repeat="item in items" ng-click="ponerSeleccion(item)" onclick="myNavigator.pushPage('pageN3.html', { animation : 'slide' } )">
+                <ons-row>
+                    <ons-col width="95px">
+                        <img ng-src="{{item.img}}" class="thumbnail">
+                    </ons-col>
+                    <ons-col>
+                        <div class="name">
+                            {{item.nombre}}
+                        </div>
+                        <div class="location">
+                            <!--  <i class="fa fa-map-marker"></i>--> {{item.director}}
+                        </div>
+                        <div class="year">
+                            {{item.year}}
+                        </div>
+                    </ons-col>
+                    <ons-col width="40px"></ons-col>
+                </ons-row>
+            </ons-list-item>
+        </ons-list>
+    </ons-page>
+    <!--    {{'page'+item+'.html'}}
+    {{'pageN'+item+'.html'}}
+    -->
+
+</ons-navigator>
+
+
+<ons-template id="pageN3.html">
+    <ons-page ng-controller="PaginaSeleccionadaController">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button>Back</ons-back-button>
+            </div>
+            <div class="center">Film: {{actual.nombre}}</div>
+        </ons-toolbar>
+        <div style="text-align: center;">
+            <ons-button modifier="dark" onclick="myNavigator.popPage()" class="margin-top">
+                <img ng-src="{{actual.img}}" class="thumbnail pop_film">
+                <br>
+                <div class="name">
+                    {{actual.nombre}}
+                </div>
+                <div class="desc">
+                    <!--  <i class="fa fa-map-marker"></i> -->{{actual.director}}
+                </div>
+                <div class="year_pop pop_film">
+                    {{actual.year}}
+                </div>
+            </ons-button>
+            <!--<br>{{actual}}-->
+        </div>
+    </ons-page>
+</ons-template>

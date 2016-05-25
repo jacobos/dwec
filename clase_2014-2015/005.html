@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            background-color: #eee;
+        }
+        img{
+          float:left;
+
+        }
+        p{float:left}
+
+        .group:before,
+        .group:after {
+          content: "";
+          display: table;
+        }
+        .group:after {
+          clear: both;
+        }
+        .group {
+          zoom: 1; /* IE6&7 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="group">
+      <img src="ski.jpg" alt="Skiiiiiiiiiiing!" />
+      <p>To successfully ski, simply <br>do not fall.</p>
+    </div>
+    <div>
+      <p>We create a div with a p element inside of it and the HOLA textNode (with JS)</p>
+    </div>
+    hola
+    <script>
+        var div = document.createElement("DIV");
+
+        document.body.appendChild(div);
+
+        var p1 = document.createElement("P");
+        div.appendChild(p1);
+        var t = document.createTextNode("HOLA");
+        p1.appendChild(t);
+    </script>
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>

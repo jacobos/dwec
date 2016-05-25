@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>Sanchis Systems</title>
+
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="components/loader.css">
+
+    <script src="components/loader.js"></script>
+
+
+
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components-blue-basic-theme.css">
+<link rel="stylesheet" href="css/login.css">
+
+
+
+    <script src="app.js"></script>
+    <script src="entrada.js"></script>
+
+  <script>
+      </script>
+  </head>
+  <body >
+    <ons-page ng-controller="MaquinasController">
+
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="$root.ons.findParentComponentUntil('ons-navigator', $event).popPage()">Atras</ons-toolbar-button>
+        </div>
+        <div class="center">Añadir Maquina</div>
+      </ons-toolbar>
+      <form ng-submit="processForm()">
+      <ons-list modifier="inset" style="margin-top: 10px">
+
+        <ons-list-item>
+          <input type="text" class="text-input text-input--transparent" placeholder="Nombre" ng-model="formData.nombre" style="width: 100%">
+        </ons-list-item>
+
+        <ons-list-item>
+          <textarea class="textarea textarea--transparent" placeholder="Descripcion" ng-model="formData.desc" style="width: 100%; height: 100px;"></textarea>
+        </ons-list-item>
+        <ons-list-item>
+          <input type="text" class="text-input text-input--transparent" placeholder="Modelo" ng-model="formData.modelo" style="width: 100%">
+        </ons-list-item>
+        <ons-list-item>
+          <input type="number" class="text-input text-input--transparent" placeholder="Elevacion" ng-model="formData.elevacion" style="width: 100%">
+        </ons-list-item>
+
+        <ons-list-item>
+          <input type="number" class="text-input text-input--transparent" placeholder="Capacidad de carga" ng-model="formData.cap_carga" style="width: 100%">
+        </ons-list-item>
+        <ons-list-item>
+          <select class="topcoat-text-input ng-valid ng-dirty" ng-model="formData.selectedValue">
+            <option value="termicas" class="ng-scope">Térmicas</option>
+
+          </select>
+        </ons-list-item>
+        <ons-list-item>
+          <ul class="list">
+            <li class="list__item list__item--tappable">
+              <label class="checkbox checkbox--list-item">
+                <input type="checkbox" checked ng-model="formData.alquiler">
+                <div class="checkbox__checkmark checkbox--list-item__checkmark" ></div>
+                Alquiler
+              </label>
+            </li>
+            <li class="list__item list__item--tappable">
+              <label class="checkbox checbox--list-item">
+                <input type="checkbox" ng-model="formData.venta">
+                <div class="checkbox__checkmark checkbox--list-item__checkmark" ></div>
+                Venta
+              </label>
+            </li>
+          </ul>
+        </ons-list-item>
+        <ons-list-item>
+          <input type="number" class="text-input text-input--transparent" placeholder="Precio dia" ng-model="formData.preciodia" style="width: 100%">
+        </ons-list-item>
+
+        <ons-list-item>
+          <input type="number" class="text-input text-input--transparent" placeholder="Precio total" ng-model="formData.preciototal" style="width: 100%">
+        </ons-list-item>
+
+        <ons-list-item>
+          <input type="file" class="text-input text-input--transparent" placeholder="Imagen" ng-model="formData.archivo" style="width: 100%">
+        </ons-list-item>
+
+      </ons-list>
+
+      <div style="padding: 10px 9px"><ons-button ng-click="processForm()">
+          Añadir Maquina
+        </ons-button>
+      </div>
+</form>
+
+    </ons-page>
+</body>
+</html>

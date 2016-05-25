@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Exam rec JQ</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <div id="exam">
+    <br>
+    <input id="valor" type="text">
+    <button id="elboton">Go to...</button>
+
+  </div>
+
+  <!-- Compiled and minified JavaScript, jQuery and Bootstrap -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script>
+    $.getJSON("http://37.187.2.239:81/dwec/canvas/exam_/getJSON2.php?callback=?", function(data) {
+      console.log(data);
+      $.each(data.important.probably["here it is"]["human beings"], function(i, v) {
+        var $jb = $("<div class='jumbotron'>");
+        var $da = $("<div class='col-sm-6 text-center'><h4>Wife: "+v.wife+"</h4></div>");
+        var $ma = $("<div class='col-sm-6  text-center'><h4>Husband: "+v.husband+"</h4></div>");
+        var $sons = "";
+        if(v.sons.length > 0 || v.daughters.length > 0 ){
+          $.each(v.sons, function(a, m){
+            $sons += "<div class='container' style='background-color: #ddd'>";
+            $sons += "<div class='col-md-3'><h5><strong>Name</strong>: "+m.name+"</h5></div>";
+            $sons += "<div class='col-md-3'><h5><strong>Age</strong>: "+m.age+"</h5></div>";
+            if(m.desc == undefined){}
+            else{
+              $sons += "<div class='col-md-6'><strong>Description</strong>: "+m.desc+"</div>";
+            }
+            $sons += "</div><br/>";
+          });
+          $.each(v.daughters, function(a, m){
+            $sons += "<div class='container' style='background-color: #ddd'>";
+            $sons += "<div class='col-md-3'><h5><strong>Name</strong>: "+m.name+"</h5></div>";
+            $sons += "<div class='col-md-3'><h5><strong>Age</strong>: "+m.age+"</h5></div>";
+            if(m.desc == undefined){}
+            else{
+              $sons += "<div class='col-md-6'><strong>Description</strong>: "+m.desc+"</div>";
+            }
+            $sons += "</div><br/>";
+          });
+        }
+        else {
+          $sons="<h3 class='text-center'>none</h3>";
+        }
+        $("#exam").append($jb.append($da).append($ma).append("<h3>Children</h3><hr>").append($sons).append("<br><button class='moveme'>Move me down</button>").append("<br><button class='deleteme'>Delete me</button>"));
+      });
+      /*$(".jumbotron").css({
+        height: $(window).height() / 0.75,
+        background: "#bbb"
+      });*/
+      $("button.moveme").on("click", function(){
+        $(this).parent().next().after($(this).parent());
+      });
+      $("button.deleteme").on("click", function(){
+        $(this).parent().remove(); //next().after($(this).parent());
+      });
+      //si muestra FINISHED por consola todo va bien
+      //trabaja solo con el data, el data.devuelve es para mostrar el FINISHED
+      /*console.log(eval(data.devuelve));
+      console.log(data);
+      console.log(data.devuelve);
+      console.log(data.menu);
+      console.log(data.information);
+      console.log(data.information["JS exam"]);*/
+      $("#elboton").on("click", function() {
+        $("html, body").animate({
+          scrollTop: $(".jumbotron").eq($("#valor").val()).offset().top
+        });
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>

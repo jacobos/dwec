@@ -1,0 +1,18 @@
+{
+    "plugins": [
+        "mobi.monaca.plugins.Monaca",
+        "org.apache.cordova.splashscreen",
+        "org.apache.cordova.statusbar"
+    ],
+    "framework_version": "3.5",
+    "xcode_version": "5",
+    "title-ja": "",
+    "title-en": "sliding_gems",
+    "description-ja": "",
+    "description-en": "sliding_gems",
+    "category": "User Template",
+    "platform": [
+
+    ],
+    "name": "generated-1421968782-54c15878fd1734024ff06695"
+}

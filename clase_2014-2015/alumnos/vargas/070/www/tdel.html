@@ -1,0 +1,23 @@
+<ons-page>
+    <ons-list ng-controller="tdelController">
+        <ons-list-item>
+            <label>Code</label>
+            <select class="form-control" ng-model="codigo">
+                <option ng-repeat="del in tareaborrar">{{del.codigo}}</option>
+
+            </select>
+            <button class="btn btn-danger btn-lg btn-block" ng-click="deltarea(codigo)">Go Delete!</button>
+        </ons-list-item>
+        <br>
+        <ons-scroller>
+            <ons-list ng-repeat="del in tareaborrar" modifier="chevron" class="list-item-container">
+
+                <ons-list-header>Codigo - {{del.codigo}}</ons-list-header>
+                <ons-list-item>{{del.tarea}}</ons-list-item>
+
+
+            </ons-list>
+        </ons-scroller>
+    </ons-list>
+
+</ons-page>

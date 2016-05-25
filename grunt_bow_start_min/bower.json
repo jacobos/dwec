@@ -1,0 +1,23 @@
+{
+  "name": "boot",
+  "version": "0.0.0",
+  "authors": [
+    "jacobos <jacobo.solvam@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.5",
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.4.0"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  }
+}

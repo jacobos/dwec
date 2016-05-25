@@ -1,0 +1,121 @@
+<ons-navigator title="Navigator" var="myNavigator">
+<ons-toolbar>
+    <div class="center" style="font-family:PositiveReinforcement;">List of Characters</div>
+</ons-toolbar>
+<ons-page ng-controller="ControladorModificaciones" >
+<ons-list style="font-family:PositiveReinforcement;">
+            <ons-list-item style="margin-left:15px;" ng-repeat="item in info" ng-click="ponerSeleccion(item)" onclick="myNavigator.pushPage('pageN3.html', { animation : 'slide' } )">
+                <ons-row>
+                    <ons-col width="130">
+                        <div class="name" style="margin-left:5px; font-family:PositiveReinforcement;">
+                            Name: {{item.nombre}}
+							<p><img ng-src="{{item.imagen}}"></p>
+                        </div>
+                    </ons-col>
+                    <ons-col>
+                        <div class="name">
+                          Age: {{item.edad}}
+                        </div>
+                       <div class="name">
+                           Class: {{item.clase}}
+                        </div>
+                        <div class="desc">
+                           Sex: {{item.sexo}}
+                        </div>
+						<div class="name">
+                           VIT: {{item.vit}}
+                        </div>
+						<div class="name">
+                           MP: {{item.pm}}
+                        </div>
+						
+                        
+                    </ons-col>
+                    <ons-col width="40px"></ons-col>
+                </ons-row>
+            </ons-list-item>
+			
+     </ons-list>
+</ons-page
+</ons-navigator>
+
+<ons-template id="pageN3.html">
+    <ons-page ng-controller="PaginaSeleccionadaController">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button>Back</ons-back-button>
+            </div>
+            
+        </ons-toolbar>
+        <div style="text-align: center; font-family:PositiveReinforcement;">
+            <ons-button modifier="dark" onclick="myNavigator.popPage()">
+			<div class="center">
+				<table style="text-align:left;">
+				
+					<tr>
+						<td>Name: {{actual.nombre}}<td>
+					</tr>
+					<tr>
+						<td><img ng-src="{{actual.imagen}}" class="thumbnail"></td>
+					</tr>
+					<tr>   
+						<td><i class="ion-wand"></i>MP:{{actual.pm}}</td>
+					</tr>
+					<tr>
+						<td><i class="ion-heart"></i> VIT:{{actual.vit}}</td>
+					</tr>
+					<tr>
+						<td><i class="ion-connection-bars"></i> Age:{{actual.edad}}</td>
+					</tr>   
+					<tr>  
+						<td><i class="ion-document-text"></i> Class:{{actual.clase}}</td>
+					</tr>
+					<tr>
+						<td><i class="ion-shuffle"></i>Sex: {{actual.sexo}}</td>
+					</tr>
+				</table>	
+			
+            </div>
+            </ons-button>
+			<img ng-click="eliminar(actual.id)" src="cruz.png" alt="delete" >
+			<!-- Button trigger modal -->
+			<img src="actualizar.png" alt="update"  data-toggle="modal" data-target="#myModal" />
+
+			<!-- Modal -->
+			<div  style="font-family:PositiveReinforcement;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Update</h4>
+				  </div>
+				  <div class="modal-body">
+					<table style="text-align:center;">
+					<tr><td>Name: </td><td><input type="text" style="width:100px;height:30px" name="nombre" value="{{actual.nombre}}"></td></tr>
+					
+					<tr><td>Age: </td><td><input type="number" style="width:100px;height:30px" name="edad" max="999" min="16" value="{{actual.edad}}"></td></tr>
+					
+					<tr><td>Class: </td><td><select style="width:100px;height:30px" name="clase" value="guerrero" >
+						<option selected value="guerrero">Guerrero</option>
+						<option value="mago">Mago</option> </select></td></tr>
+						
+					<tr><td>Sex: </td><td><select style="width:100px;height:30px" name="sexo"  value="hombre" >
+						<option  selected value="hombre">Hombre</option> 
+						<option value="mujer">Mujer</option> </select></td></tr>
+					</table>	
+					
+				  </div>
+				  <div class="modal-footer">
+					<button  ng-click="modificar(actual.id)" type="button" class="btn btn-default" data-dismiss="modal">Save Changes</button>
+					<!--<button   type="button" class="btn btn-primary">Save changes</button>-->
+				  </div>
+				</div>
+			  </div>
+			</div>
+            <br><!--{{actual}}-->
+        </div>
+    </ons-page>
+</ons-template>
+
+
+

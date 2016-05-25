@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+
+    <title>DWEC - 04</title>
+
+    <link rel="stylesheet" href="core/deck.core.css">
+
+    <!-- Extension CSS files go here. Remove or add as needed. -->
+    <link rel="stylesheet" href="extensions/goto/deck.goto.css">
+    <link rel="stylesheet" href="extensions/menu/deck.menu.css">
+    <link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" href="extensions/status/deck.status.css">
+    <link rel="stylesheet" href="extensions/hash/deck.hash.css">
+    <link rel="stylesheet" href="extensions/scale/deck.scale.css">
+    <link rel="stylesheet" href="extensions/style.css">
+
+    <!-- Style theme. More available in /themes/style/ or create your own. -->
+    <link rel="stylesheet" href="themes/style/web-2.0.css">
+
+    <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+    <link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+
+    <!-- Required Modernizr file -->
+    <script src="modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+    <img src="tree-bl.png" alt="" width="100" class="bottomleft" />
+
+    <section class="slide">
+        <h1>你好 (nǐ hǎo)</h1> 
+    </section>
+
+    <section class="slide">
+        <h2>Remember - JavaScript is this (for us)</h2>
+        <img src="images/dombomecma.png" alt="langs">
+    </section>
+
+    <section class="slide">
+        <h2>Remember - ECMASCRIPT IS</h2>
+        <h3> the scripting language standardized by ECMA International in the ECMA-262 specification and ISO/IEC 16262. 
+		The language is widely used for client-side scripting on the web, in the form of several well-known implementations such as JavaScript (Mozilla Foundation), JScript (Microsoft) and ActionScript (Adobe).
+		<h3>
+	</section>
+
+	<section class="slide">
+		<h2>Remember - DOM, this...</h2>
+<pre><code>&lt;html>
+    &lt;head>
+        &lt;title>Sample Page&lt;/title>
+    &lt;/head>
+    &lt;body>
+        &lt;p>Hello World!&lt;/p>
+    &lt;/body>
+&lt;/html></code></pre>
+	</section>
+
+	<section class="slide">
+		<h2>Remember - Becomes this (DOM):</h2>
+		<img width="400px" src="images/dom.png" alt="langs">
+	</section>
+   
+
+    <section class="slide">
+
+        <h2>DOM Object, DOM Elements, Events, Attributes</h2>
+        <ul>
+            <li class="slide">
+                <h3>
+				
+                <a href="http://www.w3schools.com/jsref/dom_obj_document.asp" target="_blank">Document Object Properties and Methods</a>
+			</h3>
+        </li>
+        <li class="slide">
+            <h3>
+                <a href="http://www.w3schools.com/jsref/dom_obj_all.asp" target="_blank">The HTML DOM Element Object (properties and methods)</a>
+                <ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ParentNode.children" target="_blank">Children</a></li></ul>
+			</h3>
+        </li>
+        <li class="slide">
+            <h3>
+				
+                <a href="http://www.w3schools.com/jsref/dom_obj_attributes.asp" target="_blank"> The HTML DOM Attribute Object</a>
+			</h3>
+        </li>
+        <li class="slide">
+            <h3>
+				
+                <a href="http://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">HTML DOM Events</a>
+			</h3>
+        </li>
+
+        </ul>
+    </section>
+    <section class="slide">
+        <h2>Using the DOM (1)</h2>
+        <ul>
+            <li class="slide">
+                <h3>
+					You can create nodes using the DOM and insert them (div, p, a, etc.)
+				</h3>
+            </li>
+            <li class="slide noList">
+                <h6>
+				<pre><code>
+    var nodeInfo = document.createElement("p"); //create a &lt;p> node
+    var nodeText = document.createTextNode("info"); // text node
+    nodeInfo.appendChild(nodeText);// append the text node to the p node 
+    //(the text node becomes child of the p node)
+    
+    document.body.appendChild(nodeInfo); // append the p node to the body node 
+    //(the p node becomes child of the body node)
+    
+	</code></pre>
+			</h6>
+            </li>
+        </ul>
+        </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Using the DOM (2)</h2>
+        <ul>
+            <li class="slide">
+                <h3>
+					Example
+				</h3>
+            </li>
+            <li class="slide noList">
+                <h6>
+				<pre><code>
+BODY
+    DIV
+        P
+            TEXT
+            A
+                TEXT
+    DIV
+        A
+        A
+
+    var div1 = document.createElement("div"); //create a &lt;div> node
+    var div2 = document.createElement("div"); //create a &lt;div> node
+    var p1 = document.createElement("p"); //create a &lt;p> node
+    var a1 = document.createElement("a"); //create a &lt;a> node
+    var a2 = document.createElement("a"); //create a &lt;a> node
+    var a3 = document.createElement("a"); //create a &lt;a> node
+    var t1 = document.createTextNode("some text"); //create a text node
+    var t2 = document.createElement("some text"); //create a text node
+    document.body.appendChild(div1); // append the div from the body, otherwise we won't see it
+    div1.appendChild(p1); //hang the p from the div
+    document.body.appendChild(div2); // append the div from the body, otherwise we won't see it
+    p1.appendChild(t1);
+    p1.appendChild(a1);
+    a1.appendChild(t2);
+    div2.appendChild(a2);
+    div2.appendChild(a3);
+	</code></pre>
+			</h6>
+            </li>
+        </ul>
+        </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Using the DOM (3)</h2>
+        <ul>
+            <li class="slide noList">
+                <h6>
+				<pre><code>
+    //document.getElementById
+    var pe = document.getElementById("demo"); //store in pe the element which ID is demo
+    
+    //element.innerHTML
+    pe.innerHTML = "P inner html changed to this &lt;br> :)"; //change the html inside the pe element
+
+    //To exchange the content of two elements you could do it like this
+    var uno = document.getElementById("name1");
+    var dos = document.getElementById("name2");
+
+    var aux = dos.innerHTML;
+    dos.innerHTML = uno.innerHTML;
+    uno.innerHTML = aux;
+            
+	</code></pre>
+			</h6>
+            </li>
+        </ul>
+        </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Using the DOM (4)</h2>
+        <ul>
+            <li class="slide noList">
+                <h6>
+				<pre><code>
+    In the html: 
+    &lt;link id="css1" rel="stylesheet" href="csss/one.css">
+    
+    var myStyle = document.getElementById("css1");
+    var valorDeHref = myStyle.getAttribute("href"); //this returns the value of href
+    myStyle.setAttribute("href", "css/two.css"); // this sets href attribute to css/two.css
+
+    var boton = document.getElementById("miBotoncito"); // select an element with the miBotoncito ID
+    
+    function func() {  //function that exchanges myStyle href value (the values two.css and one.css)
+        if (myStyle.getAttribute("href") === "csss/two.css") {
+            myStyle.setAttribute("href", "csss/one.css");
+        } else {
+            myStyle.setAttribute("href", "csss/two.css");
+        }
+    }
+
+    boton.onclick = function () { // add an onclick event to the boton element
+        func(); //this function is called when the boton element is clicked
+    };
+    //the same as the one we have above, but using addEventListener
+    //boton.addEventListener("click", function(){func()});
+        
+        </code></pre>
+			</h6>
+            </li>
+        </ul>
+        </li>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+
+        <h2>Document functions and properties(1)</h2>
+        <ul>
+            <li class="slide">
+                createElement (document.createElement) &rarr;
+                <a target="_blank" href="http://www.w3schools.com/jsref/met_document_createelement.asp">document.createElement (create a &lt;html> element, an object) </a>
+                <ul>
+                    <li>Example, create a button: <code>var btn = document.createElement("BUTTON");</code>
+                    </li>
+                </ul>
+            </li>
+            <li class="slide">
+                createTextNode &rarr;
+                <a target="_blank" href="http://www.w3schools.com/jsref/met_document_createtextnode.asp">document.createTextNode (create a text node, an object) </a>
+                <ul>
+                    <li>Example: <code>var t = document.createTextNode("Hello World");</code>
+                    </li>
+                </ul>
+            </li>
+            <li class="slide">
+                getElementById &rarr;
+                <a target="_blank" href="http://www.w3schools.com/jsref/met_document_getelementbyid.asp">document.getElementById (get an element by it's ID, an object) </a>
+                <ul>
+                    <li>Example: <code>var a = document.getElementById("demo");</code>
+                    </li>
+                </ul>
+            </li>
+            <li class="slide">
+                getElementsByClassName &rarr;
+                <a target="_blank" href="http://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp">document.getElementsByClassName (returns all the elements with a given class, an Array of objects) </a>
+                <ul>
+                    <li>Example: <code>var s = document.getElementsByClassName("slide");</code>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+
+        <h2>Document functions and properties(2)</h2>
+        <ul>
+            <li class="slide">
+                getElementsByTagName &rarr;
+                <a target="_blank" href="http://www.w3schools.com/jsref/met_document_getelementsbytagname.asp">document.getElementsByTagName</a> (returns all the elements with a given tag, an Array of objects)
+            </li>
+            <li class="slide">
+                document.body &#8594; Returns the body element of the document
+            </li>
+            <li class="slide">
+                querySelector &rarr;
+		<a target="_blank" href="http://www.w3schools.com/jsref/met_document_queryselector.asp">document.querySelector()</a> &#8594; Returns the first element that matches a specified
+CSS selector(s) in the document
+            </li>
+            <li class="slide">
+                querySelectorAll &rarr;
+		<a target="_blank" href="http://www.w3schools.com/jsref/met_document_queryselectorall.asp">document.querySelectorAll()</a> &#8594; Returns a static NodeList containing all elements that
+matches a specified CSS selector(s) in the document
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+
+        <h2>Document functions and properties(3)</h2>
+        <ul>
+            <li class="slide">
+                document.URL &rarr; Returns the full URL of the HTML document
+            </li>
+            <li class="slide">
+                document.images &rarr; Returns a collection of all &lt;img> elements in the document
+            </li>
+            <li class="slide">
+                document.title &rarr; Sets or returns the title of the document
+            </li>
+            <li class="slide">
+                document.scripts &rarr; Returns a collection of &lt;script> elements in the
+document
+            </li>
+
+            <li class="slide">
+                <a target="_blank" href="http://www.w3schools.com/jsref/dom_obj_document.asp">More properties and methods can be used on the HTML DOM Document Object</a>
+            </li>
+
+        </ul>
+    </section>
+    <section class="slide">
+
+        <h2>The DOM Element Object (1)</h2>
+        <ul>
+            <li class="slide">
+                <p><a target="_blank" href="http://www.w3schools.com/jsref/dom_obj_all.asp">In the HTML DOM (Document Object Model), everything is a node:</a>
+                    <ul>
+                        <li>The document itself is a document node</li>
+                        <li>All HTML elements are element nodes</li>
+                        <li>All HTML attributes are attribute nodes</li>
+                        <li>Text inside HTML elements are text nodes</li>
+                        <li>Comments are comment nodes</li>
+                    </ul>
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>The DOM Element Object (2)</h2>
+        <li class="slide">
+            <a target="_blank" href="http://www.w3schools.com/jsref/dom_obj_all.asp">The HTML DOM Element Object, properties and methods</a>
+        </li>
+        <li class="slide ">
+            appendChild &rarr;
+            <a target="_blank " href="http://www.w3schools.com/jsref/met_node_appendchild.asp">document.getElementById("myList").appendChild(newListItem); (appends a Child to the element selected, in this case to the element with the Id "contenido"</a>
+            <ul>
+                <li>Example: <code>var newP = document.createElement("P");
+                document.getElementById("contenido").appendChild(newP);</code>
+                </li>
+            </ul>
+        </li>
+        <li class="slide">
+            childNodes &rarr;
+            <a target="_blank" href="http://www.w3schools.com/jsref/prop_node_childnodes.asp">var chil = document.body.childNodes (returns an Array of all the nodes that append from another element, in this case the body) </a>
+        </li>
+        <li class="slide">
+            children &rarr;
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/ParentNode.children">var chil = document.body.children (returns an Array of all the elements (nodes that can have children), in this case of the body element) </a>
+        </li>
+        <li class="slide ">
+            cloneNode &rarr;
+            <a target="_blank " href="http://www.w3schools.com/jsref/met_node_clonenode.asp">var clon = document.getElementById("myList2").children[0].cloneNode(true) (clones a node into the given var)
+            </a>
+            <ul>
+                <li>Example: <code>var node=document.getElementById("myList2")[0].cloneNode(true);
+                document.getElementById("myList1").appendChild(node);
+                // this makes a copy of node into the "myList1" element
+               </code>
+                </li>
+            </ul>
+        </li>
+    </section>
+
+
+    <section class="slide">
+        <h2>The DOM Element Object (3)</h2>
+        <li class="slide">
+            firstChild &rarr;
+            <a target="_blank" href="http://www.w3schools.com/jsref/prop_node_firstchild.asp">document.firstChild </a>
+            <p>
+                (returns the first child of an element, in this case of the &lt;&#33;DOCTYPE html> element
+            </p>
+        </li>
+        <li class="slide">
+            lastChild &rarr;
+            <a target="_blank" href="http://www.w3schools.com/jsref/prop_node_lastchild.asp">document.lastChild </a>
+            <p>(returns the last child of an element, in this case the &lt;html> element)</p>
+        </li>
+        <li class="slide ">
+            id &rarr;
+            <a target="_blank " href="http://www.w3schools.com/jsref/prop_html_id.asp">var x = document.getElementById("myAnchor").id; (sets or gets the id of an element, in this case gets)</a>
+        </li>
+        <li class="slide">
+            innerHTML &rarr;
+            <a target="_blank" href="http://www.w3schools.com/jsref/prop_html_innerhtml.asp"> document.getElementById("demo").innerHTML = "Paragraph changed!"; </a>
+            <p>(gets or sets the HTML content of an alement)</p>
+        </li>
+    </section>
+
+
+    <section class="slide">
+        <h2>The DOM Element Object (4)</h2>
+
+        <li class="slide ">
+            parentNode &rarr;
+            <a target="_blank " href="http://www.w3schools.com/jsref/prop_node_parentnode.asp">document.getElementById("item1").parentNode; </a>
+            <p>(returns the parent node of the specified node)</p>
+        </li>
+        <li class="slide">
+            removeChild &rarr;
+            <a target="_blank" href="http://www.w3schools.com/jsref/met_node_removechild.asp">document.body.removeChild(document.body.childNodes[0]); </a>
+            <p>(removes the given child of an element)</p>
+        </li>
+        <li class="slide ">
+            getAttribute &rarr;
+            <a target="_blank " href="http://www.w3schools.com/jsref/met_element_getattribute.asp">document.getElementsByTagName("a")[0].getAttribute("style"); </a>
+            <p>(returns the attribute specified of the given node)</p>
+        </li>
+        <li class="slide">
+            setAttribute &rarr;
+            <a target="_blank" href="http://www.w3schools.com/jsref/met_element_setattribute.asp">document.getElementsById("contenido").setAttribute("class", "tipo_contenido"); </a>
+            <p>(sets a value to a given attribute of an element)</p>
+        </li>
+    </section>
+
+    <section class="slide">
+        <h2>Events</h2>
+
+        <li class="slide noList">
+            &rarr;
+            <a target="_blank " href="http://www.w3schools.com/jsref/dom_obj_event.asp">Events reference</a>
+            <p>HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document. Events are normally used in combination with functions, and the function will not be executed before the event occurs (such as when a user clicks a button).</p>
+        </li>
+        <li class="slide noList">
+            <pre><code>
+    Example: onclick
+
+    In HTML:
+        &lt;element onclick="myScript">
+
+    In JavaScript:
+        object.onclick=function(){myScript};
+
+    In JavaScript, using the addEventListener() method:
+        object.addEventListener("click", myScript);
+   
+    //look at the reference for more events!!!                        
+
+        </code></pre>
+        </li>
+    </section>
+
+    <section class="slide">
+        <h3>DOM - methods and properties</h3>
+	<img src="DOM_methods_properties_short.png">
+    </section>
+
+    <section class="slide" style="text-align:center">
+        <h2 style="margin-top:100px"> Questions? </h2>
+    </section>
+
+
+    <section class="slide ">
+        <h1>
+            :)	
+        <h1>
+    </section>
+
+<!-- End slides. -->
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
+            <script src="jquery-1.7.2.min.js "></script>
+            <script src="core/deck.core.js "></script>
+
+            <!-- Extension JS files. Add or remove as needed. -->
+            <script src="core/deck.core.js "></script>
+            <script src="extensions/hash/deck.hash.js "></script>
+            <script src="extensions/menu/deck.menu.js "></script>
+            <script src="extensions/goto/deck.goto.js "></script>
+            <script src="extensions/status/deck.status.js "></script>
+            <script src="extensions/navigation/deck.navigation.js "></script>
+            <script src="extensions/scale/deck.scale.js "></script>
+
+            <!-- Initialize the deck. You can put this in an external file if desired. -->
+            <script>
+                $(function () {
+                    $.deck('.slide');
+                });
+            </script>
+</body>
+</html>

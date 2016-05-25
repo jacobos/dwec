@@ -1,0 +1,59 @@
+<ons-page>
+  <ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+    <div class="center">Change any song u want</div>
+  </ons-toolbar>
+  <ons-list ng-controller="modcancionController">
+    
+  
+    
+<center>Song's name:  <div class="cent2"><input ng-model="nombre" class="text-input">  </br></br></div> </center>
+<center>New age:<div class="cent2"><input ng-model="ano" class="text-input"> </br></br> </div></center> 
+<center>Style : <div class="cent2">  <input ng-model="genero" class="text-input"> </br></br></div></center>
+<center>Duration : <div class="cent2">  <input ng-model="duracion" class="text-input"> </br></br></div></center>
+<center>Code : <div class="cent2">  <input ng-model="codigo" class="text-input"> </br></br></div></center>
+
+      
+     <center> <button ng-click="modificar(nombre,ano,genero,duracion,codigo)">Change !</button></center> 
+   
+    <ons-list-item ng-repeat="aux in canciones" modifier="chevron" class="list-item-container">
+      <ons-row>
+ 
+        <ons-col>
+
+   <center>         
+            
+            
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000">
+    
+
+<tr> 
+    
+    <td width="25%">{{aux.nombre}}</td>
+    <td width="25%">{{aux.ano}}</td>
+    <td width="25%">{{aux.genero}}</td>
+    <td width="25%">{{aux.duracion}}</td>
+    <td width="25%">{{aux.codigo}}</td>
+   
+</tr>
+         
+            
+    
+</table>
+            </center>
+            
+            
+            
+        </ons-col>
+          
+   
+        <ons-col width="40px"></ons-col>
+      </ons-row>
+    </ons-list-item>
+  </ons-list>
+
+</ons-page>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas height="200" id="myCanvas" width="278" style="border:1px solid black"></canvas>
+    <script>
+      window.rAF = (function() {
+        return window.requestAnimationFrame || window.webkitRequestAnimationFrame ||
+         window.mozRequestAnimationFrame || window.oRequestAnimationFrame ||
+         window.msRequestAnimationFrame ||
+         function(callback) {
+          window.setTimeout(callback, 1000 / 60);
+          };
+      })();
+
+      function drawRectangle(re) {
+        context.beginPath();
+        context.rect(re.x, re.y, re.width, re.height);
+        context.fillStyle = '#8ED6FF';
+        context.fill();
+        context.lineWidth = re.borderWidth;
+        context.strokeStyle = 'black';
+        context.stroke();
+      }
+      function drawCircle(cir) {
+          context.beginPath();
+          context.arc(cir.x, cir.y, cir.radius, cir.startAngle, cir.endAngle, false);
+          context.fillStyle = 'rgb(207, 51, 53)';
+          context.fill();
+      }
+
+      function animate() {
+
+        // update
+        if(myRectangle.x > canvas.width-myRectangle.width)
+          myRectangle.x = -myRectangle.width;
+        myRectangle.x++;
+
+        // clear
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        //paint
+        drawRectangle(myRectangle);
+
+        drawCircle(myCirle);
+
+        // request new frame
+        rAF(function() {
+          animate();
+        });
+      }
+
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      var myRectangle = {
+        x: 0,
+        y: 75,
+        width: 50,
+        height: 50,
+        borderWidth: 5
+      };
+      var myCirle = {
+        x: 50,
+        y: 50,
+        radius: 15,
+        startAngle: 0,
+        endAngle: 2 * Math.PI
+      };
+
+      drawRectangle(myRectangle);
+
+
+      // wait one second before starting animation
+    //  setTimeout(function() {
+    //    var startTime = (new Date()).getTime();
+      animate();
+    //  }, 1000);
+    </script>
+  </body>
+</html>

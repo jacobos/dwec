@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Example</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <style>
+        /* Added to show the edge of canvas */
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id='canvasElem' width='600' height='600'></canvas>
+    <div class="punt"></div>
+    <script>
+        var canvas = $('#canvasElem')[0],
+            ctx = canvas.getContext('2d');
+
+         // 60 frames per second
+        var dt = 1 / 60;
+        var x = 0,
+            y = 0;
+        var ax = 0,
+            ay = 0;
+
+        var i = 0;
+
+        var mouseX, mouseY;
+
+        var numpelota = 0;
+
+        var pelotas = [];
+        var clicked = false;
+
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF'.split('');
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function random(min, max) {
+            return~~ (Math.random() * (max - min + 1)) + min
+        }
+
+        var pelota2 = {
+            x: mouseX,
+            y: mouseY,
+            color: "#000",
+            radius: 10,
+            pos: numpelota
+        };
+        numpelota++;
+        pelotas.push(pelota2);
+
+
+        ctx.fillStyle = pelota2.color;
+        ctx.beginPath();
+        ctx.arc(mouseX, mouseY, pelota2.radius, 0, 100);
+
+        function animLoop() {
+            // Clear the canvas
+
+           // colides();
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (i = 0; i < pelotas.length; i++) {
+                // Update the position and velocity
+                pelota = pelotas[i];
+
+                pelota.x += pelota.vx * dt;
+                pelota.y += pelota.vy * dt;
+
+                if (pelota.x < 10) {
+                    pelota.x = 10;
+                    pelota.vx *= -1;
+                } else if (pelota.x > canvas.width - 10) {
+                    pelota.x = canvas.width - 10;
+                    pelota.vx *= -1;
+                }
+                if (pelota.y < 10) {
+                    pelota.y = 10;
+                    pelota.vy *= -1;
+                } else if (pelota.y > canvas.height - 10) {
+                    pelota.vy *= -1;
+                }
+
+                pelota2.x = mouseX;
+                pelota2.y = mouseY;
+
+                ctx.fillStyle = pelota.color;
+                ctx.beginPath();
+                ctx.arc(pelota.x, pelota.y, pelota.radius, 0, 100);
+                ctx.fill();
+            }
+
+            setTimeout(animLoop, dt * 1000);
+        }
+
+        for (i = 0; i < 10; i++) {
+
+            var pelota = {
+                x: random(0, 600),
+                y: random(0, 600),
+                vx: random(-100, 100),
+                vy: random(-100, 100),
+                color: getRandomColor(),
+                radius: random(0, 50),
+                pos: numpelota
+            };
+            numpelota++;
+            pelotas.push(pelota);
+            
+            $(canvas).on("mousemove", function (e) {
+            mouseX = e.offsetX;
+            mouseY = e.offsetY;
+            if (e.offsetX >= pelota.x - pelota.radius
+                && e.offsetX <= pelota.x + pelota.radius
+                && e.offsetY <= pelota.y + pelota.radius
+                && e.offsetY >= pelota.y - pelota.radius) {
+                $('.punt').append("Has muerto");
+            }
+        });
+
+            if (!clicked) {
+                clicked = true;
+                animLoop();
+            }
+        }
+
+
+        $(document).ready(function () {
+            $(canvas).css({
+                'cursor': 'none'
+            });
+        });
+
+        /*function colides() {
+            if (pelota2.x+pelota2.radius <= pelota.x - pelota.radius 
+                && pelota2.x-pelota2.radius >= pelota.x + pelota.radius
+                && pelota2.y-pelota2.radius <= pelota.y + pelota.radius 
+                && pelota2.y+pelota2.radius >= pelota.y - pelota.radius) {
+                $('.punt').append("Has muerto");
+            }
+        }*/
+
+        animLoop();
+
+        /*if (e.offsetX <= pelota.x + 10 && e.offsetX >= pelota.x - 10 && e.offsetY <= pelota.y + 20 && e.offsetY >= pelota.y - 20) {
+				alert("Has pasado por una pelota " + pelota.pos);*/
+         //}
+    </script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</body>
+
+</html>

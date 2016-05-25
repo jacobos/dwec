@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="578" height="220"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      for(i = 0; i < 19; i++){
+        context.moveTo(200, 50);
+        context.lineTo(200+i*10, 200);
+      }
+      for(i = 1; i < 16; i++){
+        context.moveTo(390, 200);
+        context.lineTo(200, 50+i*10);
+      }
+      context.stroke();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.list-item-container {
+    line-height: 1;
+    padding: 15px 0px 15px 15px;
+}
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.pop_film{
+	width: 50%;height: 50%;margin-left: 25%;"
+}
+.name {
+    font-weight: 500;
+	line-height: 16px;
+	font-size: 19px;
+	margin-bottom: 6px;
+	margin-top: 10px;
+}
+.location {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: -20px;
+}
+.year {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 1px;
+}

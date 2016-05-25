@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exam rec JQ</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <div id="exam">
+        <br>
+        <input id="valor" type="text">
+        <button id="elboton">Go to...</button>
+
+    </div>
+
+    <!-- Compiled and minified JavaScript, jQuery and Bootstrap -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script>
+        $.getJSON("http://37.187.2.239:81/dwec/canvas/exam_/getJSON2.php?callback=?", function (data) {
+            //console.log(data);
+
+            // some help
+            // a = $("<div class='jumbotron'>");
+            // la a es un elemento de tipo div (se cierra automáticamente la etiqueta, no haría falta poner el </div>)
+
+            // $("<div class='col-sm-6 text-center'>
+            // "<div class='container' style='background-color: #aaa'>";
+
+            pepe = data;
+            //console.log(pepe);
+            //console.log(pepe.important.probably["here it is"]["human beings"]);
+            // console.log(pepe.important.probably["here it is"]["human beings"][5].sons[1]);
+
+            myArray = pepe.important.probably["here it is"];
+            //for (x = 0; x < myArray.length; x++) {
+            //console.log(x); //muestra los elementos que hay en mi array
+            //console.log(myArray[x]);
+            // }
+
+            //ESTE EACH RECORRE A LOS PADRES Y LOS AÑADE AL HTML
+            $.each(pepe.important.probably["here it is"]["human beings"], function (index, value) {
+                //console.log(value.wife);
+                //console.log(value.husband);
+                $("#exam").append("<div class='jumbotron'><div class='col-sm-6 text-center' > <strong>Wife: " + value.wife + "</strong></div><div class='col-sm-6 text-center'><strong>Husband: " + value.husband + "</strong></div></br><h3>Children</h3><hr size='2px' color='black'/><div class='hijos'></div></div>");
+                //console.log(value.daughters.age);
+                //console.log(value.daughters[0].name);
+                //console.log(value.daughters[0]
+
+
+                //ESTE EACH RECORRE LAS HIJAS Y LAS AÑADE AL HTML
+                $.each(pepe.important.probably["here it is"]["human beings"][index].daughters, function (value, value2) {
+                    //  console.log(value2.age);
+                    // console.log(value2.name);
+                    //console.log(value2.desc);
+
+                    $("#exam").append("<div class='container' style='background-color: #aaa'> <div class='col-sm-3 col-md-3 text-center'><strong>Name:</strong> " + value2.name + "</div> <div class='col-sm-3 col-md-3 text-center'> <strong>Age:</strong> " + value2.age + "</div> <div class='col-sm-6 col-md-6 text-center'><strong>Description:</strong> " + value2.desc + "</div></div>");
+                });
+
+
+
+
+                //ESTE EACH RECORRE LOS HIJOS  Y LOS AÑADE AL HTML
+                $.each(pepe.important.probably["here it is"]["human beings"][index].sons, function (value, value3) {
+                    //console.log(value3.name);
+
+                    $("#exam").append("<div class='container' style='background-color: #aaa'> <div class='col-sm-3 col-md-3 text-center'><strong>Name:</strong> " + value3.name + "</div> <div class='col-sm-3 col-md-3 text-center'> <strong>Age:</strong> " + value3.age + "</div> <div class='col-sm-6 col-md-6 text-center'><strong>Description:</strong> " + value3.desc + "</div></div>");
+
+                });
+
+
+
+
+
+                $("#exam").append("<button class='eliminar'>Move me down</button></br>");
+                $("#exam").append("<button class='eliminar'>Delete me</button></br></br>");
+
+
+
+
+                //ELIMINAR PRODUCTOS
+                $(document.body).on("click", ".eliminar", function () { //DOCUMENT.BODY hace referencia al contenedor padre, es mejor usarlo así
+                    console.log("Boton eliminar funcionando");
+                    $(this).parent.remove();
+
+                });
+
+            });
+
+            $("button.moveme").on("click", function () {});
+
+
+            $("#elboton").on("click", function () {
+                console.log($("#valor").val());
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

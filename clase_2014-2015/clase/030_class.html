@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>attributeEquals demo</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<div>
+  <label>
+    <input type="radio" name="newsletter" value="Hot Fuzz" >
+    <span miInvento="pacoooooo">paquito</span>
+  </label>
+</div>
+<div miInvento="aapacoooooo">
+  <label>
+    <input type="radio" name="newsletter" value="Cold Fusion">
+    <span>dos</span>
+    <span>dos</span>
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" name="newsletter" value="Evil Plans">
+    <span>value?</span>
+  </label>
+</div>
+ 
+<script>
+//get all the input values with the valorando attribute = paco
+//change the text of the node after the selected ones
+	$( "input[valorando='paco']" ).next().text( "Bla bla bla" );
+
+//get all the input values with the valorando attribute = paco inside of all the divs
+//change the text of the node after the selected ones
+	$( "div").find("input[miInvento^='paco']" ).next().text( "nuevo" );
+
+//get all the input values with the valorando attribute starting with paco
+//change the text of the node after the selected ones
+	$( "*").find("[miInvento^='paco']" ).next().text( "sasdf" );
+
+//get all the values with the miInvento attribute starting with paco
+//change the css
+	$("[miInvento^='paco']" ).css("background-color", "blue");
+
+//get all the values with the miInvento attribute containing with paco
+//change the css
+	$("[miInvento*='paco']" ).css("background-color", "black");
+
+//get all the values with the miInvento attribute containing with paco
+//change the css
+	$("[miInvento*='paco']" ).css({"background-color": "black", "color": "blue"});
+
+//object example
+var miObjeto = {
+  "manifest_version": 2,
+  "another version": 3,
+  "name": "Hello",
+  "short_name": "Hello",
+  "description": "Description for Hello",
+
+  "version": "0.0.1.0",
+
+  "icons": {
+    "16": "assets/icon_16.png",
+    "128": "assets/icon_128.png"
+  },
+
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
+};
+
+//accessing objects
+miObjeto.manifest_version
+//the same as
+miObjeto["manifest_version"]
+//accessing another object
+miObjeto["another version"]  //with spaces or starting with numbers do this
+
+var variable = "another version"
+//accessing the same object using a variable
+console.log(miObjeto[variable]);
+</script>
+ 
+</body>
+</html>

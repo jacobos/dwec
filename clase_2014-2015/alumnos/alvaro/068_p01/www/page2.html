@@ -1,0 +1,63 @@
+<ons-navigator>
+  <ons-page ng-controller="anadirController">
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button ng-click="ons.slidingMenu.toggleMenu()">
+          <ons-icon icon="bars"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">Add movie</div>
+    </ons-toolbar>
+      <ons-list-item>
+          <style>
+                .list__item{
+                    padding: 0;
+                }
+                .row{margin-left: 0}
+                button{background: #4F81BB;border:0;border-radius: 5px;color:white}
+                input{  background-color: transparent;  
+                        border-style: solid;  
+                        border-width: 0px 0px 1px 0px;  
+                        border-color: #4f81bb; 
+                        outline:0; 
+                }
+          </style>
+            <ons-row>
+                <ons-col>
+                  <div class="datos" class="center">
+                    <input type="text" name="titulo" placeholder="Title" ng-model="titulo" style="width:100%">   
+                  </div>
+                </ons-col>
+            </ons-row>
+      </ons-list-item>
+      <ons-list-item>
+            <ons-row>
+                <ons-col>
+                    <div>
+                       <input type="text" name="pais" placeholder="Country" ng-model="pais" style="width:100%"> 
+                    </div>
+                </ons-col>
+            </ons-row>
+      </ons-list-item>
+      <ons-list-item>
+            <ons-row>
+                <ons-col>
+                    <div>
+                        <input type="text" name="vista" placeholder="Watched" ng-model="vista" style="width:100%"> 
+                    </div>
+                </ons-col>
+            </ons-row>
+      </ons-list-item>
+      <ons-list-item>
+            <ons-row>
+                <ons-col>
+                    <div>
+                        <br>
+                        <button id="enviar" ng-click="enviardatos(titulo,pais,vista)" style="width:100%">Send</button>  
+                    </div>
+                </ons-col>
+            </ons-row>
+      </ons-list-item> 
+  </ons-page>
+</ons-navigator>
+

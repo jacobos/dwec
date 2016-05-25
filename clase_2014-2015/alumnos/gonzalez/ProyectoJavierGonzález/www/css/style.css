@@ -1,0 +1,93 @@
+
+p{
+    font-size: 9px; 
+}
+button{
+
+    background: #F0FFFF;
+
+}
+
+table {  
+  
+position:relative; 
+width: 100%;
+left:6%;
+
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 9px; 
+text-align: center;   
+padding-top:4%;
+margin-top:4%;
+
+}
+
+table tr{
+    
+    border:1px solid #669;
+border-color:#669;
+    position:relative;
+    width: 100%;
+    
+}
+
+
+th { 
+    font-size: 11px; 
+    font-weight: normal;    
+    padding: 1%;    
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;   
+    border-bottom: 1px solid #fff; 
+    color: #039;
+    text-align: center;  
+}
+
+td {    padding: 1%;     background: #e8edff;     border-bottom: 1px solid #fff;
+    color: #669;    border-top: 1px solid transparent;  }
+
+tr:hover td { background: #d0dafd; color: #339; }
+
+
+
+div.page__background{
+background-color: url(restaurante.jpg) no-repeat center center fixed !important; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+div.cent{
+    
+    position:relative;  
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px; 
+text-align: center;   
+left:2%;
+
+  
+}
+
+div.cent2{
+    
+    position:relative;  
+width: 30%;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px; 
+text-align: center;   
+right: 20%;
+margin: 0 auto;
+}
+
+input{
+
+   background: #F0FFFF;
+    width: 200px;
+}
+input:hover {background: yellow;}
+input:focus {background: #FF99FF;}
+input:focus:hover {background: #99FF99;}
+

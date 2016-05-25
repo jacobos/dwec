@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercises</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <link rel="stylesheet" href="js/style_ex.css">
+    <style>
+        a,
+        .showHide {
+            color: #088;
+        }
+        .showHide{
+            display: inline-block;
+        }
+        a:hover,
+        .showHide:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exercises</h1>
+    <ol>
+        <li>
+            Template 86x
+        </li>
+        <li>
+            Paella Dragon
+        </li>
+        <li>
+            Library with the created objects
+        </li>
+        <li>
+            Dinamically adding and removing objects to the library (shown in the website too)
+        </li>
+        <li>
+            Show the following object tree using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in" target="_blank">for ... in</a>
+            <div class="showHide">(click to hide/show)</div>
+
+            <pre>
+var resort = {
+      "bung1": {
+        "room1": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room2": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room3": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+      },
+      "bung2": {
+        "room1": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room2": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room3": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+      },
+      "bung3": {
+        "room1": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room2": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room3": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+      }
+    };
+        </pre>
+        </li>
+
+        <li>Create some input fields (text fields)
+            <br>Tag field:
+            <input type="text" name="tag">Text field:
+            <input type="text" name="textField">Attribute tag:
+            <input type="text" name="atTag">Attribute field:
+            <input type="text" name="atField">Tag field:
+            <input type="text" name="tag">
+            <input type="submit" value="Submit">
+            <br>
+            <br>When you fill in the fields and click on submit a node with the selected information should be created and added to the body (document.body).
+        </li>
+        <li>
+            Create a form with multiple fields and validate them, when it doesn't match show it to the user to refill it
+            <br>Fields:
+            <ul>
+                <li>Name: starting with a capital letter
+                    <l/i>
+                        <li>Surname: only capital letters</li>
+                        <li>Email: a yahoo, gmail, hotmail, live, msn account. Ending with com/fr/es/se</li>
+                        <li>Pass: only numbers or this symbols: +,,,-,*,/</li>
+            </ul>
+            </li>
+            <li>
+                Modify the previous exercise (or add to it) in order to show to the user what he/she should fill in.
+                <br>Make a div appear next to the field that has been wrongly filled in with the info needed by the user for it.
+            </li>
+            <li>
+                With a RegExp do the next exercise:
+                <ul>
+                    <li>Have a form with an input text field (like this)
+                        <input type="text">
+                    </li>
+                    <li>It should get all the occurrences of sho....</li>
+                    <li>Example <b>sho</b>arrayMorning@shadow<b>sho</b>right<b>sho</b>low</li>
+                    <li>In an array save the following strings:
+                        <ul>
+                            <li><b>sho</b>arrayMorning@shadow<b>sho</b>right<b>sho</b>low</li>
+                            <li>sho</b>right<b>sho</b>low</li>
+                            <li><b>sho</b>low</li>
+                        </ul>
+                    </li>
+                    <li>Show them at the bottom of the page</li>
+                </ul>
+            </li>
+            <li>
+                Do the next exercise:
+                <ul>
+                    <li>Have a form with an input text field (like this)
+                        <input type="text">
+                    </li>
+                    <li>It should get all the occurrences of: info, info, info</li>
+                    <li>Example <b>Jorge, Michel, Krishnamurti, Hannah, Michail, Kropotkin, Maker, Alvin</b>
+                    </li>
+                    <li>In an array save the name/surname strings, like ["Jorge", "Michel", Krishnamurti"...]</li>
+                    <li>Show them in a html table that looks like this:
+                        <table border="1">
+                            <tr>
+                                <td style="color:#88f; border: 2px solid #99b">Name</td>
+                            </tr>
+                            <div style="font-size:10px">
+                                <tr>
+                                    <td>Jorge</td>
+                                </tr>
+                                <tr>
+                                    <td>Michel</td>
+                                </tr>
+                                <tr>
+                                    <td>Krishnamurti</td>
+                                </tr>
+                                <tr>
+                                    <td>Hannah</td>
+                                </tr>
+                            </div>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://en.wikipedia.org/wiki/Battleship_%28game%29">Sea Battle</a>
+                <ul>
+                    <li>Two fields to select the field. Height:
+                        <input type="text">Width
+                        <input type="text">
+                    </li>
+                    <li>Make the field with divs or with a table</li>
+                    <li>Two players</li>
+                    <li>First player selects the places of his/her boats, then the second player (3 boats)</li>
+                    <li>First player starts playing, the pieces that he/she opened should be seen, if there is a boat show it!</li>
+                    <li>Same with the second player</li>
+                    <li>When somebody wins it should be shown</li>
+                </ul>
+            </li>
+    </ol>
+    <script>
+        $(".showHide").on("click", function () {
+            $(this).next().toggle()
+        });
+    </script>
+</body>
+
+</html>

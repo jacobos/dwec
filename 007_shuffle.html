@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Random sort
+  </title>
+</head>
+
+<body>
+  Look at the console and press f5 a few times
+  <pre>
+   /**
+   * Randomize array element order in-place. Using Durstenfeld shuffle algorithm.
+   */
+  function shuffleArray(array) {
+      for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+      }
+      return array;
+  }
+  // use
+  var ar = [1,2,3,4];
+  console.log(ar);
+  shuffleArray(ar);
+  console.log(ar);
+
+  // ar is now randomly shuffled (random sort)
+  // remember, an array is an object in javaScript
+  </pre>
+  <script>
+   /**
+   * Randomize array element order in-place. Using Durstenfeld shuffle algorithm.
+   */
+  function shuffleArray(array) {
+      for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+      }
+      return array;
+  }
+  // use
+  var ar = [1,2,3,4];
+  console.log("Declared");
+  console.log(ar);
+  shuffleArray(ar);
+  console.log("Randomized");
+  console.log(ar);
+
+  // ar is now randomly shuffled (random sort)
+  // remember, an array is an object in javaScript
+  </script>
+</body>
+
+</html>

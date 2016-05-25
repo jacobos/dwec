@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Object example</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="scripts/shCore.js"></script>
+    <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/shCoreDefault.css" />
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+    </script>
+</head>
+
+<body>
+    <pre class="brush: js;">
+        // The most common way of defining custom types is to combine the constructor and prototype patterns.
+        //--> Combination Constructor/Prototype Pattern
+        function Person(name, age, job) {
+            this.name = name;
+            this.age = age;
+            this.job = job;
+        }
+        Person.prototype = {
+            constructor: Person,
+            sayName: function () {
+                alert(this.name);
+            }
+        };
+        var peter = new Person("peter", 30, "it staff");
+         // with the
+         //      constructor: Person
+         // we asure that
+        console.log(peter instanceof Object); //true
+        console.log(peter instanceof Person); // true
+        console.log(peter.constructor == Person); //true, without the "constructor:Person" line it would be false
+        console.log(peter.constructor == Object); //true  
+    </pre>
+
+    <script>
+        // The most common way of defining custom types is to combine the constructor and prototype patterns.
+         //--> Combination Constructor/Prototype Pattern
+        function Person(name, age, job) {
+            this.name = name;
+            this.age = age;
+            this.job = job;
+        }
+        Person.prototype = {
+            constructor: Person,
+            sayName: function () {
+                alert(this.name);
+            }
+        };
+        var peter = new Person("peter", 30, "it staff");
+        console.log(peter instanceof Object); //true
+        console.log(peter instanceof Person); // true
+        console.log(peter.constructor == Person); //true, without the constructor line it would be false
+        console.log(peter.constructor == Object); //true
+    </script>
+
+</body>
+
+</html>

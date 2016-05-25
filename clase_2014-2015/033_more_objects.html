@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Object example</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+  <script>
+    var resort = {
+      "bung1": {
+        "room1": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room2": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room3": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+      },
+      "bung2": {
+        "room1": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room2": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room3": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+      },
+      "bung3": {
+        "room1": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room2": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+        "room3": {
+          "bed1": {
+            "type": "single",
+            "number": 0
+          },
+          "bed2": {
+            "type": "double",
+            "number": 1
+          },
+          "bed3": {
+            "type": "double",
+            "number": 3
+          }
+        },
+      }
+    };
+    var booksObj = {
+      "libro1": {
+        paginas: 6,
+        tapa: "blanda"
+      },
+      "libro2": {
+        paginas: 26,
+        tapa: "dura"
+      }
+    };
+    for (var key in booksObj) {
+      //    console.log(key);
+      for (var ruben in booksObj[key]) {
+        console.log(ruben + " " + booksObj[key][ruben]);
+      }
+    }
+
+
+    var myBox = {
+      height: 6,
+      width: 12,
+      length: 10,
+      volume: 720,
+      material: "cardboard",
+      contents: booksObj,
+      weight: 24,
+      destination1: "Orlando",
+      destination2: "Miami"
+    };
+
+    booksObj["libro2"]["paginas"] = 28;
+    console.log(myBox["contents"]["libro2"]);
+
+    st = "";
+    $.each(myBox["contents"],
+      function (i, val) {
+        st += "<p>" + i + " ==> " + val + "</p>";
+        for (key in val) {
+          st += "<p>";
+          st += "&nbsp;&nbsp;&nbsp;&nbsp;";
+          st += key + "==> " + val[key] + "</p>";
+        }
+
+      });
+    $(document.body).append(st);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #330523;
+$back: #fce9ec;
+
+.basic-color,
+.btn {
+  color: $primary-color;
+  background: $back;
+}
+.anti-basic-color {
+  background: $primary-color;
+  color: $back;
+}
+body {
+  @extend .basic-color;
+  padding-top: 20px;
+  font: 100% $font-stack;
+}
+.jumbotron,
+.thumbnail,
+.btn:hover {
+  @extend .anti-basic-color;
+}

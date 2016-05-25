@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Exam</title>
+  <link rel="shortcut icon" href="">
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+    }
+    
+    .starter-template {
+      padding: 40px 15px;
+      text-align: center;
+    }
+    
+    #container {
+      padding: 0;
+      float: left;
+      width: 20%;
+      height: 100%;
+    }
+    
+    #container::after {
+      content: "";
+      background: url('im_trees/grunge_back.jpg');
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      width: 20%;
+      z-index: -1;
+    }
+    
+    #paint {
+      float: left;
+      width: 80%;
+      height: 100%;
+    }
+    
+    #paint::after {
+      content: "";
+      background: url('im_trees/Preview.jpg');
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="container">
+
+
+  </div>
+  <div id="paint">
+
+  </div>
+
+  <script>
+    var ims, d1, i1, posX, posY;
+
+    document.onmousemove = function (event) {
+      var dot, eventDoc, doc, body, pageX, pageY;
+
+      event = event || window.event; // IE-ism
+
+      // If pageX/Y aren't available and clientX/Y are,
+      // calculate pageX/Y - logic taken from jQuery.
+      // (This is to support old IE)
+      if (event.pageX == null && event.clientX != null) {
+        eventDoc = (event.target && event.target.ownerDocument) || document;
+        doc = eventDoc.documentElement;
+        body = eventDoc.body;
+
+        event.pageX = event.clientX +
+          (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+          (doc && doc.clientLeft || body && body.clientLeft || 0);
+        event.pageY = event.clientY +
+          (doc && doc.scrollTop || body && body.scrollTop || 0) -
+          (doc && doc.clientTop || body && body.clientTop || 0);
+      }
+      // x position of the mouse --> event.pageX;
+      // y position of the mouse --> event.pageY;
+
+      posX = event.pageX;
+      posY = event.pageY;
+    };
+
+    var imagen,
+      selec = false;
+    for (var i = 1; i <= 12; i++) {
+      var d1 = document.createElement("div");
+      var i1 = document.createElement("img");
+      d1.appendChild(i1);
+      i1.setAttribute("src", "im_trees/im" + i + ".png");
+      i1.width = "75";
+      i1.setAttribute("style", "float: left;");
+      document.getElementById("container").appendChild(d1);
+      i1.addEventListener("click", function (e) {
+        selec = true;
+        imagen = this; //;
+      });
+    }
+
+    document.getElementById("paint").onclick = function (e) {
+      if (selec) {
+        var i2 = document.createElement("img");
+        i2.setAttribute("src", imagen.getAttribute("src"));
+        i2.setAttribute("style", "position: absolute; top: " + (posY - imagen.height / 2) + "px; left: " + (posX - imagen.width / 2) + "px");
+        i2.width = "75";
+        document.body.appendChild(i2);
+        i2.onclick = function () {
+          if (borrar == 1)
+            this.parentNode.removeChild(this);
+          else if (borrar == 2){
+            this.height = this.height * 0.75;
+            this.width = this.width * 0.75;
+          }
+          else if (borrar == 3){
+            this.height = this.height * 1.25;
+            this.width = this.width * 1.25;
+          }
+        }
+      }
+    };
+
+    pintarBot();
+    
+    function pintarBot() {
+      borrar = 0;
+      var d1 = document.createElement("button");
+      d1.style.position = "absolute";
+      d1.style.zIndex = 10;
+      d1.style.bottom = "0px";
+      d1.style.left = "30%";
+      d1.style.width = "10%";
+      d1.appendChild(document.createTextNode("Nothing"));
+      document.getElementById("container").appendChild(d1);
+      d1.onclick = function () {
+        borrar = 0;
+      }
+
+      d1 = document.createElement("button");
+      d1.style.position = "absolute";
+      d1.style.zIndex = 10;
+      d1.style.bottom = "0px";
+      d1.style.left = "40%";
+      d1.style.width = "10%";
+      d1.appendChild(document.createTextNode("Delete"));
+      document.getElementById("container").appendChild(d1);
+      d1.onclick = function () {
+        borrar = 1;
+      }
+
+      d1 = document.createElement("button");
+      d1.style.zIndex = 10;
+      d1.style.position = "absolute";
+      d1.style.bottom = "0px";
+      d1.style.left = "50%";
+      d1.style.width = "10%";
+
+      d1.appendChild(document.createTextNode("Smaller"));
+      document.getElementById("container").appendChild(d1);
+      d1.onclick = function () {
+        borrar = 2;
+      }
+      document.getElementById("container").appendChild(d1);
+
+      d1 = document.createElement("button");
+      d1.style.zIndex = 10;
+      d1.style.position = "absolute";
+      d1.style.bottom = "0px";
+      d1.style.left = "60%";
+      d1.style.width = "10%";
+      d1.appendChild(document.createTextNode("Bigger"));
+      document.getElementById("container").appendChild(d1);
+      d1.onclick = function () {
+        borrar = 3;
+      }
+      document.getElementById("container").appendChild(d1);
+    }
+  </script>
+</body>
+
+</html>

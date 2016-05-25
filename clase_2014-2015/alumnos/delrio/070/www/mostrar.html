@@ -1,0 +1,98 @@
+<ons-page modifier="shop-details" ng-controller="mostrar">
+    <div class="container">
+        <h2 class="intro-text text-center">Manage 
+                        <strong>Bookings</strong>
+            </h2>
+        <hr>
+
+
+        <p>
+<!--
+            <input type="text" id="fecha" name="fecha" value="" placeholder="Fecha inicio" />
+            <input type="text" id="fecha2" name="fecha" value="" placeholder="Fecha Fin" />
+-->
+        </p>
+        
+            <ons-list-item  class="list-item-container">
+      <ons-row>
+        <ons-col>
+        <center>
+        <table class="table table-hover gestiona"ng-controller="borrar">
+            <tr style="background-color:#dadada;">
+
+                <td>Name</td>
+                <td>Surname</td>
+                <td>DNI</td>
+                <td>Date</td>
+                <td>Time</td>
+                <td>Delete</td>
+                <td>Edit</td>
+            </tr>
+
+            <tr ng-repeat="cont in contenedor">
+                <td>{{cont.Nombre}}</td>
+                <td>{{cont.Apellido}}</td>
+                <td>{{cont.DNI}}</td>
+                <td>{{cont.Fecha}}</td>
+                <td>{{cont.Hora}}</td>
+                <td><button ng-click="borrar(cont.DNI)" class="btn btn-danger borrar" onclick="return confirm('Want to delete this Book?')">Delete</button></td>
+                <td><a href="#" class="btn btn-success" data-toggle="modal" data-target="#basicModal">Edit</a></td>
+            </tr>
+        </center>
+        </table>
+         </ons-col>
+      </ons-row>
+    </ons-list-item>
+  </ons-list>
+
+        <button ng-click="mostrar()" class="btn btn-warning " style="float:right;">Refresh</button>
+
+        <div class="clearfix"></div>
+        
+        
+  <div class="modal fade" id="basicModal" ng-controller="actualizar" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">   
+            <h4 class="modal-title" id="myModalLabel">Edit Booking</h4>
+          </div>
+          <div class="modal-body">
+           <p>
+            <input id="fecha" ng-model="fecha" placeholder="Choose the date" required/>
+        </p>
+
+        <p>
+            <input id="hora" name="hora" ng-model="hora" type="text" placeholder="Select Time" class="time" required/>
+        </p>
+
+        <span><p><b>Enter your details</b>
+                        </br>
+                        Name: 
+                        <input type="text"  ng-model="nombre" class="name" required>
+                    </p>
+                    <p>Surname:
+                        <input type="text" ng-model="apellidos" class="surname" required>
+                    </p>
+                    <p>DNI: 
+                        <input type="text"  ng-model="dni" class="dni" required>
+                    </p>
+                    <p>Choose your treatment:<br>
+                    
+                        <select ng-model="tratamiento">
+                            <option value="13">Lumbar massage   30€</option>
+                            <option value="14">Therapeutic massage   30€</option>
+                            <option value="15">Remove contractures   20€</option>
+                            <option value="16">Aromatherapy   20€</option>
+                        </select>
+                    </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" ng-click="mostrar()" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" ng-click="actualizar(JSON.stringify(fecha), hora, nombre, apellidos, dni, tratamiento)" onclick="return confirm('Booked correctly')">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+</ons-page>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Exam rec JQ</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <div id="exam">
+    <br>
+    <input id="valor" type="text">
+    <button id="elboton">Go to...</button>
+
+  </div>
+
+  <!-- Compiled and minified JavaScript, jQuery and Bootstrap -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script>
+    $.getJSON("http://37.187.2.239:81/dwec/canvas/exam_/getJSON2.php?callback=?", function(data) {
+      console.log(data);
+
+      // some help
+      // a = $("<div class='jumbotron'>");
+      // la a es un elemento de tipo div (se cierra automáticamente la etiqueta, no haría falta poner el </div>)
+
+      // $("<div class='col-sm-6 text-center'>
+      // "<div class='container' style='background-color: #aaa'>";
+
+      objeto = data;
+
+      $.each(objeto.important.probably["here it is"]["human beings"], function(index,value){
+      //console.log(value);
+      //console.log(index);
+      //console.log(value.wife);
+      //console.log(value.husband);
+      console.log(value.daughters[0].age);
+      console.log(value.daughters[0].desc);
+      $("#exam").append("<div class='jumbotron'>"+"<p>Wife: </p>"+value.wife+"<p>Husband: </p>"+value.husband+"<p>Children: </p>"+"Name: "+value.daughters[0].name+"<br>"+"Age: "+value.daughters[0].age+"<br>"+"Description: "+value.daughters[0].desc+"<br>"+"<input type='submit' value='Move me down' class='moveme'>"+"<br>"+"<input type='submit' value='Delete me' class='delete'>"+"</div>");
+      });
+
+      $("button.moveme").on("click", function(){
+      $("#exam").append();
+      });
+
+      $("#elboton").on("click", function() {
+      console.log($("#valor").val());
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>

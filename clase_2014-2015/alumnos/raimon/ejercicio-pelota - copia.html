@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Animate</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<canvas id='canvasElem' width='600' height='400'></canvas>
+<script>
+    // equivalent to canvas = document.getElementById("canvasElem");
+    var canvas = $('#canvasElem')[0],
+        ctx = canvas.getContext('2d');
+    dibujar = canvas.getContext('2d');
+    dibujar.fillStyle = "#000";
+    canvas.width = $(window).width() - 10;
+    canvas.height = $(window).height() - 20;
+    ctx.fillStyle = "#000";
+
+    // 60 frames per second
+    var dt = 1 / 60;
+    var x = 0,
+        y = 390;
+
+    var vx = 80,
+        vy = -400;
+    var ax = 0,
+        ay = 200;
+    var pelotas = [],
+        i, j, h;
+
+    var clicked = false;
+    var x, y;
+
+    function getCol() {
+        return "rgba(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + "0.8)";
+    }
+
+    function animLoop() {
+        // Clear the canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (i = 0; i < pelotas.length; i++) {
+            pelota = pelotas[i];
+            ctx.fillStyle = pelota.col;
+            // Update the position and velocity
+            pelota.vx += pelota.ax * dt;
+            pelota.vy += pelota.ay * dt;
+            pelota.x += pelota.vx * dt;
+            pelota.y += pelota.vy * dt;
+
+
+            if (pelota.x < pelota.s) {
+                pelota.x = pelota.s;
+                pelota.vx *= -0.8;
+            } else if (pelota.x > canvas.width - pelota.s) {
+                pelota.x = canvas.width - pelota.s;
+                pelota.vx *= -0.8;
+            }
+
+            if (pelota.y < pelota.s) {
+                pelota.y = pelota.s;
+                pelota.vy *= -0.8;
+            } else if (pelota.y > canvas.height - 10) {
+                pelota.y = canvas.height - pelota.s;
+                pelota.vy *= -0.8;
+            }
+            // Set the alpha based on the velocity
+            //ctx.globalAlpha = Math.sqrt(vx * vx + vy * vy) / 400;
+            // Draw a ball
+            ctx.beginPath();
+            ctx.arc(pelota.x, pelota.y, pelota.s, 0, 260);
+            //ctx.fillRect(pelota.x, pelota.y, pelota.s, pelota.s);
+            
+            
+			
+			
+            ctx.arc(x, y, puntero.s, 0, 260);
+            ctx.fill();
+             
+        }
+
+        // Call set timeout for the next frame
+        setTimeout(animLoop, dt * 1000);
+    }
+	
+	var puntero = {};
+			puntero.col = getCol();
+			//puntero.x = x;
+			//puntero.y = y;
+			puntero.ax = -200 + Math.floor(Math.random() * 400);
+			puntero.ay = 0; //-200 + Math.floor(Math.random() * 400); 
+			puntero.vy = -200 + Math.floor(Math.random() * 400);
+			puntero.vx = -200 + Math.floor(Math.random() * 400);
+			puntero.s = 20;
+
+    for (j = 0; j < 50; j++) {
+        var pelota = {};
+        pelota.col = getCol();
+        pelota.x = Math.floor(Math.random() * 400);
+        pelota.y = Math.floor(Math.random() * 400);
+        pelota.ax = -200 + Math.floor(Math.random() * 400);
+        pelota.ay = 0; //-200 + Math.floor(Math.random() * 400); 
+        pelota.vy = -200 + Math.floor(Math.random() * 400);
+        pelota.vx = -200 + Math.floor(Math.random() * 400);
+        pelota.s = 5 + Math.floor(Math.random() * 45);
+        pelotas.push(pelota);
+    }
+
+    $(canvas).on("mousemove", function (e) {
+        x = e.offsetX;
+        y = e.offsetY;
+
+        for (h = 0; h < pelotas.length; h++) {
+            if (pelotas[h].s >= Math.sqrt((pelotas[h].x - e.offsetX) * (pelotas[h].x - e.offsetX) + (pelotas[h].y - e.offsetY) * (pelotas[h].y - e.offsetY)) && (pelotas[h].s<=puntero.s))  {
+                pelotas[h] = {};
+				puntero.s=puntero.s+10;
+            }
+			
+			if (pelotas[h].s >= Math.sqrt((pelotas[h].x - e.offsetX) * (pelotas[h].x - e.offsetX) + (pelotas[h].y - e.offsetY) * (pelotas[h].y - e.offsetY)) && (pelotas[h].s>puntero.s))  {
+                 alert("Dead");
+				 puntero.s=20;
+            } 
+        }
+
+    });
+
+    /* $(canvas).on("mousemove", function(e){
+            dibujar.beginPath();
+            dibujar.arc(pelota.x, pelota.y, 100, 0, 260);
+        
+        
+        });*/
+
+    animLoop();
+</script>
+
+</body>
+
+</html>

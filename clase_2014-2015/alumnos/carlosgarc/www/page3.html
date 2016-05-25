@@ -1,0 +1,46 @@
+<ons-navigator title="Navigator" var="myNavigator">
+    <ons-page class="letra">
+
+        <head>
+            <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+        </head>
+        <ons-toolbar>
+            <div class="center"><b>Add Vehicles</b>
+            </div>
+        </ons-toolbar>
+        <ons-list ng-controller="addController">
+
+            <div id="formulario">
+                <fieldset>
+                    <label>
+                        Number plate:
+                        <div>
+                            <input ng-model="Matricula"> </br>
+                            </br>
+                        </div>
+                        Brand:
+                        <input ng-model="Marca"> </br>
+                        </br>
+                        Model:
+                        <input ng-model="Modelo"> </br>
+                        </br>
+                        City:
+                        <input ng-model="Ciudad"> </br>
+                        </br>
+                        Price:
+                        <input ng-model="Precio_diario"> </br>
+                        </br>
+                    </label>
+                </fieldset>
+                <button class="bot" onclick="myNavigator.pushPage('page2.html', { animation : 'slide' } )" ng-click="addVeh(Matricula,Marca,Modelo,Ciudad,Precio_diario)">Add Vehicles</button>
+            </div>
+
+            <img class="audi" src="images/Audi.png">
+            <img class="cocher" src="images/cocher.png">
+
+            <br>
+            <br>
+            <br>
+
+    </ons-page>
+</ons-navigator>

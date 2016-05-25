@@ -1,0 +1,35 @@
+<ons-navigator title="Navigator" var="Navigator2">
+    <ons-page ng-controller="iniciar2Controller">
+        <ons-toolbar>
+            <div class="left">
+              <ons-toolbar-button ng-click="cerrar(Navigator2)">LogOut</ons-toolbar-button>
+            </div>
+            <div class="center">Home</div>
+        </ons-toolbar>
+
+        <div style="text-align: center">
+            <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel" >
+                <ons-carousel-item>
+                    <div class="item-label"><img style="width: 100%;" src="images/taller1.jpg"></div>
+                </ons-carousel-item>
+                <ons-carousel-item >
+                    <div class="item-label"><img style="width: 100%;" src="images/taller2.jpg"></div>
+                </ons-carousel-item>
+                <ons-carousel-item >
+                    <div class="item-label"><img style="width: 100%;" src="images/taller3.jpg"></div>
+                </ons-carousel-item>
+                <ons-carousel-item >
+                    <div class="item-label"><img style="width: 100%;" src="images/taller4.jpg"></div>
+                </ons-carousel-item>
+                 <ons-carousel-item >
+                    <div class="item-label"><img style="width: 100%;" src="images/taller5.jpg"></div>
+                </ons-carousel-item>
+                <ons-carousel-cover>
+                    <div class="cover-label">Swipe left or right</div>
+                </ons-carousel-cover>
+            </ons-carousel>
+        </div>
+    </ons-page>
+</ons-navigator>
+
+

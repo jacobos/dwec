@@ -1,0 +1,36 @@
+
+<ons-page>
+
+  <ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+    <div class="center">The best films</div>
+  </ons-toolbar>
+  <div style="text-align: center">
+    <h1>Add your film</h1>
+  </div>
+  <ons-list ng-controller="added_film">
+   <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" ng-model="NOMBRE">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Director:</label>
+      <input type="text" class="form-control" ng-model="DIRECTOR">
+    </div>
+    <div class="form-group">
+      <label for="year">Year:</label>
+      <input type="text" class="form-control" ng-model="ANO">
+    </div>
+    <div class="form-group">
+      <label for="gnd">Gender:</label>
+      <input type="text" class="form-control" ng-model="GENERO">
+    </div>
+    <button ng-click="new(NOMBRE,DIRECTOR,ANO,GENERO)">Add film !</button>
+  </ons-list>
+
+
+</ons-page>

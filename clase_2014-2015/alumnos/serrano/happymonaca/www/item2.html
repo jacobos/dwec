@@ -1,0 +1,32 @@
+<ons-template id="item.html">
+    <ons-page ng-controller="PaginaSeleccionadaController">
+       <!-- <ons-toolbar>
+            <div class="left">
+                <ons-back-button>Back</ons-back-button>
+            </div>
+            <div class="center">Codigo cliente, {{actual.cod}}</div>
+        </ons-toolbar>-->
+        <div style="text-align: center;">
+            <ons-button modifier="dark" onclick="myNavigator.popPage()">
+ 
+                <br>
+                <div class="name">fdsfdsf
+                    {{actual.nombre}}
+                </div>
+                <div class="apellidos">
+                    <i class="fa fa-map-marker"></i> {{actual.apellidos}}
+                </div>
+                <div class="email">dsfdsf
+                    {{actual.email}}
+                </div>
+                 <div class="telefono">fdsf
+                    {{actual.telefono}}
+                </div>
+                  <div class="domicilio">sdfdsf
+                    {{actual.domicilio}}
+                </div>
+            </ons-button>
+            <br>{{actual}}
+        </div>
+    </ons-page>
+</ons-template>

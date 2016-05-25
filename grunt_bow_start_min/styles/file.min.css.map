@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,sBACK,CACH,KAAK,CALS,OAAO,CAMrB,UAAU,CALL,OAAO,CAOd,kDAAkB,CAChB,UAAU,CATI,OAAO,CAUrB,KAAK,CATA,OAAO,CAWd,IAAK,CAEH,WAAW,CAAE,IAAI,CACjB,IAAI,CAAE,yBAAgB",
+"sources": ["../scss/info.scss"],
+"names": [],
+"file": "file.min.css"
+}

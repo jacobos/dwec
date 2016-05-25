@@ -1,0 +1,67 @@
+<ons-page class="letra">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+    </head>
+    <ons-toolbar>
+        <div class="center">Edit a Vehicle</div>
+    </ons-toolbar>
+    <ons-list ng-controller="editController">
+
+
+
+        <div id="formulario">
+            <fieldset>
+                <label>
+                    Number plate:
+                    <div>
+                        <input ng-model="Matricula"> </br>
+                        </br>
+                    </div>
+                    Brand:
+                    <input ng-model="Marca"> </br>
+                    </br>
+                    Model:
+                    <input ng-model="Modelo"> </br>
+                    </br>
+                    City:
+                    <input ng-model="Ciudad"> </br>
+                    </br>
+                    Price:
+                    <input ng-model="Precio_diario"> </br>
+                    </br>
+                </label>
+            </fieldset>
+            <button class="bot" ng-click="editar(Matricula,Marca,Modelo,Ciudad,Precio_diario)">Edit Vehicles</button>
+        </div>
+        </br>
+
+        <table style="margin-top: 50px" class="table table-bordered">
+            <tr>
+                <td class='amarillo'>NUMBER PLATE</td>
+                <td class='amarilloc'>BRAND</td>
+                <td class='amarillo'>MODEL</td>
+                <td class='amarilloc'>CITY</td>
+                <td class='amarillo'>PRICE</td>
+            </tr>
+        </table>
+
+        <ons-list-item ng-repeat="edit in editVehicle">
+            <div class="center">
+                <table class="table table-bordered">
+                    <tr>
+                        <td>{{edit.Matricula}}</td>
+                        <td>{{edit.Marca}}</td>
+                        <td>{{edit.Modelo}}</td>
+                        <td>{{edit.Ciudad}}</td>
+                        <td>{{edit.Precio_diario}}</td>
+                    </tr>
+                </table>
+            </div>
+    </ons-list>
+
+</ons-page>

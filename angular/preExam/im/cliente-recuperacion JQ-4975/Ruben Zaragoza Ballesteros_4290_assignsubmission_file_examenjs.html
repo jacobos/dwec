@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Exam rec JQ</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <div id="exam">
+    <br>
+    <input id="valor" type="text">
+    <button id="elboton">Go to...</button>
+
+  </div>
+
+  <!-- Compiled and minified JavaScript, jQuery and Bootstrap -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script>
+    $.getJSON("http://37.187.2.239:81/dwec/canvas/exam_/getJSON2.php?callback=?", function(data) {
+      //console.log(data);
+    console.log(data.important.probably["here it is"]["human beings"].daughters);
+
+        $.each(data.important.probably["here it is"]["human beings"],function(index,value){
+            console.log(value);
+            console.log(value.wife);
+            console.log(value.husband);
+            console.log(value.daughters);
+            $.each(value.daughters,function(indexp,valuep){
+                console.log(valuep.name);
+            $("#exam").append("<div class='jumbotron'><div class='row'><div class='col-md-6'align='center'><h4>Wife: "+value.wife+"</h4></div><div class='col-md-6' align='center'><h4>Husband: "+value.husband+"</h4></div></div><div class='row'><h3>Children</h3></div><div class='container' style='background-color: #aaa'><div class='row'><div class='col-md-3'>Name: "+valuep.name+"</div><div class='col-md-3'>Age: "+valuep.age+"</div><div class='col-md-6'>Description: "+valuep.desc+"</div></div></div><div class='row'><button id='move'>Move me down</button></div><div class='row'><button id='delete'>Delete me</button></div></div>");
+
+
+      // some help
+      // a = $("<div class='jumbotron'>");
+      // la a es un elemento de tipo div (se cierra automáticamente la etiqueta, no haría falta poner el </div>)
+
+      // $("<div class='col-sm-6 text-center'>
+      // "<div class='container' style='background-color: #aaa'>";
+
+
+      $("#move").on("click", function(){
+      });
+
+        $("#delete").on("click",function(){
+
+        });
+
+      $("#elboton").on("click", function() {
+
+           });
+
+      });
+     });
+
+    });
+
+  </script>
+
+</body>
+
+</html>

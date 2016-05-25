@@ -1,0 +1,103 @@
+<ons-navigator title="Navigator" var="myNavigator">
+    <ons-page ng-controller="PaginationControllerLands">
+        <ons-toolbar>
+
+            <div class="left">
+                <ons-toolbar-button ng-click="prevPage()">Previous page</ons-toolbar-button>
+
+            </div>
+            <div class="right">
+
+                <ons-toolbar-button ng-click="nextPage()">Next page</ons-toolbar-button>
+            </div>
+        </ons-toolbar>
+
+        <ons-list>
+            <ons-list-item>
+                <label>Delete</label>
+                <select style="width:100px;" class="form-control" ng-model="elim" value="select the name">
+                    <option ng-repeat="item in getCurrentPage()">{{item.nombre}}</option>
+                </select>
+                <button class="btn btn-success btn-lg " ng-click="delClie(elim)">Delete</button>
+            </ons-list-item>
+            <ons-list-item ng-repeat="item in getCurrentPage()" ng-click="ponerSeleccion(item)" onclick="myNavigator.pushPage('pageN3.html', { animation : 'lift' } )">
+                <ons-row>
+                    <ons-col width="95px">
+                        <img ng-src="{{item.img}}" class="thumbnail">
+                    </ons-col>
+                    <ons-col>
+                        <div class="name">
+                            {{item.nombre}}
+                        </div>
+                        <div class="location">
+                            {{item.apellido}}
+                        </div>
+
+                    </ons-col>
+                    <ons-col width="40px"></ons-col>
+                </ons-row>
+
+            </ons-list-item>
+
+
+
+
+        </ons-list>
+
+    </ons-page>
+    <!--    {{'page'+item+'.html'}}
+    {{'pageN'+item+'.html'}}
+    -->
+
+</ons-navigator>
+
+
+<ons-template id="pageN3.html">
+    <ons-page ng-controller="PaginaSeleccionadaController">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button>Back</ons-back-button>
+            </div>
+            <div class="center">{{actual.nombre}} {{ actual.apellido}}</div>
+        </ons-toolbar>
+        <div style="text-align: center;">
+            <ons-button class="contacto" modifier="dark" onclick="myNavigator.popPage()">
+
+                <img ng-src="{{actual.img}}" class="thumbnail">
+
+                <div class="name">
+                    {{actual.nombre}}
+                </div>
+                <div class="location">
+                    {{actual.apellido}}
+                </div>
+                <div class="desc">
+                    {{actual.fijo}}
+                </div>
+                <div class="desc">
+                    {{actual.movil}}
+                </div>
+                <div class="desc">
+                    {{actual.direccion}}
+                </div>
+                <div class="desc">
+                    {{actual.mail}}
+                </div>
+
+            </ons-button>
+
+            <br>
+        </div>
+
+    </ons-page>
+
+</ons-template>
+
+
+<br>
+</div>
+
+
+</ons-page>
+
+</ons-template>

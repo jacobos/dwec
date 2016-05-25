@@ -1,0 +1,73 @@
+<ons-page>
+  <ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+    <center>Seach a Client</center>
+  </ons-toolbar>
+  <ons-list ng-controller="BuscarClieController">
+    
+      
+    
+  <center>Insert the Client Name to seach:</center> <div class="cent2"> <input ng-model="nombre"> </br></br></div> 
+   
+
+   
+      
+    <center><button ng-click="busqueda(nombre)">Search</button></center>
+   
+    <ons-list-item ng-repeat="clie in buscarclie">
+      <ons-row>
+        
+          
+          
+          
+          
+        <ons-col>
+            
+            
+       
+     <center>
+  
+            
+            
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+    
+    
+<tr> 
+    <th>Code</th>
+    <th>Name</th>
+    <th>Last Name</th>
+    <th>Phone</th>
+    
+</tr>
+    
+    
+<tr> 
+    <td>{{clie.codigo}}</td>
+    <td>{{clie.nombre}}</td>
+    <td>{{clie.apellidos}}</td>
+    <td>{{clie.Telefono}}</td>
+   
+</tr>
+         
+            
+    
+</center>
+            
+            
+            
+            
+        </ons-col>
+          
+          
+          
+          
+        <ons-col width="40px"></ons-col>
+      </ons-row>
+    </ons-list-item>
+  </ons-list>
+
+</ons-page>

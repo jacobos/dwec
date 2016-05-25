@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Exam rec JQ</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <div id="exam">
+    <br>
+    <input id="valor" type="text">
+    <button id="elboton">Go to...</button>
+
+  </div>
+
+  <!-- Compiled and minified JavaScript, jQuery and Bootstrap -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script>
+    $.getJSON("http://37.187.2.239:81/dwec/canvas/exam_/getJSON2.php?callback=?", function(data) {
+      console.log(data);
+
+	 pepe = data;
+        miArray = pepe.important.probably["here it is"]["human beings"];
+		console.log(miArray);
+       for(i = 0; i < miArray.length; i++){
+          console.log(miArray[i]);
+
+        }
+
+		 $.each(pepe.important.probably["here it is"]["human beings"], function(index, value){
+
+			 $.each(value.sons, function(i,z){
+				  $.each(value.daughters, function(d,de){
+
+
+          console.log(value);
+			// console.log(value.wife);
+			 //console.log(value.husband);
+			 //console.log(value.sons[i].age);
+			 //console.log(value.sons[i].name);
+				// console.log(value.sons[i].desc);
+					  	 console.log(value.daughters[d].age);
+					   console.log(value.daughters[d].name);
+			 //console.log(value.sons[i].name);
+				// console.log(value.sons[i].desc);
+
+
+
+
+			 $("#exam").append("<div class='familia'>"+"Husband:"+value.husband+" "+" " + " " +" Wife: "+value.wife+" <br> </br>" +" Children"+ "<br> </br> "+" <hr> </hr>" +value.sons[i].name + " "+ value.sons[i].age+ " "+value.sons[i].desc+"<br> </br>"+"Name:"+" "+value.daughters[d].name+" "+" Age:"+value.daughters[d].age+" "+"Desc:"+value.daughters[d].desc+" <br> </br>"+" </div>");
+
+
+					   var $boton = $("<button id='elboton"+index +"'>"+"Borrame"+"</button>");
+					   $boton.appendTo($("#exam"));
+
+					   $("#hi").on("click", function(x){
+
+                var recogida = $("#i").val();
+
+				$(".exam").eq(index).remove();
+				$("#elboton"+recogida).remove();
+				//recogida=" ";
+
+
+
+		 })
+
+			  });
+			 });
+			 });
+
+
+
+
+          //console.log(value.important.probably["here it is"]["human beings"].wife);
+          //console.log(value.important.probably["here it is"]["human beings"].husband);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         // $("#exam").append("<div class='libro'>"+value.volumeInfo.title+"<a href=''>"+value.volumeInfo.description+"</a>"+"<img src='"+value.volumeInfo.imageLinks.smallThumbnail+"'></img></div>");
+
+          //var $boton = $("<button id='elboton"+index+"'>"+index+"</button>");
+          //$boton.appendTo($("#botones"));
+          //$("#elboton"+index).on("click", function() {
+           // $("html, body").animate({
+             // scrollTop: $(".libro").eq(index).offset().top
+            //});
+          //});
+
+
+
+
+
+
+
+
+
+      // some help
+      // a = $("<div class='jumbotron'>");
+      // la a es un elemento de tipo div (se cierra automáticamente la etiqueta, no haría falta poner el </div>)
+
+      // $("<div class='col-sm-6 text-center'>
+      // "<div class='container' style='background-color: #aaa'>";
+
+
+      $("button.moveme").on("click", function(){
+      });
+
+
+      $("#elboton").on("click", function() {
+        console.log($("#valor").val());
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>

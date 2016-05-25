@@ -1,0 +1,76 @@
+<ons-page>
+  <ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+        <ons-icon icon="bars"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+      <div class="center">Add Clients</div>
+  </ons-toolbar>
+  <ons-list ng-controller="AnadirClieController">
+    
+     
+    
+  <center>Insert the name:</center>  <div class="cent2"><input ng-model="nombre">  </br></br></div>
+ <center>Insert the last names:</center><div class="cent2"><input ng-model="apellidos"> </br></br> </div>
+ <center>Insert the phone:</center> <div class="cent2">  <input ng-model="telefono"> </br></br></div>
+
+
+      
+      <center><button ng-click="addClie(nombre,apellidos,telefono)">Add Client</button></center>
+   
+    <ons-list-item ng-repeat="add in addcliente" >
+      <ons-row>
+        
+          
+          
+          
+          
+        <ons-col>
+            
+            
+       
+            
+  
+            
+            
+  <center><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+    
+    
+<tr> 
+    <th>Code</th>
+    <th>Name</th>
+    <th>Last Names</th>
+    <th>Phone</th>
+    
+</tr>
+    
+    
+<tr> 
+    
+    <td>{{add.codigo}}</td>
+    <td>{{add.nombre}}</td>
+    <td>{{add.apellidos}}</td>
+    <td>{{add.Telefono}}</td>
+   
+</tr>
+         
+            
+    
+</table>
+  
+           </center>
+            
+            
+            
+        </ons-col>
+          
+          
+          
+          
+        <ons-col width="40px"></ons-col>
+      </ons-row>
+    </ons-list-item>
+  </ons-list>
+
+</ons-page>

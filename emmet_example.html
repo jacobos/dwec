@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>using EMMET</title>
+  <style media="screen">
+    contenido {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <contenido>
+    on the top the emmet command (you write it and after you press tab) on the bottom of each element what appears<br>
+
+    .wrap>ul.list>.listillo*2
+    <div class="wrap">
+      <ul class="list">
+        <li class="listillo"></li>
+        <li class="listillo"></li>
+      </ul>
+    </div>
+
+    table#pepito.miTabla
+    <table id="pepito" class="miTabla">
+      <!-- tr.fila*4 -->
+      <tr class="fila">
+        <!-- td*3 -->
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+      </tr>
+      <!-- tr.fila*4 -->
+      <tr class="fila">
+        <!-- td*3 -->
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+      </tr>
+      <!-- tr.fila*4 -->
+      <tr class="fila">
+        <!-- td*3 -->
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+      </tr>
+      <!-- tr.fila*4 -->
+      <tr class="fila">
+        <!-- td*3 -->
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+      </tr>
+    </table>
+
+    table#pepito.miTabla>tr.fila*4>td{nuevo 10}*3
+    <table id="pepito" class="miTabla">
+      <tr class="fila">
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+      </tr>
+      <tr class="fila">
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+      </tr>
+      <tr class="fila">
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+      </tr>
+      <tr class="fila">
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+        <td>nuevo 10</td>
+      </tr>
+    </table>
+
+    section>.wrap>h1>p>a
+    <section>
+      <div class="wrap">
+        <h1>
+          <p>
+            <a href=""></a>
+          </p>
+        </h1>
+      </div>
+    </section>
+
+    section>.wrap>h1>p{small}^a[href="nice_ref.html"]{grande}
+    <section>
+      <div class="wrap">
+        <h1>
+          <p>small</p>
+        </h1>
+        <a href="nice_ref.html">grande</a>
+      </div>
+    </section>
+
+    section>.wrap>h1>p{small}^a[href="nice_ref.html" target="blank"]{grande}
+    <section>
+      <div class="wrap">
+        <h1>
+          <p>small</p>
+        </h1>
+        <a href="nice_ref.html" target="blank">grande</a>
+      </div>
+    </section>
+
+    section>.wrap>h1>p{small}^a{grande}
+    <section>
+      <div class="wrap">
+        <h1>
+          <p>small</p>
+        </h1>
+        <a href="">grande</a>
+      </div>
+    </section>
+
+    section>.wrap>h1>p^a
+    <section>
+      <div class="wrap">
+        <h1>
+          <p></p>
+        </h1>
+        <a href=""></a>
+      </div>
+    </section>
+
+    ul>li.item4*3
+    <ul>
+      <li class="item4"></li>
+      <li class="item4"></li>
+      <li class="item4"></li>
+    </ul>
+
+    ul>li.item4{texto $$}*3
+    <ul>
+      <li class="item4">texto 01</li>
+      <li class="item4">texto 02</li>
+      <li class="item4">texto 03</li>
+    </ul>
+
+
+    ul>li.item4{texto}*3
+    <ul>
+      <li class="item4">texto</li>
+      <li class="item4">texto</li>
+      <li class="item4">texto</li>
+    </ul>
+
+    ul>li.item${item $$}*3
+    <ul>
+      <li class="item1">item 01</li>
+      <li class="item2">item 02</li>
+      <li class="item3">item 03</li>
+    </ul>
+
+  </contenido>
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<ons-page>
+
+	<div class="login-form" ng-controller="ControladorPedidos">
+
+		<table class="table table table-bordered table-striped table-hover table-condensed " style=" text-align: center">
+			<thead>
+				<th style=" text-align: center">Codes</th>
+				<th style=" text-align: center">Cod_users</th>
+				<th style=" text-align: center">Code_customers</th>
+				<th style=" text-align: center">Date</th>
+				<th style=" text-align: center">Errand</th>
+				<th style=" text-align: center">Price</th>
+				<th style=" text-align: center">
+					<a type="button" class="btn btn-primary btn-large  " href="#test_modal_addPedido" data-toggle="modal" style="background:#000;">
+						<ons-icon icon="ion-plus-circled" size="21px" class="ons-icon ons-icon--ion ion-plus-circled" style="font-size: 10px;"></ons-icon>
+					</a>
+				</th>
+			</thead>
+
+			<tr ng-repeat="pedido in getCurrentPage()">
+				<td>{{pedido.cod}}</td>
+				<td>{{pedido.cod_usuario}}</td>
+				<td>{{pedido.cod_cliente}}</td>
+				<td>{{pedido.fecha}}</td>
+				<td>{{pedido.encargo}}</td>
+				<td>{{pedido.precio}}</td>
+				<td>
+					<a type="button" class="btn btn-primary btn-large modificarUser" href="#test_modal_mod" data-toggle="modal">
+						<ons-icon icon="ion-wrench" size="21px" class="ons-icon ons-icon--ion ion-plus-circled" style="font-size: 10px;"></ons-icon>
+					</a>
+					<a type="button" ng-click="eliminar(pedido.cod)" class="btn btn-primary btn-large eliminarUno  " href="#test_modal" data-toggle="modal">
+						<ons-icon icon="ion-trash-a" size="21px" class="ons-icon ons-icon--ion ion-plus-circled" style="font-size: 10px;"></ons-icon>
+					</a>
+				</td>
+			</tr>
+
+		</table>
+
+		<div class="modal fade" id="test_modal">
+
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;
+                                 </span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title">Confirmation of the action</h4>
+					</div>
+					<div class="modal-body">
+						<p>Are you sure to delete this field?</p>
+					</div>
+					<div class="modal-footer">
+						<form class="form-horizontal" method="post">
+							<div class="control-group">
+								<label class="control-label" for="dlgAddDeviceFolder_name">Click accept to remove</label>
+								<div class="controls">
+									<button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
+									<input type="submit" ng-click="destroyed()" class="btn btn-primary eliminar " name="eliminar" data-dismiss="modal" value="Remove"></input>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="test_modal_addPedido">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;
+                                 </span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title">Add a new field</h4>
+					</div>
+					<div class="modal-body">
+
+						<form class="form-horizontal">
+
+							<div class="form-group has-feedback">
+								<label class="control-label  col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">User</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<select class="form-control addNamePedido" >
+										<option ng-change="changeUser()">Selecciona</option>
+										<option ng-change="changeUser()">Selecciona2</option>
+									</select>
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label class="control-label col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Customer</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<select class="form-control addCliente" ng-model="nameCli">
+										<!--                                        <option>Selecciona</option>;-->
+
+									</select>
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label class="control-label col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Fecha de Order</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<input type="date" ng-model="fechaPed" class="form-control addFechaPedido" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+
+							<div class="form-group  has-feedback">
+								<label class="control-label col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Errand</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<textarea class="form-control addEncargoPedido" rows="3" id="inputSuccess3" aria-describedby="inputSuccess3Status" ng-model="encargoPed"></textarea>
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+
+							<div class="form-group  has-feedback">
+								<label class="control-label col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Price</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<input type="text" class="form-control ModPrecioPedido" id="inputSuccess3" aria-hidden="true" ng-model="precioPed">
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+							<th style=" text-align: center">Codes</th>
+							<th style=" text-align: center">cod_users</th>
+							<th style=" text-align: center">code_customers</th>
+							<th style=" text-align: center">date</th>
+							<th style=" text-align: center">errand</th>
+							<th style=" text-align: center">price</th>
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<form class="form-horizontal" method="post">
+							<div class="control-group">
+								<label class="control-label" for="dlgAddDeviceFolder_name">Click accept to add</label>
+								<div class="controls">
+									<button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
+									<input type="submit" ng-click="anadirPed()" class="btn btn-primary addPedido  " name="anadir" data-dismiss="modal" value="Add"></input>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="test_modal_mod">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;
+                                 </span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title">Changing field</h4>
+					</div>
+					<div class="modal-body">
+
+						<form class="form-horizontal">
+							<div class="form-group has-feedback">
+								<label class="control-label col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">User</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<select class="form-control user">
+										<option>Select</option>;
+
+									</select>
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+
+							<div class="form-group  has-feedback">
+								<label class="control-label col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Customer</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<select class="form-control cliente">
+										<option>Select</option>;
+
+									</select>
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+
+							<div class="form-group  has-feedback">
+								<label class="control-label col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Fecha Order</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<input type="text" class="form-control fecha" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+
+							<div class="form-group  has-feedback">
+								<label class="control-label col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Errand</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<textarea class="form-control encargo" rows="3" id="inputSuccess3" aria-describedby="inputSuccess3Status"></textarea>
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+
+							<div class="form-group  has-feedback">
+								<label class="control-label col-xs-3 col-sm-3 col-md-3 col-lg-3" for="inputSuccess3">Price</label>
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<input type="text" class="form-control precio" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+									<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+									<span id="inputSuccess3Status" class="sr-only">(success)</span>
+								</div>
+							</div>
+						</form>
+
+					</div>
+
+					<div class="modal-footer">
+						<form class="form-horizontal" method="post">
+							<div class="control-group">
+								<label class="control-label" for="dlgAddDeviceFolder_name">Click to accept changes</label>
+								<div class="controls">
+									<button type="button" class="btn btn-default " data-dismiss="modal">Cancelar</button>
+									<input type="submit" class="btn btn-primary modify " name="modify" data-dismiss="modal" value="Modify"></input>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</ons-page>

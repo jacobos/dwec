@@ -1,0 +1,16 @@
+body {
+    padding: 10px !important;   
+}
+
+.ng-table th.text-right {
+    text-align: right;
+}
+.ng-table th.text-left {
+    text-align: left;
+}
+
+.ng-table tr:hover{
+ background-color: #df0031;
+color: white;
+    
+}
