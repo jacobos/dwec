@@ -1,3 +1,0 @@
-<div class="col-md-7 col-md-offset-1">
-                    <span class="textos"><b>Me llamo Alvaro y soy</b> un programador web de Valencia. Soy una persona proactiva a la que le gusta diseñar y programar para crear páginas web agradables y con buena funcionalidad. Cuando trabajo me gusta cuidar cada detalle y sentir la satisfacción de un buen trabajo y dejar siempre agradado al cliente.</span>
-                </div>
