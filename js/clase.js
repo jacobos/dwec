@@ -50,8 +50,8 @@
       name: "Boolean",
       url: "http://www.w3schools.com/jsref/jsref_obj_boolean.asp"
     }, {
-      name: "http://www.w3schools.com/jsref/jsref_obj_math.asp",
-      url: "Math Object"
+      name: "Math Object",
+      url: "http://www.w3schools.com/jsref/jsref_obj_math.asp"
     }, {
       name: "Date Object",
       url: "http://www.w3schools.com/jsref/jsref_obj_date.asp"
@@ -63,8 +63,8 @@
       desc: "JS global properties and functions",
       url: "http://www.w3schools.com/jsref/jsref_obj_global.asp"
     }, {
-      name: "http://www.w3schools.com/jsref/jsref_operators.asp",
-      url: "Operators"
+      name: "Operators",
+      url: "http://www.w3schools.com/jsref/jsref_operators.asp"
     }, {
       name: "RegExp Object",
       url: "http://www.w3schools.com/jsref/jsref_obj_regexp.asp"
@@ -94,37 +94,37 @@
     orden: 2,
     name: "document functions (DOM.a)",
     fills: [{
-      name: "document.getElementById(string)",
+      name: "getElementById(string)",
       desc: "Get the element with the specified ID",
       url: "http://www.w3schools.com/jsref/met_document_getelementbyid.asp",
       url2: "http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_getelementbyid"
     }, {
-      name: "document.createTextNode(string)",
+      name: "createTextNode(string)",
       desc: "The createElement() method creates an Element Node with the specified name",
       url: "http://www.w3schools.com/jsref/met_document_createtextnode.asp",
       url2: "http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createtextnode"
     }, {
-      name: "document.createElement(string)",
+      name: "createElement(string)",
       desc: "The createElement() method creates an Element Node with the specified name (div, button, span...)",
       url: "http://www.w3schools.com/jsref/met_document_createelement.asp",
       url2: "http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createelement2"
     }, {
-      name: "document.getElementsByClassName(string)",
+      name: "getElementsByClassName(string)",
       desc: "Get all elements with the specified class name",
       url: "http://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp",
       url2: "http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_getelementsbyclassname"
     }, {
-      name: "document.getElementsByTagName(string)",
+      name: "getElementsByTagName(string)",
       desc: "Get all elements with the specified tag name",
       url: "http://www.w3schools.com/jsref/met_document_getelementsbytagname.asp",
       url2: "http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_getelementsbytagname"
     }, {
-      name: "document.querySelector(string)",
+      name: "querySelector(string)",
       desc: "Get the first element in the document with the given css selector",
       url: "http://www.w3schools.com/jsref/met_document_queryselector.asp",
       url2: "http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_queryselector_class"
     }, {
-      name: "document.querySelectorAll(string)",
+      name: "querySelectorAll(string)",
       desc: "Get all the elements in the document with the given css selector",
       url: "http://www.w3schools.com/jsref/met_document_queryselectorall.asp",
       url2: "http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_queryselectorall_class"
@@ -917,13 +917,13 @@
         w3: "http://www.w3schools.com/jquery/event_resize.asp",
         url2: "http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_event_resize",
       }, {
-        name: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢1. Traversing examples (1)",
+        name: "Traversing examples (1)",
         url: "http://learn.jquery.com/using-jquery-core/traversing/"
       }, {
-        name: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢2. Traversing examples (2)",
+        name: "Traversing examples (2)",
         url: "http://jqfundamentals.com/chapter/traversing-manipulating"
       }, {
-        name: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢3. Traversing tricks",
+        name: "Traversing tricks",
         url: "http://code.tutsplus.com/tutorials/10-really-helpful-traversing-functions-in-jquery--net-6619"
       }
     ]
@@ -932,7 +932,7 @@
     orden: 13,
     fills: [{
         name: "AJAX",
-        desc: "Ajax (also AJAX; /Ãƒâ€¹Ã‹â€ eÃƒâ€°Ã‚ÂªdÃƒÅ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¦ks/; short for asynchronous JavaScript and XML) is a set of web development techniques utilizing many web technologies used on the client-side to create asynchronous Web applications.",
+        desc: "Ajax (short for Asynchronous JavaScript and XML) is a set of web development techniques utilizing many web technologies used on the client-side to create asynchronous Web applications.",
         url: "https://developer.mozilla.org/en-US/docs/AJAX"
       }, {
         name: "AJAX w3",
@@ -1161,14 +1161,6 @@
       name: "Your first AngJS App (2)",
       desc: "A Step-by-Step Tutorial for Your First AngularJS App",
       url: "http://www.toptal.com/angular-js/your-first-angularjs-app-part-2-scaffolding-building-and-testing",
-    }, {
-      name: "Extra, googleMaps1",
-      desc: "an extra with google maps",
-      url: "http://37.187.2.239:81/dwec/angular/maps1.html",
-    }, {
-      name: "Extra, googleMaps2",
-      desc: "an extra with google maps",
-      url: "http://37.187.2.239:81/dwec/angular/maps2.html",
     }]
   }, {
     orden: 21,
@@ -1232,6 +1224,14 @@
       name: "multiple keypress",
       desc: "document.body.onkeydown = document.body.onkeyup = function(e){var e = e || event; key[e.keyCode] = e.type == 'keydown';}; ",
       url: "http://jsfiddle.net/B1KMusic/U5L2X/embedded/result%2Cjs/"
+    },{
+      name: "GoogleMaps1",
+      desc: "an extra with google maps",
+      url: "http://37.187.2.239:81/dwec/angular/maps1.html",
+    }, {
+      name: "GoogleMaps2",
+      desc: "an extra with google maps",
+      url: "http://37.187.2.239:81/dwec/angular/maps2.html",
     }]
   }, {
     orden: 24,
