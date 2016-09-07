@@ -442,6 +442,9 @@
     }]
   }, {
     orden: -3,
+    name: "empty"
+  }/*, {
+    orden: -3,
     name: "Class examples",
     fills: [{
         name: "Change innerHTML and JS in html",
@@ -528,7 +531,7 @@
       }
 
     ]
-  }, {
+  }*/, {
     orden: 8,
     name: "jQuery (1)",
     fills: [{

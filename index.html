@@ -110,7 +110,7 @@
     }
 
     a {
-      color: rgb(119, 209, 139);
+      color: rgb(101, 187, 120);
     }
 
     a:hover {
@@ -162,7 +162,7 @@
   <div class="header"></div>
   <div class="container-fluid jumbotron" ng-controller="dwecClassController as elementInClass" ng-cloak>
     <div class="col-md-4 col-xs-12" ng-repeat="parentEle in elements | orderBy: 'orden' | limitTo:20 ">
-      <div class="panel">
+      <div ng-show="parentEle.fills" class="panel">
         <div class="panel-heading parent">{{parentEle.name}}
           <span style="float:right" class="glyphicon glyphicon-menu-hamburger"></span>
         </div>
@@ -181,14 +181,14 @@
   <div class="container">
   </div>
   <div class="container">
-    <span class="hidden-xs show-m btn btn-default" style="position: fixed; left: 35%; width: 10%; bottom: 0px;">Show</span>
+    <span class="hidden-xs show-m btn btn-default" style="position: fixed; left: 40%; width: 10%; bottom: 0px;">Show</span>
     <span class="hidden-sm hidden-md hidden-lg show-m btn btn-default btn-info" style="position: fixed; left: 35%; width: 10%; bottom: 0px;">S</span>
 
-    <span class="hidden-xs hide-m btn btn-default" style="position: fixed; left: 45%; width: 10%; bottom: 0px;">Hide</span>
+    <span class="hidden-xs hide-m btn btn-default" style="position: fixed; left: 50%; width: 10%; bottom: 0px;">Hide</span>
     <span class="hidden-sm hidden-md hidden-lg hide-m btn btn-default btn-info" style="position: fixed; left: 45%; width: 10%; bottom: 0px;">H</span>
 
-    <span class="hidden-xs hide-m btn btn-default" style="position: fixed; left: 55%; width: 10%; bottom: 0px;"><a target="_blank" href="exercises.html">Exercises</a></span>
-    <span class="hidden-sm hidden-md hidden-lg hide-m btn btn-default btn-info" style="position: fixed; left: 55%; width: 10%; bottom: 0px;">ex</span>
+    <!--<span class="hidden-xs hide-m btn btn-default" style="position: fixed; left: 55%; width: 10%; bottom: 0px;"><a target="_blank" href="exercises.html">Exercises</a></span>
+    <span class="hidden-sm hidden-md hidden-lg hide-m btn btn-default btn-info" style="position: fixed; left: 55%; width: 10%; bottom: 0px;">ex</span>-->
   </div>
 
   <!-- General JavaScript -->
