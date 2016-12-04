@@ -541,7 +541,7 @@
       url2: "http://www.w3schools.com/jquery/trysel.asp"
     }, {
       name: "jQuery selectors (api)",
-      desc: "Borrowing from CSS 1ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ3, and then adding its own, jQuery offers a powerful set of tools for matching a set of elements in a document.",
+      desc: "Borrowing from CSS3, and then adding its own, jQuery offers a powerful set of tools for matching a set of elements in a document.",
       url: "https://api.jquery.com/category/selectors/"
     }, {
       name: "$( document ).ready()",
@@ -1083,7 +1083,7 @@
     orden: 20,
     fills: [{
       name: "nodeJS",
-      desc: "Node.jsÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.",
+      desc: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.",
       url: "https://nodejs.org/"
     }, {
       name: "npmJS",
@@ -1095,7 +1095,7 @@
       url: "http://gruntjs.com/getting-started"
     }, {
       name: "Bower",
-      desc: "Web sites are made of lots of things ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.",
+      desc: "Web sites are made of lots of things: frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.",
       url: "http://bower.io/"
     }, {
       name: "Yeoman",
@@ -1130,26 +1130,26 @@
     }, {
       name: "AngularJS Gems",
       desc: "AngularJS gems",
-      url: "http://37.187.2.239:81/dwec/angular"
+      url: "http://jacobos.github.io/dwec/angular"
     }, {
       name: "AngularJS sillas",
       desc: "AngularJS sillas",
-      url: "http://37.187.2.239:81/dwec/angular/index_sillas.html"
+      url: "http://jacobos.github.io/dwec/angular/index_sillas.html"
     }, {
       name: "AngularJS Gems (without own Directives)",
       desc: "AngularJS Gems (no own directives)",
-      url: "http://37.187.2.239:81/dwec/angular/gems_noDirectives.zip",
-      url2: "http://37.187.2.239:81/dwec/angular/gems_noDirectives"
+      url: "http://jacobos.github.io/dwec/angular/gems_noDirectives.zip",
+      url2: "http://jacobos.github.io/dwec/angular/gems_noDirectives"
     }, {
       name: "AngularJS Gems (without Routing)",
       desc: "AngularJS Gems (no routing)",
-      url: "http://37.187.2.239:81/dwec/angular/gems_noRouting.zip",
-      url2:"http://37.187.2.239:81/dwec/angular/gems_noRouting"
+      url: "http://jacobos.github.io/dwec/angular/gems_noRouting.zip",
+      url2:"http://jacobos.github.io/dwec/angular/gems_noRouting"
     }, {
       name: "AngularJS Gems (with Routing)",
       desc: "AngularJS Gems (routing)",
-      url: "http://37.187.2.239:81/dwec/angular/gems_Routing.zip",
-      url2: "http://37.187.2.239:81/dwec/angular/gems_Routing"
+      url: "http://jacobos.github.io/dwec/angular/gems_Routing.zip",
+      url2: "http://jacobos.github.io/dwec/angular/gems_Routing"
     }, {
       name: "other interesting tutorials"
     }, {
@@ -1230,11 +1230,11 @@
     },{
       name: "GoogleMaps1",
       desc: "an extra with google maps",
-      url: "http://37.187.2.239:81/dwec/angular/maps1.html",
+      url: "http://jacobos.github.io/dwec/angular/maps1.html",
     }, {
       name: "GoogleMaps2",
       desc: "an extra with google maps",
-      url: "http://37.187.2.239:81/dwec/angular/maps2.html",
+      url: "http://jacobos.github.io/dwec/angular/maps2.html",
     }]
   }, {
     orden: 24,
@@ -1279,7 +1279,7 @@
       url: "http://meanjs.org/"
     }, {
       name: "nodejS",
-      desc: "Node.jsÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.",
+      desc: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.",
       url: "https://nodejs.org/en/",
       url2: "http://www.nodebeginner.org/"
     }, {
